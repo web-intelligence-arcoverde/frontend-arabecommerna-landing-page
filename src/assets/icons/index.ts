@@ -1,1 +1,4 @@
-export const ICONS = {};
+import Mouse from "./Frame.svg";
+export const ICONS = {
+  Mouse,
+};
