@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <PageView suppressHydrationWarning={true}>
       <Presentation />
-      <Presentation />
     </PageView>
   );
 };
