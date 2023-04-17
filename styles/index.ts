@@ -39,7 +39,6 @@ export const PageView = styled.div`
   width: 100%;
   max-width: ${BREAKPOINTS.xxg};
   margin: 0 auto;
-  padding: 0 96px;
   background-color: ${COLORS.light._06};
 
   @media (max-width: ${BREAKPOINTS.sm}) {
