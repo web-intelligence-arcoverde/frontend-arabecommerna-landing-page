@@ -1,9 +1,10 @@
-import { COLORS } from "./../../../common/index";
+
+import { IMAGES } from "@/assets";
+import { COLORS } from "@/common";
 import styled from "styled-components";
-import { IMAGES } from "../../../assets";
 
 export const PresentationContainer = styled.section`
-  background-image: ${IMAGES.BackgroundPresentation?.src};
+  background-image: url(${IMAGES.BackgroundPresentation.src});
   background-size: cover;
   text-align: center;
   color: ${COLORS.light._05};
