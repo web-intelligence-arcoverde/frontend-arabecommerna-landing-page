@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { IMAGES } from "../../../assets";
 
 export const PresentationContainer = styled.section`
-  background-image: url(https://cdn.pixabay.com/photo/2019/02/14/15/59/manipulation-3996878_1280.jpg);
+  background-image: ${IMAGES.BackgroundPresentation?.src};
+  background-size: cover;
   text-align: center;
   color: ${COLORS.light._05};
   height: 100vh;
