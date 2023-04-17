@@ -9,7 +9,7 @@ export const PresentationContainer = styled.section`
   background-size: cover;
   color: ${COLORS.light._05};
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   padding: 128px 0px 212px;
   align-items: center;
