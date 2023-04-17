@@ -5,7 +5,7 @@ import { PageView } from '../styles';
 const Home = () => {
   return (
     <PageView suppressHydrationWarning={true}>
-      <Header />
+      <Header currentPage='curso' />
       <Presentation />
     </PageView>
   );

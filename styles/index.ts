@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
   transition: all 0.3s ease-in-out;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
 }
 
 body {
