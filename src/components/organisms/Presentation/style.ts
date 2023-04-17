@@ -59,5 +59,5 @@ export const SeeMore = styled.div`
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  margin-top: 540px;
+  bottom: 17.7%;
 `;
