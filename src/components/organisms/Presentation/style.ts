@@ -9,17 +9,13 @@ export const PresentationContainer = styled.section`
   background-size: cover;
   color: ${COLORS.light._05};
   text-align: center;
-  max-height: 80vh;
   display: flex;
   padding: 128px 0px 212px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   @media (max-width: ${BREAKPOINTS.sm}) {
-    background-size: cover;
-    background-position: center bottom;
-    max-width: 375px;
-    max-height: 589px;
+    background-position: center;
     padding: 96px 0px 128px;
   }
 `;
