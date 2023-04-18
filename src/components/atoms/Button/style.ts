@@ -8,4 +8,5 @@ export const CardButton = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  padding: 10px 32px;
 `;

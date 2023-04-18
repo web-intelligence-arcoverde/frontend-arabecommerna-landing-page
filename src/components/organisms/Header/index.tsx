@@ -12,34 +12,39 @@ import {
 import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
-import { allSectionsMock } from '@/__mocks__';
 import { Button, ChangeLanguage } from '@/components';
+
 
 interface HeaderProps {
   currentPage: string;
   lastPage: string;
+  howItWorks: Section[];
 }
+type Section = {
+  name: string;
+  id: string;
+};
 
-export const Header = ({ currentPage, lastPage }: HeaderProps) => {
-  const [step, setStep] = useState(allSectionsMock[0]);
+export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
+  const [section, setSection] = useState(howItWorks[0]);
 
   return (
     <ContainerHeader>
       <Navigation>
         <Logo />
         <ListNav>
-        <VerticalLine />
+          <VerticalLine />
           <CurrentPageActivated>{currentPage}</CurrentPageActivated>
           <CurrentNavigation>
-            <a href="#"> {step.name}</a>
-            <Image src={ICONS.Arrow} alt="icone dopdrow" /> 
+            <a href="#"> {section.name}</a>
+            <Image src={ICONS.Arrow} alt="icone dopdrow" />
           </CurrentNavigation>
           <VerticalLine />
           <LastPage href="/traducoes">{lastPage}</LastPage>
         </ListNav>
       </Navigation>
-      <Controls >
-        <ChangeLanguage/>
+      <Controls>
+        <ChangeLanguage />
         <Button>Whatsapp</Button>
       </Controls>
     </ContainerHeader>
