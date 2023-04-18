@@ -2,9 +2,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { BREAKPOINTS, COLORS } from '../src/common';
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
-
 
 * {
   margin: 0;
@@ -34,7 +31,7 @@ textarea {
 button,
 a {
   cursor: pointer;
-  font-family: 'Raleway', sans-serif
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 `;
 
