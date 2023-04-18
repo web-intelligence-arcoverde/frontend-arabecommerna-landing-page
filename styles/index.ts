@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from "styled-components";
-import { BREAKPOINTS, COLORS } from "../src/common";
+import styled, { createGlobalStyle } from 'styled-components';
+import { BREAKPOINTS, COLORS } from '../src/common';
 
 export const GlobalStyle = createGlobalStyle`
 
