@@ -16,7 +16,8 @@ export const PresentationContainer = styled.section`
   justify-content: center;
   @media (max-width: ${BREAKPOINTS.sm}) {
     background-position: center;
-    padding: 96px 0px 128px;
+    width: 100%;
+    padding: 96px 20px 128px;
   }
 `;
 
@@ -68,15 +69,14 @@ export const PresentationDetails = styled.div`
     box-shadow: 0px 0px 40px rgba(122, 119, 134, 0.1);
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
-    max-width: 335px;
+    max-width: 100%;
     button {
       font-size: 0.844rem;
-      width: 335px;
+      width: 100%;
       height: 48px;
     }
     h2 {
       font-family: 'Raleway';
-      font-style: normal;
       font-size: 1.5rem;
       font-weight: 700;
       line-height: 200%;
@@ -88,7 +88,6 @@ export const PresentationDetails = styled.div`
     }
 
     p {
-      max-width: 270px;
       font-size: 1rem;
       font-weight: 400;
     }
