@@ -5,11 +5,12 @@ import styled from 'styled-components';
 
 export const PresentationContainer = styled.section`
   background-image: url(${IMAGES.BackgroundPresentation.src});
-  background-position: center -65px;
+  background-position: center -270px;
   background-size: cover;
   color: ${COLORS.light._05};
   text-align: center;
-  height: 100vh;
+  width: 1440px;
+  height: 672px;
   display: flex;
   padding: 128px 0px 212px;
   align-items: center;
@@ -17,8 +18,9 @@ export const PresentationContainer = styled.section`
   justify-content: center;
   @media (max-width: ${BREAKPOINTS.sm}) {
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position: center bottom;
+    width: 375px;
+    height: 589px;
     padding: 96px 0px 128px;
   }
 `;
@@ -28,6 +30,7 @@ export const PresentationDetails = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  position: relative;
   h2 {
     font-family: 'Raleway', sans-serif;
     max-width: 700px;
@@ -37,12 +40,13 @@ export const PresentationDetails = styled.div`
     font-weight: 700;
   }
   p:first-of-type {
+    font-size: 1rem;
     line-height: 150%;
     letter-spacing: 0.02em;
   }
   p {
     max-width: 453px;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 200%;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -103,7 +107,7 @@ export const SeeMore = styled.div`
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  bottom: -25px;
+  bottom: -210px;
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: none;
   }
