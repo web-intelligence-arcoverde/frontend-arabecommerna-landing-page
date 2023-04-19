@@ -1,27 +1,24 @@
-import { useEffect, useState } from "react";
-import Select from "react-select";
-import { CardSelect, ContainerSelect } from "./style";
+import { useEffect, useState } from 'react';
+import Select from 'react-select';
+import { CardSelect, ContainerSelect } from './style';
 
-const countries = [
-  { value: "pt-BR", label: "Português" },
-  { value: "en-US", label: "English" },
-];
+const countries = [{ value: 'pt-BR' }, { value: 'en-US' }];
 
 export const ChangeLanguage = () => {
-  const I18N_STORAGE_KEY = "i18nextLng";
+  const I18N_STORAGE_KEY = 'i18nextLng';
   const [selectedCountry, setSelectedCountry] = useState<any>(countries[0]);
-  const instanceId = "select-box";
+  const instanceId = 'select-box';
 
   useEffect(() => {
-    const data: any = localStorage.getItem("index");
+    const data: any = localStorage.getItem('index');
     const obj = JSON.parse(data);
     setSelectedCountry(countries[obj]);
   }, []);
 
   const handleChange = (value: any) => {
-    const index = value.value === "pt-BR" ? 0 : 1;
+    const index = value.value === 'pt-BR' ? 0 : 1;
     setSelectedCountry(index);
-    localStorage.setItem("index", index.toString());
+    localStorage.setItem('index', index.toString());
     localStorage.setItem(I18N_STORAGE_KEY, value.value);
     location.reload();
   };
@@ -35,7 +32,7 @@ export const ChangeLanguage = () => {
         backspaceRemovesValue
         formatOptionLabel={(country) => (
           <CardSelect>
-            <span>{country.label}</span>
+            <span>{country.value}</span>
           </CardSelect>
         )}
       />
