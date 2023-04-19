@@ -4,6 +4,7 @@ export const messages = {
       header: {
         currentPage: 'Course',
         lastPage: 'Translations',
+        logo:'Árabe with Merna',
       },
       allSections: {
         howItWorks: 'How it works',
@@ -18,7 +19,7 @@ export const messages = {
         questions: 'Questions',
       },
       presentation: {
-        teste: 'testing language change',
+        button: 'fuck you',
       },
     },
   },

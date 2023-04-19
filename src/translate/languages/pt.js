@@ -2,6 +2,7 @@ export const messages = {
   pt: {
     translations: {
       header: {
+        logo:'Árabe com Merna',
         currentPage: 'Curso',
         lastPage: 'Traduções',
       },
@@ -18,7 +19,7 @@ export const messages = {
         questions: 'Dúvidas',
       },
       presentation: {
-        teste: 'Teste mudança de idioma ',
+        button: 'vai se foder ',
       },
     },
   },

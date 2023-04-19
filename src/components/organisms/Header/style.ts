@@ -38,6 +38,7 @@ export const CurrentPageActivated = styled.div`
 export const CurrentNavigation = styled.div`
   display: flex;
   gap: 12px;
+  line-height: 70px;
   cursor: pointer;
   a {
     color: ${COLORS.gray._03};
