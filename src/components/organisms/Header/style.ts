@@ -24,7 +24,7 @@ export const ListNav = styled.div`
   align-items: center;
 `;
 
-export const CurrentPageActivated = styled.a`
+export const CurrentPageActivated = styled.div`
   font-weight: 600;
   color: ${COLORS.auxiliary.confirm};
   margin-right: 16px;
@@ -32,6 +32,7 @@ export const CurrentPageActivated = styled.a`
   min-width: 60px;
   text-align: center;
   line-height: 70px;
+  z-index: 3;
 `;
 
 export const CurrentNavigation = styled.div`
@@ -71,4 +72,10 @@ export const Controls = styled.div`
     color: ${COLORS.brand._01};
     font-weight: 500;
   }
+`;
+
+export const ContainerDrop = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
 `;

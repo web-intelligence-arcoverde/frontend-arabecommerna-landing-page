@@ -1,5 +1,6 @@
 import { Logo } from '@/components/atoms/Logo';
 import {
+  ContainerDrop,
   ContainerHeader,
   Controls,
   CurrentNavigation,
@@ -12,8 +13,7 @@ import {
 import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
-import { Button, ChangeLanguage } from '@/components';
-
+import { Button, ChangeLanguage, DropdownHeader } from '@/components';
 
 interface HeaderProps {
   currentPage: string;
@@ -33,7 +33,10 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
       <Navigation>
         <Logo />
         <ListNav>
-          <VerticalLine />
+          <ContainerDrop>
+            <VerticalLine />
+            <DropdownHeader />
+          </ContainerDrop>
           <CurrentPageActivated>{currentPage}</CurrentPageActivated>
           <CurrentNavigation>
             <a href="#"> {section.name}</a>
