@@ -18,7 +18,11 @@ export const messages = {
         questions: 'Dúvidas',
       },
       presentation: {
-        teste: 'Teste mudança de idioma ',
+        learn: 'Teste mudança de idioma',
+        become: 'Torne-se <span>fluente em Árabe</span> de um modo eficiente e descomplicado',
+        wheAre: 'Somos a primeira metodologia que garante a fluência no idioma Árabe e te insere de verdade na cultura',
+        start: 'Começar a aprender',
+        seeMore: 'Arraste para ver mais',
       },
     },
   },
