@@ -30,12 +30,10 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
 
   const handleMouseEnter = () => {
     setIsHovering(true);
-    console.log(isHovering);
   };
 
   const handleMouseLeave = () => {
     setIsHovering(false);
-    console.log(isHovering);
   };
 
   return (

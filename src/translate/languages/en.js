@@ -24,7 +24,7 @@ export const messages = {
           'Become <span>fluent in Arabic</span> in an efficient and hassle-free way',
         wheAre:
           'We are the first methodology that guarantees fluency in the Arabic language and truly inserts you into the culture',
-        start: 'start learning',
+        start: 'Start learning',
         seeMore: 'Drag to see more',
       },
     },

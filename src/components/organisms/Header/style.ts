@@ -72,6 +72,7 @@ export const Controls = styled.div`
     background: ${COLORS.brand._03};
     color: ${COLORS.brand._01};
     font-weight: 500;
+    height: 42px;
   }
 `;
 
