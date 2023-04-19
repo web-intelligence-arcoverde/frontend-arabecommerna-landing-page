@@ -25,6 +25,4 @@ export const CardSelect = styled.div`
     width: 20px;
     display: none;
   }
-  .css-319lph-ValueContainer {
-  }
 `;

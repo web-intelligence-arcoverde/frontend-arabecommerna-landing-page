@@ -1,5 +1,5 @@
-import { Logo } from '@/components/atoms/Logo';
 import {
+  ContainerDrop,
   ContainerHeader,
   Controls,
   CurrentNavigation,
@@ -12,8 +12,7 @@ import {
 import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
-import { Button, ChangeLanguage } from '@/components';
-
+import { Button, ChangeLanguage, DropdownHeader, Logo } from '@/components';
 
 interface HeaderProps {
   currentPage: string;
@@ -27,15 +26,39 @@ type Section = {
 
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   const [section, setSection] = useState(howItWorks[0]);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+    console.log(isHovering);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+    console.log(isHovering);
+  };
 
   return (
     <ContainerHeader>
       <Navigation>
         <Logo />
         <ListNav>
-          <VerticalLine />
+          <ContainerDrop>
+            <VerticalLine />
+            {isHovering && (
+              <div
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <DropdownHeader />
+              </div>
+            )}
+          </ContainerDrop>
           <CurrentPageActivated>{currentPage}</CurrentPageActivated>
-          <CurrentNavigation>
+          <CurrentNavigation
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <a href="#"> {section.name}</a>
             <Image src={ICONS.Arrow} alt="icone dopdrow" />
           </CurrentNavigation>

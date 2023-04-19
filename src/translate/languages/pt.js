@@ -2,6 +2,7 @@ export const messages = {
   pt: {
     translations: {
       header: {
+        logo:'Árabe com Merna',
         currentPage: 'Curso',
         lastPage: 'Traduções',
       },
