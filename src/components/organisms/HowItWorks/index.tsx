@@ -11,6 +11,9 @@ export const HowItWorks = () => {
           Aprenda a <span>ler, escrever e conversar</span> em Árabe com mais
           confiança
         </h2>
+        <div>
+          <Image src={ICONS.Details} />
+        </div>
       </LearnContainer>
       <LearnDetails>
         <div>

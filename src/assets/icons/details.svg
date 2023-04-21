@@ -1,0 +1,39 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_396_1617)">
+<path d="M0 30.5737L42.4264 73.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 23.5737L42.4264 66.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 16.5737L42.4264 59.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 9.57373L42.4264 52.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 2.57373L42.4264 45.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 -4.42627L42.4264 38.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 -11.4263L42.4264 31.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 -18.4263L42.4264 24.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 -25.4263L42.4264 17.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M0 -32.4263L42.4264 10.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+</g>
+<rect x="1.5" y="39.5" width="39" height="39" transform="rotate(-90 1.5 39.5)" stroke="#0C6746" stroke-opacity="0.25"/>
+<g clip-path="url(#clip1_396_1617)">
+<path d="M39 70.5737L81.4264 113" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 63.5737L81.4264 106" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 56.5737L81.4264 99.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 49.5737L81.4264 92.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 42.5737L81.4264 85.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 35.5737L81.4264 78.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 28.5737L81.4264 71.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 21.5737L81.4264 64.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 14.5737L81.4264 57.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M39 7.57373L81.4264 50.0001" stroke="#0C6746" stroke-opacity="0.25"/>
+</g>
+<rect x="40.5" y="79.5" width="39" height="39" transform="rotate(-90 40.5 79.5)" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M40 79.5H0" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M120 79.5H80" stroke="#0C6746" stroke-opacity="0.25"/>
+<path d="M79.5 80V120" stroke="#0C6746" stroke-opacity="0.25"/>
+<defs>
+<clipPath id="clip0_396_1617">
+<rect x="1" y="40" width="40" height="40" transform="rotate(-90 1 40)" fill="white"/>
+</clipPath>
+<clipPath id="clip1_396_1617">
+<rect x="40" y="80" width="40" height="40" transform="rotate(-90 40 80)" fill="white"/>
+</clipPath>
+</defs>
+</svg>
