@@ -26,8 +26,8 @@ export const ChangeLanguage = () => {
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
-      backgroundColor: state.isSelected ? `${COLORS.brand._03}` : '#F0F0F0',
-      color: state.isSelected ? '#FFFFFF' : '#000000',
+      backgroundColor: state.isSelected && `${COLORS.brand._03}`,
+      color: state.isSelected && `${COLORS.light._06}`,
     }),
   };
   return (

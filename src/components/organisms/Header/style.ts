@@ -10,8 +10,10 @@ export const ContainerHeader = styled.header`
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
     padding: 15px 20px;
-    height: 72px;
+    height: auto;
     position: relative;
+    width: 100%;
+ 
   }
 `;
 
@@ -21,6 +23,10 @@ export const Navigation = styled.nav`
   align-items: center;
   a {
     text-transform: capitalize;
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    width: 100%;
+    margin-bottom: 15px;
   }
 `;
 
@@ -83,7 +89,7 @@ export const Controls = styled.div`
     font-weight: 500;
     height: 42px;
   }
-  @media (max-width:${BREAKPOINTS.sm}){
+  @media (max-width: ${BREAKPOINTS.sm}) {
     position: absolute;
     bottom: -70px;
     background-color: ${COLORS.light._06};
@@ -91,6 +97,8 @@ export const Controls = styled.div`
     width: 100%;
     justify-content: space-between;
     padding: 20px;
+    border-top: solid 1px ${COLORS.light._02};
+    border-bottom: solid 1px ${COLORS.light._02};
   }
 `;
 
@@ -98,4 +106,16 @@ export const ContainerDrop = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+`;
+export const CardButton = styled.button`
+  width: max-content;
+  border-radius: 4px;
+  border: solid 1px ${COLORS.light._02};
+  background-color: ${COLORS.light._06};
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
 `;

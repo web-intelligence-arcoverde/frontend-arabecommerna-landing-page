@@ -1,4 +1,5 @@
 import {
+  CardButton,
   ContainerDrop,
   ContainerHeader,
   Controls,
@@ -27,6 +28,7 @@ type Section = {
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   const [section, setSection] = useState(howItWorks[0]);
   const [isHovering, setIsHovering] = useState(false);
+  const [menuActive,setMenuActive] = useState(false)
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -40,7 +42,9 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
     <ContainerHeader>
       <Navigation>
         <Logo />
-        <h1>menu</h1>
+        <CardButton>
+          <Image src={ICONS.Menu} alt="icone menu" />
+        </CardButton>
         <ListNav>
           <ContainerDrop>
             <VerticalLine />
