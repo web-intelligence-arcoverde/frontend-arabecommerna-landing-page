@@ -1,4 +1,4 @@
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ContainerHeader = styled.header`
@@ -7,6 +7,12 @@ export const ContainerHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 72px;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    flex-direction: column;
+    padding: 15px 20px;
+    height: 72px;
+    position: relative;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -22,6 +28,9 @@ export const ListNav = styled.div`
   display: flex;
   gap: 40px;
   align-items: center;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
+  }
 `;
 
 export const CurrentPageActivated = styled.div`
@@ -73,6 +82,15 @@ export const Controls = styled.div`
     color: ${COLORS.brand._01};
     font-weight: 500;
     height: 42px;
+  }
+  @media (max-width:${BREAKPOINTS.sm}){
+    position: absolute;
+    bottom: -70px;
+    background-color: ${COLORS.light._06};
+    z-index: 10;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
   }
 `;
 

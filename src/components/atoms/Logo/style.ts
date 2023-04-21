@@ -10,4 +10,5 @@ export const StyleLogo = styled.span`
   border-radius: 100px;
   line-height: 24px;
   cursor: pointer;
+  width: max-content;
 `;

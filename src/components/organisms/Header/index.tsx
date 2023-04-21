@@ -40,6 +40,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
     <ContainerHeader>
       <Navigation>
         <Logo />
+        <h1>menu</h1>
         <ListNav>
           <ContainerDrop>
             <VerticalLine />

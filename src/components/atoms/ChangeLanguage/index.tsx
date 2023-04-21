@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Select from 'react-select';
 import { CardSelect, ContainerSelect } from './style';
+import { COLORS } from '@/common';
 
 const countries = [{ value: 'pt-BR' }, { value: 'en-US' }];
 
@@ -22,9 +23,17 @@ export const ChangeLanguage = () => {
     localStorage.setItem(I18N_STORAGE_KEY, value.value);
     location.reload();
   };
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.isSelected ? `${COLORS.brand._03}` : '#F0F0F0',
+      color: state.isSelected ? '#FFFFFF' : '#000000',
+    }),
+  };
   return (
     <ContainerSelect>
       <Select
+        styles={customStyles}
         instanceId={instanceId}
         value={selectedCountry}
         options={countries}
