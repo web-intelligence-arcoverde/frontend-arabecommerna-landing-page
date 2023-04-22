@@ -16,20 +16,16 @@ export const HowItWorks = () => {
         </div>
       </LearnContainer>
       <LearnDetails>
+        <Image src={ICONS.Mouses} />
         <div>
-          <Image src={ICONS.Mouses} />
-          <div>
-            <p>
-              Adotamos um modelo de ensino conversacional, junto com a prática
-              constante e o uso da língua em situações reais, para garantir um
-              aprendizado eficaz e imersivo
-            </p>
-          </div>
           <h1>Metodologia</h1>
+          <p>
+            Adotamos um modelo de ensino conversacional, junto com a prática
+            constante e o uso da língua em situações reais, para garantir um
+            aprendizado eficaz e imersivo
+          </p>
         </div>
-        <div>
-          <Image src={ICONS.Notebook} />
-        </div>
+        <Image src={ICONS.Notebook} />
         <div>
           <h1>Aulas ao vivo</h1>
           <p>
@@ -38,9 +34,7 @@ export const HowItWorks = () => {
             idioma e ganha confiança para se comunicar
           </p>
         </div>
-        <div>
-          <Image src={ICONS.People} />
-        </div>
+        <Image src={ICONS.People} />
         <div>
           <h1>Acompanhamento do aluno</h1>
           <p>
