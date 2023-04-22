@@ -62,7 +62,6 @@ export const LearnDetails = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 96px;
   h1 {
     color: ${COLORS.gray._01};
     font-size: 1.125rem;

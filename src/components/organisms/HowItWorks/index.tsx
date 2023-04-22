@@ -1,16 +1,15 @@
 import Image from 'next/image';
 import { HowItWorksContainer, LearnContainer, LearnDetails } from './style';
 import { ICONS } from '@/assets';
+import { i18n } from '../../../translate/i18n.js';
 
 export const HowItWorks = () => {
+  const learnto = i18n.t('howWork.learnto');
   return (
     <HowItWorksContainer>
       <LearnContainer>
-        <h1>COMO FUNCIONA</h1>
-        <h2>
-          Aprenda a <span>ler, escrever e conversar</span> em Árabe com mais
-          confiança
-        </h2>
+        <h1>{`${i18n.t('howWork.Work')}`}</h1>
+        <h2 dangerouslySetInnerHTML={{ __html: learnto }}></h2>
         <div>
           <Image src={ICONS.Details} />
         </div>
@@ -18,30 +17,18 @@ export const HowItWorks = () => {
       <LearnDetails>
         <Image src={ICONS.Mouses} />
         <div>
-          <h1>Metodologia</h1>
-          <p>
-            Adotamos um modelo de ensino conversacional, junto com a prática
-            constante e o uso da língua em situações reais, para garantir um
-            aprendizado eficaz e imersivo
-          </p>
+          <h1>{`${i18n.t('howWork.Methodology')}`}</h1>
+          <p>{`${i18n.t('howWork.adopted')}`}</p>
         </div>
         <Image src={ICONS.Notebook} />
         <div>
-          <h1>Aulas ao vivo</h1>
-          <p>
-            Estudar árabe com uma professora nativa ao vivo traz diversos
-            benefícios: você aprimora a pronúncia, melhora a compreensão do
-            idioma e ganha confiança para se comunicar
-          </p>
+          <h1>{`${i18n.t('howWork.liveClasses')}`}</h1>
+          <p>{`${i18n.t('howWork.study')}`}</p>
         </div>
         <Image src={ICONS.People} />
         <div>
-          <h1>Acompanhamento do aluno</h1>
-          <p>
-            Com a orientação constante da professora, através de feedbacks e
-            correções frequentes, o aluno pode aprimorar suas habilidades e
-            avançar mais rapidamente
-          </p>
+          <h1>{`${i18n.t('howWork.studentFollow')}`}</h1>
+          <p>{`${i18n.t('howWork.withConstant')}`}</p>
         </div>
       </LearnDetails>
     </HowItWorksContainer>
