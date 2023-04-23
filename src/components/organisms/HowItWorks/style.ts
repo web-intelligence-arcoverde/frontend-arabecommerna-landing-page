@@ -1,12 +1,14 @@
 import { BREAKPOINTS } from './../../../common/index';
 import { COLORS } from '@/common';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const HowItWorksContainer = styled.section`
   display: flex;
+  background-color: ${COLORS.light._05};
   padding: 128px 96px;
   gap: 130px;
-  background-color: ${COLORS.light._05};
+
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: flex;
     flex-direction: column;
@@ -29,6 +31,7 @@ export const LearnContainer = styled.div`
   h1 {
     font-weight: 500;
     color: ${COLORS.gray._02};
+    line-height: 24px;
   }
   h2,
   span {
@@ -40,6 +43,7 @@ export const LearnContainer = styled.div`
   span {
     color: ${COLORS.brand._02};
   }
+
   @media (max-width: ${BREAKPOINTS.sm}) {
     h1 {
       font-weight: 500;
@@ -52,28 +56,39 @@ export const LearnContainer = styled.div`
       font-size: 1.5rem;
       line-height: 48px;
     }
-    element.style {
-      display: none;
-    }
   }
 `;
 export const LearnDetails = styled.div`
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 612px;
+  gap: 48px 0;
   h1 {
     color: ${COLORS.gray._01};
     font-size: 1.125rem;
     font-weight: 500;
+    line-height: 27px;
   }
   p {
-    width: 516px;
-    height: 96px;
+    max-width: 516px;
+    max-height: 96px;
     color: ${COLORS.gray._02};
     font-weight: 400;
     line-height: 32px;
-    line-height: 200%;
-    letter-spacing: 0.02em;
   }
+
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    width: 100%;
+    h1 {
+      font-size: 1rem;
+      line-height: 24px;
+    }
+  }
+`;
+
+export const ContainerImage = styled(Image)`
+  width: 56px !important;
+  height: 56px !important;
 `;

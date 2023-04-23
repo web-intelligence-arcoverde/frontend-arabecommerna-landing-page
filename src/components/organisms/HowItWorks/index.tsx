@@ -1,5 +1,10 @@
+import {
+  ContainerImage,
+  HowItWorksContainer,
+  LearnContainer,
+  LearnDetails,
+} from './style';
 import Image from 'next/image';
-import { HowItWorksContainer, LearnContainer, LearnDetails } from './style';
 import { ICONS } from '@/assets';
 import { i18n } from '../../../translate/i18n.js';
 
@@ -11,11 +16,11 @@ export const HowItWorks = () => {
         <h1>{`${i18n.t('howWork.Work')}`}</h1>
         <h2 dangerouslySetInnerHTML={{ __html: learnto }}></h2>
         <div>
-          <Image src={ICONS.Details} />
+          <Image src={ICONS.Details} alt="icone" />
         </div>
       </LearnContainer>
       <LearnDetails>
-        <Image src={ICONS.Mouses} />
+        <ContainerImage src={ICONS.Mouses} />
         <div>
           <h1>{`${i18n.t('howWork.Methodology')}`}</h1>
           <p>{`${i18n.t('howWork.adopted')}`}</p>
