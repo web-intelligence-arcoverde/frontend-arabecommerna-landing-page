@@ -25,10 +25,6 @@ export const CardInfos = styled.div`
       font-size: 1rem;
       line-height: 24px;
     }
-  }
-`;
-export const ContainerImage = styled.div`
-  @media (max-width: ${BREAKPOINTS.sm}) {
     span {
       width: 56px !important;
       height: 56px !important;
