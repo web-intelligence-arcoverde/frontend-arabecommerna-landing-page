@@ -14,6 +14,7 @@ export const CardSeeMore = styled.div`
   justify-content: space-between;
   position: absolute;
   bottom: -23px;
+  z-index: 10;
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: none;
   }

@@ -1,3 +1,4 @@
+import { ICONS } from '@/assets';
 import { i18n } from '../translate/i18n.js';
 
 export const allSectionsMock = [
@@ -40,5 +41,22 @@ export const allSectionsMock = [
   {
     name: `${i18n.t('allSections.questions')}`,
     id: 'questions',
+  },
+];
+export const cardInfosMock = [
+  {
+    title: `${i18n.t('howWork.Methodology')}`,
+    subTitle: `${i18n.t('howWork.adopted')}`,
+    icon: ICONS.Mouses,
+  },
+  {
+    title: `${i18n.t('howWork.liveClasses')}`,
+    subTitle: `${i18n.t('howWork.study')}`,
+    icon: ICONS.Notebook,
+  },
+  {
+    title: `${i18n.t('howWork.studentFollow')}`,
+    subTitle: `${i18n.t('howWork.withConstant')}`,
+    icon: ICONS.People,
   },
 ];
