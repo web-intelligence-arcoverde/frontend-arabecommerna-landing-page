@@ -7,3 +7,8 @@ type Section = {
   name: string;
   id: string;
 };
+
+interface ContentMenuMobileProps {
+  buttonName: string;
+  sections: any;
+}

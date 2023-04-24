@@ -40,13 +40,17 @@ export const CurrentPageActivated = styled.a`
   color: ${COLORS.auxiliary.confirm};
 `;
 
-export const CurrentSection = styled.div`
+export const CurrentSection = styled.div<{ arrowRotate:string }>`
   display: flex;
   gap: 10px;
   a {
     align-items: center;
     color: ${COLORS.gray._04};
     font-size: 0.9rem;
+  }
+  img {
+    transform: ${(props) =>
+      props.arrowRotate ?  props.arrowRotate  : 'rotate(0deg)'};
   }
 `;
 export const NextPage = styled.div`
@@ -55,5 +59,17 @@ export const NextPage = styled.div`
   a {
     font-weight: 500;
     color: ${COLORS.gray._02};
+  }
+`;
+
+export const AllSections = styled.ul`
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px ${COLORS.light._02};
+  padding: 20px;
+  gap: 32px;
+  a {
+    font-weight: 500;
+    color: ${COLORS.gray._04};
   }
 `;

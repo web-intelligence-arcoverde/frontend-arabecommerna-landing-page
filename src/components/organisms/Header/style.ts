@@ -98,14 +98,18 @@ export const ContainerDrop = styled.div`
   position: relative;
 `;
 export const CardButton = styled.button`
-  width: max-content;
-  border-radius: 4px;
-  border: solid 1px ${COLORS.light._02};
-  background-color: ${COLORS.light._06};
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 20px;
+  display: none;
+
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    width: max-content;
+    border-radius: 4px;
+    border: solid 1px ${COLORS.light._02};
+    background-color: ${COLORS.light._06};
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+  }
 `;
