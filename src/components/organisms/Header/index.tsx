@@ -20,6 +20,7 @@ import {
   DropdownHeader,
   Logo,
 } from '@/components';
+import { HeaderProps } from '@/types/header';
 
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   const buttonName = 'Whatsapp';

@@ -1,14 +1,14 @@
-interface HeaderProps {
+export interface HeaderProps {
   currentPage: string;
   lastPage: string;
   howItWorks: Section[];
 }
-type Section = {
+export type Section = {
   name: string;
   id: string;
 };
 
-interface ContentMenuMobileProps {
+export interface ContentMenuMobileProps {
   buttonName: string;
   sections: any;
 }

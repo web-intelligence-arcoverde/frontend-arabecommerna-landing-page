@@ -11,6 +11,7 @@ import {
 import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
+import { ContentMenuMobileProps } from '@/types/header';
 
 export const ContentMenuMobile = ({
   buttonName,
