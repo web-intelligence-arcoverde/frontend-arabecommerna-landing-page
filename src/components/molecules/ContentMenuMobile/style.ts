@@ -42,7 +42,7 @@ export const CurrentPageActivated = styled.a`
 
 export const CurrentSection = styled.div<{ arrowRotate:string }>`
   display: flex;
-  gap: 10px;
+  gap: 17px;
   a {
     align-items: center;
     color: ${COLORS.gray._04};
