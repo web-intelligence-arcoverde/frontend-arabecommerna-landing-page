@@ -13,19 +13,17 @@ import {
 import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
-import { Button, ChangeLanguage, ContentMenuMobile, DropdownHeader, Logo } from '@/components';
-
-interface HeaderProps {
-  currentPage: string;
-  lastPage: string;
-  howItWorks: Section[];
-}
-type Section = {
-  name: string;
-  id: string;
-};
+import {
+  Button,
+  ChangeLanguage,
+  ContentMenuMobile,
+  DropdownHeader,
+  Logo,
+} from '@/components';
 
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
+  const buttonName = 'Whatsapp';
+
   const [section, setSection] = useState(howItWorks[0]);
   const [isHovering, setIsHovering] = useState<boolean>(false);
   const [menuActive, setMenuActive] = useState<boolean>(false);
@@ -74,9 +72,11 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
       </Navigation>
       <Controls>
         <ChangeLanguage />
-        <Button>Whatsapp</Button>
+        <Button>{buttonName}</Button>
       </Controls>
-      <ContentMenuMobile/>
+      {menuActive && (
+        <ContentMenuMobile buttonName={buttonName} sections={howItWorks} />
+      )}
     </ContainerHeader>
   );
 };
