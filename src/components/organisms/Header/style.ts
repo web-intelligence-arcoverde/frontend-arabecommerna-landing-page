@@ -10,10 +10,8 @@ export const ContainerHeader = styled.header`
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
     padding: 15px 20px;
-    height: auto;
     position: relative;
     width: 100%;
- 
   }
 `;
 
@@ -90,15 +88,7 @@ export const Controls = styled.div`
     height: 42px;
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
-    position: absolute;
-    bottom: -70px;
-    background-color: ${COLORS.light._06};
-    z-index: 10;
-    width: 100%;
-    justify-content: space-between;
-    padding: 20px;
-    border-top: solid 1px ${COLORS.light._02};
-    border-bottom: solid 1px ${COLORS.light._02};
+    display: none;
   }
 `;
 

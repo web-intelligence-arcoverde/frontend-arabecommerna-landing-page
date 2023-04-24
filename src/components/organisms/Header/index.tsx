@@ -13,7 +13,7 @@ import {
 import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
-import { Button, ChangeLanguage, DropdownHeader, Logo } from '@/components';
+import { Button, ChangeLanguage, ContentMenuMobile, DropdownHeader, Logo } from '@/components';
 
 interface HeaderProps {
   currentPage: string;
@@ -27,8 +27,8 @@ type Section = {
 
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   const [section, setSection] = useState(howItWorks[0]);
-  const [isHovering, setIsHovering] = useState(false);
-  const [menuActive,setMenuActive] = useState(false)
+  const [isHovering, setIsHovering] = useState<boolean>(false);
+  const [menuActive, setMenuActive] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -37,13 +37,16 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   const handleMouseLeave = () => {
     setIsHovering(false);
   };
+  const handleMenu = () => {
+    setMenuActive(!menuActive);
+  };
 
   return (
     <ContainerHeader>
       <Navigation>
         <Logo />
-        <CardButton>
-          <Image src={ICONS.Menu} alt="icone menu" />
+        <CardButton onClick={handleMenu}>
+          <Image src={menuActive ? ICONS.Close : ICONS.Menu} alt="icone menu" />
         </CardButton>
         <ListNav>
           <ContainerDrop>
@@ -73,6 +76,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
         <ChangeLanguage />
         <Button>Whatsapp</Button>
       </Controls>
+      <ContentMenuMobile/>
     </ContainerHeader>
   );
 };
