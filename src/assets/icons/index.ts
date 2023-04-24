@@ -1,7 +1,15 @@
-import Mouse from "./mouse.svg";
-import Arrow from './arrow.svg'
+import Mouse from './mouse.svg';
+import Arrow from './arrow.svg';
+import Mouses from './Mouses.svg';
+import Notebook from './Notebook.svg';
+import People from './People.svg';
+import Details from './details.svg';
 
 export const ICONS = {
   Mouse,
-  Arrow
+  Arrow,
+  Mouses,
+  Notebook,
+  People,
+  Details,
 };
