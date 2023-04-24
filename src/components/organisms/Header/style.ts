@@ -1,4 +1,4 @@
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ContainerHeader = styled.header`
@@ -7,6 +7,12 @@ export const ContainerHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 72px;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    flex-direction: column;
+    padding: 15px 20px;
+    position: relative;
+    width: 100%;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -16,12 +22,19 @@ export const Navigation = styled.nav`
   a {
     text-transform: capitalize;
   }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 `;
 
 export const ListNav = styled.div`
   display: flex;
   gap: 40px;
   align-items: center;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
+  }
 `;
 
 export const CurrentPageActivated = styled.div`
@@ -74,10 +87,29 @@ export const Controls = styled.div`
     font-weight: 500;
     height: 42px;
   }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
+  }
 `;
 
 export const ContainerDrop = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+`;
+export const CardButton = styled.button`
+  display: none;
+
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    width: max-content;
+    border-radius: 4px;
+    border: solid 1px ${COLORS.light._02};
+    background-color: ${COLORS.light._06};
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+  }
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLORS } from '../../../common';
+import { BREAKPOINTS, COLORS } from '../../../common';
 
 export const StyleLogo = styled.span`
   color: ${COLORS.brand._01};
@@ -10,4 +10,6 @@ export const StyleLogo = styled.span`
   border-radius: 100px;
   line-height: 24px;
   cursor: pointer;
+  width: max-content;
+ 
 `;
