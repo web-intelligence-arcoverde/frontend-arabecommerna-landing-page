@@ -7,10 +7,15 @@ export const ContainerHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 72px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: ${COLORS.light._06};
+  width: 100%;
+  max-width: ${BREAKPOINTS.xxg};
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
     padding: 15px 20px;
-    position: relative;
     width: 100%;
   }
 `;
