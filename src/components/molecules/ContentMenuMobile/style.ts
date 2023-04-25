@@ -41,6 +41,7 @@ export const CardSections = styled.div`
 export const CurrentPageActivated = styled.a`
   font-weight: 600;
   color: ${COLORS.auxiliary.confirm};
+  pointer-events: none;
 `;
 
 export const CurrentSection = styled.div<{ arrowRotate: string }>`
