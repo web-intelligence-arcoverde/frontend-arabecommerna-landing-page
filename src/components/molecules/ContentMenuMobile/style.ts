@@ -1,16 +1,18 @@
 import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
-export const CardContentMenuMobile = styled.div`
+export const CardContentMenuMobile = styled.div<{backgroundGreen:string}>`
   display: none;
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: block;
     position: absolute;
     top: 72px;
-    background-color: ${COLORS.light._06};
+    background-color: #0c674685;
     z-index: 10;
     width: 100%;
     justify-content: space-between;
+    height: auto;
+    padding-bottom:${(props)=> props.backgroundGreen ? '120px':'0'};
 
     button {
       background: ${COLORS.brand._03};
@@ -26,6 +28,7 @@ export const ButtonsControl = styled.div`
   border-top: solid 1px ${COLORS.light._02};
   border-bottom: solid 1px ${COLORS.light._02};
   padding: 20px;
+  background: ${COLORS.light._06};
 `;
 
 export const CardSections = styled.div`
@@ -33,6 +36,7 @@ export const CardSections = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  background: ${COLORS.light._06};
 `;
 
 export const CurrentPageActivated = styled.a`
@@ -56,6 +60,7 @@ export const CurrentSection = styled.div<{ arrowRotate: string }>`
 export const NextPage = styled.div`
   border-top: solid 1px ${COLORS.light._02};
   padding: 20px;
+  background: ${COLORS.light._06};
   a {
     font-weight: 500;
     color: ${COLORS.gray._02};
@@ -68,6 +73,7 @@ export const AllSections = styled.ul`
   border-top: solid 1px ${COLORS.light._02};
   padding: 20px;
   gap: 32px;
+  background: ${COLORS.light._06};
   a {
     font-weight: 500;
     color: ${COLORS.gray._04};

@@ -26,7 +26,7 @@ export const ContentMenuMobile = ({
   console.log('aqui', currentSection);
 
   return (
-    <CardContentMenuMobile>
+    <CardContentMenuMobile backgroundGreen={showSections && '300px'}>
       <ButtonsControl>
         <ChangeLanguage />
         <Button>{buttonName}</Button>
@@ -39,7 +39,7 @@ export const ContentMenuMobile = ({
             setShowSections(!showSections);
           }}
         >
-          <a href="#"> { section?.name}</a>
+          <a href="#"> {section?.name}</a>
           <Image src={ICONS.Arrow} alt="icone dopdrow" />
         </CurrentSection>
       </CardSections>
