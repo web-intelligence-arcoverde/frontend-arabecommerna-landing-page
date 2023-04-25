@@ -5,6 +5,7 @@ export const allSectionsMock = [
   {
     name: `${i18n.t('allSections.howItWorks')}`,
     id: 'how-it-works',
+    scrollDesktop: 100,
   },
   {
     name: `${i18n.t('allSections.aboutUs')}`,

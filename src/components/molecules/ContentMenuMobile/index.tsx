@@ -8,25 +8,21 @@ import {
   CurrentSection,
   NextPage,
 } from './style';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
 import { ContentMenuMobileProps } from '@/types/header';
-import { useScrollSection } from '@/hooks/useScrollSection';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const ContentMenuMobile = ({
   buttonName,
   sections,
+  nameCurrentSection,
 }: ContentMenuMobileProps) => {
-  const [section, setSection] = useState(sections[0]);
-
   const [showSections, setShowSections] = useState<boolean>(false);
 
-  const currentSection = useScrollSection(section);
-  console.log('aqui', currentSection);
-
   return (
-    <CardContentMenuMobile backgroundGreen={showSections && '300px'}>
+    <CardContentMenuMobile >
       <ButtonsControl>
         <ChangeLanguage />
         <Button>{buttonName}</Button>
@@ -39,7 +35,7 @@ export const ContentMenuMobile = ({
             setShowSections(!showSections);
           }}
         >
-          <a href="#"> {section?.name}</a>
+          <a href="#"> {nameCurrentSection}</a>
           <Image src={ICONS.Arrow} alt="icone dopdrow" />
         </CurrentSection>
       </CardSections>
@@ -47,9 +43,9 @@ export const ContentMenuMobile = ({
         <AllSections>
           {sections.map((item) => (
             <li key={item.name}>
-              <a id={currentSection?.name === item.name ? `active` : ''}>
+              <AnchorLink href={`#${item.id}`} id={nameCurrentSection === item.name ? `active` : ''}>
                 {item.name}
-              </a>
+              </AnchorLink>
             </li>
           ))}
         </AllSections>

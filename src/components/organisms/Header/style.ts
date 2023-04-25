@@ -62,6 +62,7 @@ export const CurrentNavigation = styled.div`
     color: ${COLORS.gray._03};
     text-transform: capitalize;
     width: 110px;
+    pointer-events: none;
   }
 
   :hover {

@@ -10,5 +10,6 @@ export type Section = {
 
 export interface ContentMenuMobileProps {
   buttonName: string;
-  sections: any;
+  sections: Section[];
+  nameCurrentSection:string
 }

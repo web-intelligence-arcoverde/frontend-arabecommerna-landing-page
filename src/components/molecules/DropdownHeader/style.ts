@@ -1,4 +1,5 @@
 import { COLORS } from '@/common';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
 
 export const CardDropdown = styled.ul`
@@ -32,7 +33,6 @@ export const CardDropdown = styled.ul`
     #active {
       color: ${COLORS.brand._01};
       font-weight: 500;
-      pointer-events: none;
     }
 
     :hover {
@@ -41,7 +41,7 @@ export const CardDropdown = styled.ul`
   }
 `;
 
-export const Section = styled.a`
+export const Section = styled(AnchorLink)`
   padding-left: 20px;
   color: ${COLORS.gray._03};
   text-transform: capitalize;

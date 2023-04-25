@@ -1,7 +1,7 @@
 import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
-export const CardContentMenuMobile = styled.div<{backgroundGreen:string}>`
+export const CardContentMenuMobile = styled.div`
   display: none;
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: block;
@@ -12,7 +12,6 @@ export const CardContentMenuMobile = styled.div<{backgroundGreen:string}>`
     width: 100%;
     justify-content: space-between;
     height: auto;
-    padding-bottom:${(props)=> props.backgroundGreen ? '120px':'0'};
 
     button {
       background: ${COLORS.brand._03};
@@ -81,6 +80,6 @@ export const AllSections = styled.ul`
   #active {
     color: ${COLORS.brand._01};
     font-weight: 500;
-    pointer-events: none;
+
   }
 `;

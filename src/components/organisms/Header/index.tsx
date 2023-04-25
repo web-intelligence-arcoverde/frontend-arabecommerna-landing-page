@@ -10,7 +10,7 @@ import {
   Navigation,
   VerticalLine,
 } from './style';
-import {  useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
 import {
@@ -23,12 +23,12 @@ import {
 import { HeaderProps } from '@/types/header';
 import { useScrollSection } from '@/hooks/useScrollSection';
 import useModalOverflow from '@/hooks/useOverflowModal';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
-
   const [isHovering, setIsHovering] = useState<boolean>(false);
   const [menuActive, setMenuActive] = useState<boolean>(false);
-  
+
   const buttonName = 'Whatsapp';
   const currentSection = useScrollSection(howItWorks);
 
@@ -43,10 +43,10 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
     setMenuActive(!menuActive);
   };
 
-  useModalOverflow(menuActive,handleMenu,'header')
+  useModalOverflow(menuActive, handleMenu, 'header');
 
   return (
-    <ContainerHeader id='header'>
+    <ContainerHeader id="header">
       <Navigation>
         <Logo />
         <CardButton onClick={handleMenu}>
@@ -60,7 +60,10 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <DropdownHeader nameCurrentSection={currentSection.name} allSections={howItWorks} />
+                <DropdownHeader
+                  nameCurrentSection={currentSection.name}
+                  allSections={howItWorks}
+                />
               </div>
             )}
           </ContainerDrop>
@@ -81,7 +84,11 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
         <Button>{buttonName}</Button>
       </Controls>
       {menuActive && (
-        <ContentMenuMobile buttonName={buttonName} sections={howItWorks} />
+        <ContentMenuMobile
+          nameCurrentSection={currentSection.name}
+          buttonName={buttonName}
+          sections={howItWorks}
+        />
       )}
     </ContainerHeader>
   );

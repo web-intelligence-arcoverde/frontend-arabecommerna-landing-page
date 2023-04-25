@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 export const ContainerSelect = styled.div`
   min-width: 110px;
-
+  
   .css-1s2u09g-control {
     border: solid 1px ${COLORS.light._02} !important;
+    cursor: pointer ;
   }
   .css-tlfecz-indicatorContainer{
    color: ${COLORS.gray._03};
@@ -39,9 +40,11 @@ export const CardSelect = styled.div`
   font-weight: 500;
   height: 36px;
 
+
   span {
     font-size: 14px;
     padding-left: 10px;
+    cursor: pointer;
   }
   text-transform: uppercase;
   img {

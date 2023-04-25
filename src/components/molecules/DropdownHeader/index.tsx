@@ -16,7 +16,8 @@ export const DropdownHeader = ({ allSections, nameCurrentSection }: any) => {
         >
           <Section
             id={nameCurrentSection === section.name ? `active` : ''}
-            href="#"
+            href={`#${section.id}`}
+            offset={section?.scrollDesktop}
           >
             {section.name}
           </Section>
