@@ -10,7 +10,7 @@ import {
   Navigation,
   VerticalLine,
 } from './style';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
 import {
@@ -21,13 +21,14 @@ import {
   Logo,
 } from '@/components';
 import { HeaderProps } from '@/types/header';
+import { allSectionsMock } from '@/__mocks__';
 
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   const buttonName = 'Whatsapp';
 
-  const [section, setSection] = useState(howItWorks[0]);
   const [isHovering, setIsHovering] = useState<boolean>(false);
   const [menuActive, setMenuActive] = useState<boolean>(false);
+  const [currentSection, setCurrentSection] = useState(howItWorks[0]);
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -39,6 +40,32 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   const handleMenu = () => {
     setMenuActive(!menuActive);
   };
+  useEffect(() => {
+    function handleScroll() {
+      const sections = document.querySelectorAll('section');
+      const scrollPosition = window.scrollY + window.innerHeight * 0.7;
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          const sectionFilter = allSectionsMock.find(
+            (item) => item.id === section.id
+          );
+          if (sectionFilter) {
+            setCurrentSection(sectionFilter);
+          } else {
+            setCurrentSection(null);
+          }
+        }
+      });
+    }
+    console.log(currentSection);
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [currentSection]);
 
   return (
     <ContainerHeader>
@@ -64,7 +91,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="#"> {section.name}</a>
+            <a href="#"> {currentSection.name}</a>
             <Image src={ICONS.Arrow} alt="icone dopdrow" />
           </CurrentNavigation>
           <VerticalLine />

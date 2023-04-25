@@ -14,7 +14,7 @@ import { SeeMore } from '@/components/atoms';
 export const HowItWorks = () => {
   const learnto = i18n.t('howWork.learnto');
   return (
-    <HowItWorksContainer>
+    <HowItWorksContainer id='how-it-works'>
       <LearnContainer>
         <h1>{`${i18n.t('howWork.Work')}`}</h1>
         <h2 dangerouslySetInnerHTML={{ __html: learnto }}></h2>

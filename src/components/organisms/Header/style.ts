@@ -61,6 +61,7 @@ export const CurrentNavigation = styled.div`
   a {
     color: ${COLORS.gray._03};
     text-transform: capitalize;
+    width: 110px;
   }
 
   :hover {

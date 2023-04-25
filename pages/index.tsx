@@ -13,6 +13,9 @@ const Home = () => {
       />
       <Presentation />
       <HowItWorks />
+      <section id="about-us" style={{ height: '100vh', background: '#222' }}>
+        ABOUT
+      </section>
     </PageView>
   );
 };

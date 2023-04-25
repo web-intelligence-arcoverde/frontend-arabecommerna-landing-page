@@ -3,7 +3,7 @@ import { IMAGES } from '@/assets';
 import { COLORS } from '@/common';
 import styled from 'styled-components';
 
-export const PresentationContainer = styled.section`
+export const PresentationContainer = styled.div`
   background-image: url(${IMAGES.BackgroundPresentation.src});
   background-position: center -220px;
   background-size: cover;
