@@ -22,6 +22,7 @@ import {
 } from '@/components';
 import { HeaderProps } from '@/types/header';
 import { useScrollSection } from '@/hooks/useScrollSection';
+import useModalOverflow from '@/hooks/useOverflowModal';
 
 export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
 
@@ -30,8 +31,6 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
   
   const buttonName = 'Whatsapp';
   const currentSection = useScrollSection(howItWorks);
-  const nameCurrentSection = currentSection.name
-
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -44,8 +43,10 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
     setMenuActive(!menuActive);
   };
 
+  useModalOverflow(menuActive,handleMenu,'header')
+
   return (
-    <ContainerHeader>
+    <ContainerHeader id='header'>
       <Navigation>
         <Logo />
         <CardButton onClick={handleMenu}>
@@ -59,7 +60,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <DropdownHeader nameCurrentSection={nameCurrentSection} allSections={howItWorks} />
+                <DropdownHeader nameCurrentSection={currentSection.name} allSections={howItWorks} />
               </div>
             )}
           </ContainerDrop>
@@ -68,7 +69,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="#"> {nameCurrentSection}</a>
+            <a href="#"> {currentSection.name}</a>
             <Image src={ICONS.Arrow} alt="icone dopdrow" />
           </CurrentNavigation>
           <VerticalLine />
