@@ -9,7 +9,6 @@ import { ICONS } from '@/assets';
 import { i18n } from '../../../translate/i18n.js';
 import { CardInfo } from '@/components/molecules';
 import { cardInfosMock } from '@/__mocks__';
-import { SeeMore } from '@/components/atoms';
 
 export const HowItWorks = () => {
   const learnto = i18n.t('howWork.learnto');

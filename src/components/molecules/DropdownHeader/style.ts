@@ -10,7 +10,6 @@ export const CardDropdown = styled.ul`
   border-top: solid 2px ${COLORS.light._02};
   display: flex;
   flex-direction: column;
-
   z-index: 2;
   border-radius: 0 0 5px 5px;
   height: 260px;
@@ -30,14 +29,20 @@ export const CardDropdown = styled.ul`
     display: flex;
     align-items: center;
     cursor: pointer;
+    #active {
+      color: ${COLORS.brand._01};
+      font-weight: 500;
+      pointer-events: none;
+    }
 
     :hover {
       background-color: ${COLORS.brand._04};
     }
   }
-  a {
-    padding-left: 20px;
-    color: ${COLORS.gray._03};
-    text-transform: capitalize;
-  }
+`;
+
+export const Section = styled.a`
+  padding-left: 20px;
+  color: ${COLORS.gray._03};
+  text-transform: capitalize;
 `;

@@ -12,6 +12,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
 import { ContentMenuMobileProps } from '@/types/header';
+import { useScrollSection } from '@/hooks/useScrollSection';
 
 export const ContentMenuMobile = ({
   buttonName,
@@ -19,6 +20,9 @@ export const ContentMenuMobile = ({
 }: ContentMenuMobileProps) => {
   const [section, setSection] = useState(sections[0]);
   const [showSections, setShowSections] = useState<boolean>(false);
+
+  const currentSection = useScrollSection(section);
+  const nameCurrentSection = currentSection.name;
 
   return (
     <CardContentMenuMobile>
@@ -34,7 +38,7 @@ export const ContentMenuMobile = ({
             setShowSections(!showSections);
           }}
         >
-          <a href="#"> {section.name}</a>
+          <a href="#"> {nameCurrentSection}</a>
           <Image src={ICONS.Arrow} alt="icone dopdrow" />
         </CurrentSection>
       </CardSections>
@@ -42,7 +46,9 @@ export const ContentMenuMobile = ({
         <AllSections>
           {sections.map((item) => (
             <li key={item.name}>
-              <a>{item.name}</a>
+              <a id={nameCurrentSection === item.name ? `active` : ''}>
+                {item.name}
+              </a>
             </li>
           ))}
         </AllSections>
