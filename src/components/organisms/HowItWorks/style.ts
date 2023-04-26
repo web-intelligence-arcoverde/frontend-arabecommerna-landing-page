@@ -8,6 +8,7 @@ export const HowItWorksContainer = styled.section`
   padding: 128px 96px;
   position: relative;
   gap: 130px;
+  background-color: ${COLORS.light._05};
 
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: flex;
