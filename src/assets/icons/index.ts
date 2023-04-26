@@ -6,6 +6,7 @@ import People from './People.svg';
 import Details from './details.svg';
 import Menu from './menu.svg';
 import Close from './close.svg';
+import Grade from './Grade.svg';
 
 export const ICONS = {
   Mouse,
@@ -16,4 +17,5 @@ export const ICONS = {
   Details,
   Menu,
   Close,
+  Grade,
 };
