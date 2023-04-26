@@ -1,0 +1,34 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_396_1804)">
+<path d="M7.57422 81L89.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M0.574219 81L82.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-6.42578 81L75.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-13.4258 81L68.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-20.4258 81L61.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-27.4258 81L54.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-34.4258 81L47.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-41.4258 81L40.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-48.4258 81L33.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-55.4258 81L26.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-62.4258 81L19.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-69.4258 81L12.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M-76.4258 81L5.57422 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M14.5742 81L96.5742 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M21.5742 81L103.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M28.5742 81L110.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M35.5742 81L117.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M42.5742 81L124.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M49.5742 81L131.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M56.5742 81L138.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M63.5742 81L145.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+<path d="M70.5742 81L152.574 -1" stroke="#108C5F" stroke-opacity="0.15"/>
+</g>
+<rect x="79.5" y="79.5" width="79" height="79" transform="rotate(-180 79.5 79.5)" stroke="#0C6746" stroke-opacity="0.2"/>
+<path d="M40 40V0H80V40H40Z" fill="white"/>
+<path d="M40 40H39.5V40.5H40V40ZM40.5 40V0H39.5V40H40.5ZM80 39.5H40V40.5H80V39.5Z" fill="#0C6746" fill-opacity="0.2"/>
+<defs>
+<clipPath id="clip0_396_1804">
+<rect x="80" y="80" width="80" height="80" transform="rotate(-180 80 80)" fill="white"/>
+</clipPath>
+</defs>
+</svg>

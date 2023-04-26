@@ -61,7 +61,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
                 onMouseLeave={handleMouseLeave}
               >
                 <DropdownHeader
-                  nameCurrentSection={currentSection.name}
+                  nameCurrentSection={currentSection?.name}
                   allSections={howItWorks}
                 />
               </div>
@@ -72,7 +72,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="#"> {currentSection.name}</a>
+            <a href="#"> {currentSection?.name}</a>
             <Image src={ICONS.Arrow} alt="icone dopdrow" />
           </CurrentNavigation>
           <VerticalLine />

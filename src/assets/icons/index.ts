@@ -1,11 +1,12 @@
 import Mouse from './mouse.svg';
 import Arrow from './arrow.svg';
-import Mouses from './Mouses.svg';
-import Notebook from './Notebook.svg';
-import People from './People.svg';
+import Mouses from './mouses.svg';
+import Notebook from './notebook.svg';
+import People from './people.svg';
 import Details from './details.svg';
 import Menu from './menu.svg';
 import Close from './close.svg';
+import Feedback from './feedback.svg';
 
 export const ICONS = {
   Mouse,
@@ -16,4 +17,5 @@ export const ICONS = {
   Details,
   Menu,
   Close,
+  Feedback,
 };
