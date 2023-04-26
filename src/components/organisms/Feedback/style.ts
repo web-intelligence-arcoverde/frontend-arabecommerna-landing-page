@@ -1,14 +1,11 @@
 import { BREAKPOINTS, COLORS } from '@/common';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 export const ContainerFeedback = styled.section`
   padding: 128px 96px;
   display: flex;
   gap: 120px;
-  @media (max-width: ${BREAKPOINTS.sm}) {
-    flex-direction: column;
-  }
+
   aside {
     h4 {
       color: ${COLORS.gray._02};
@@ -26,6 +23,16 @@ export const ContainerFeedback = styled.section`
       font-size: 2rem;
     }
   }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    flex-direction: column;
+    padding: 96px 20px;
+    gap: 32px;
+    aside {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
 `;
 export const CardImage = styled.div`
   display: flex;
@@ -34,5 +41,8 @@ export const CardImage = styled.div`
     padding-left: 50px;
     position: relative;
     left: 50%;
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
   }
 `;

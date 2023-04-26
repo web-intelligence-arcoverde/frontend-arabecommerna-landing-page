@@ -1,5 +1,5 @@
 import { ICONS } from '@/assets';
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ContainerTestimonial = styled.div`
@@ -25,12 +25,30 @@ export const ContainerTestimonial = styled.div`
   .swiper-button-next {
     right: 0;
   }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    flex-direction: column;
+    gap: 24px;
+    .swiper {
+      width: 100%;
+    }
+    .swiper-button-prev {
+      display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 92%;
+    }
+  }
 `;
 
 export const CardIconFeedback = styled.div`
   border-radius: 5px;
   margin-right: 32px;
-  width: 30%;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    img {
+      width: 48px !important;
+    }
+  }
 `;
 
 export const Post = styled.div`
