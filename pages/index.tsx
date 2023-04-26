@@ -6,11 +6,7 @@ import { Header, HowItWorks, Presentation, Teacher } from '@/components';
 const Home = () => {
   return (
     <PageView suppressHydrationWarning={true}>
-      <Header
-        currentPage={i18n.t('header.currentPage')}
-        lastPage={i18n.t('header.lastPage')}
-        howItWorks={allSectionsMock}
-      />
+
       <Presentation />
       <HowItWorks />
       <Teacher />
@@ -19,3 +15,8 @@ const Home = () => {
 };
 
 export default Home;
+      /*<Header
+        currentPage={i18n.t('header.currentPage')}
+        lastPage={i18n.t('header.lastPage')}
+        howItWorks={allSectionsMock}
+      />*/
