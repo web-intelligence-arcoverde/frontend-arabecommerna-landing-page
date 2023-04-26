@@ -1,7 +1,7 @@
 import { PageView } from '../styles';
 import { allSectionsMock } from '@/__mocks__';
 import { i18n } from '../src/translate/i18n.js';
-import { Header, HowItWorks, Presentation, Teacher } from '@/components';
+import { AboutUs, Header, HowItWorks, Presentation } from '@/components';
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       />
       <Presentation />
       <HowItWorks />
-      <Teacher />
+      <AboutUs />
     </PageView>
   );
 };

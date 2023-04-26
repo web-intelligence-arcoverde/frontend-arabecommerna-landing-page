@@ -61,3 +61,15 @@ export const cardInfosMock = [
     icon: ICONS.People,
   },
 ];
+export const AboutCardConMocks = [
+  {
+    title: `${i18n.t('aboutUs.material.title')}`,
+    subTitle: `${i18n.t('aboutUs.material.subTitle')}`,
+    icon: ICONS.Table,
+  },
+  {
+    title: `${i18n.t('aboutUs.certificate.title')}`,
+    subTitle: `${i18n.t('aboutUs.certificate.subTitle')}`,
+    icon: ICONS.Certificado,
+  },
+];

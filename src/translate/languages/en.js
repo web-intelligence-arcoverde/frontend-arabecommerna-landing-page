@@ -54,7 +54,22 @@ export const messages = {
         subTitle: 'Hello, my name is <span>Merna</span>',
         about: 'With almost 10 years of experience in teaching the Arabic language, her passion for the language and culture, together with her pedagogical vocation, encouraged her to create an Arabic course for foreigners in Cairo, which is currently helping several students of different nationalities around of the world',
         end: 'Over the years, he has opted for a flexible teaching approach that adapts to the individual needs of each student, focusing on learning through conversation.',
-      }
+      },
+      aboutUs: {
+        course: {
+          title: 'ABOUT OUR COURSE',
+          subTitle: 'We intensify your <span>learning experience</span> of a new language',
+          about: 'Our course is the perfect choice for anyone wanting to learn Arabic from scratch and reach an advanced level. With a dynamic methodology and conversational approach, our course helps you to take off your Arabic level quickly and effectively',
+        },
+        material: {
+          title: 'Study material',
+          subTitle: 'Textbooks, summaries and extra materials for all classes',
+        },
+        certificate: {
+          title: 'Certificate of completion',
+          subTitle: 'At the end of the course, with the level reached and the workload',
+        }
+      },
     },
   },
 };

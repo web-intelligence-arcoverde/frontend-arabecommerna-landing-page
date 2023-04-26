@@ -48,7 +48,23 @@ export const messages = {
         subTitle: 'Olá, eu me chamo <span>Merna</span>',
         about: 'Com quase 10 anos de experiência no ensino do idioma árabe,sua paixão pela língua e pela cultura, juntamente com sua vocação pedagógica, a incentivaram a criar um curso de árabe para estrangeiros no Cairo, que atualmente está ajudando vários alunos de diversas nacionalidades ao redor do mundo',
         end: 'Ao longo dos anos, optou por uma abordagem de ensino flexível, que se adapta às necessidades individuais de cada aluno, focando no aprendizado através da conversação',
-      }
+      },
+      aboutUs: {
+        course: {
+          title: 'SOBRE NOSSO CURSO',
+          subTitle: 'Intensificamos a sua <span>experiência de aprendizado</span> de uma nova língua',
+          about: 'Nosso curso é a escolha perfeita para quem quer aprender o idioma árabe do zero e chegar ao nível avançado. Com uma metodologia dinâmica e abordagem conversacional, nosso curso te ajuda a decolar seu nível de árabe de forma rápida e eficaz',
+        },
+        material: {
+          title: 'Material de estudo',
+          subTitle: 'Livros didáticos, resumos e materiais extras de todas as aulas',
+        },
+        certificate: {
+          title: 'Certificado de conclusão',
+          subTitle: 'Ao final do curso, com o nível que foi alcançado e a carga horária',
+        }
+      },
+
     },
   },
 };

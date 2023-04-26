@@ -1,4 +1,4 @@
-import { BREAKPOINTS } from './../../../common/index';
+import { BREAKPOINTS } from '../../../common/index';
 import { COLORS } from '@/common';
 import styled from 'styled-components';
 
@@ -8,8 +8,8 @@ export const TeacherPresentation = styled.section`
   padding: 128px 96px 128px 96px;
   position: relative;
   @media (max-width: ${BREAKPOINTS.sm}) {
-    padding: 0;
     flex-direction: column;
+    padding: 0;
   }
 `;
 export const CardImage = styled.div`
