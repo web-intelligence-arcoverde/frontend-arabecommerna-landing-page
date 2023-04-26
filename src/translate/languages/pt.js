@@ -43,6 +43,12 @@ export const messages = {
           subTitle: 'Com a orientação constante da professora, através de feedbacks e correções frequentes, o aluno pode aprimorar suas habilidades e avançar mais rapidamente',
         },
       },
+      teacher: {
+        title: 'COM QUEM VOCÊ VAI APRENDER',
+        subTitle: 'Olá, eu me chamo <span>Merna</span>',
+        about: 'Com quase 10 anos de experiência no ensino do idioma árabe,sua paixão pela língua e pela cultura, juntamente com sua vocação pedagógica, a incentivaram a criar um curso de árabe para estrangeiros no Cairo, que atualmente está ajudando vários alunos de diversas nacionalidades ao redor do mundo',
+        end: 'Ao longo dos anos, optou por uma abordagem de ensino flexível, que se adapta às necessidades individuais de cada aluno, focando no aprendizado através da conversação',
+      }
     },
   },
 };
