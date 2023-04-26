@@ -72,6 +72,9 @@ export const AboutContent = styled.div`
       line-height: 48px;
       letter-spacing: 0.02em;
     }
+    p {
+      font-size: 1rem;
+    }
   }
 `;
 
