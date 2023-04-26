@@ -44,6 +44,7 @@ export const ContainerTestimonial = styled.div`
 export const CardIconFeedback = styled.div`
   border-radius: 5px;
   margin-right: 32px;
+  width: 30%;
   @media (max-width: ${BREAKPOINTS.sm}) {
     img {
       width: 48px !important;
