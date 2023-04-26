@@ -1,4 +1,4 @@
-import { ICONS } from '@/assets';
+import { ICONS, IMAGES } from '@/assets';
 import { i18n } from '../translate/i18n.js';
 
 export const allSectionsMock = [
@@ -59,5 +59,20 @@ export const cardInfosMock = [
     title: `${i18n.t('howWork.studentFollow')}`,
     subTitle: `${i18n.t('howWork.withConstant')}`,
     icon: ICONS.People,
+  },
+];
+
+export const testimonialMock = [
+  {
+    name: 'José Paulo',
+    occupation: 'Desenvolvedor Web',
+    text: 'Volutpat eget in nullam iaculis nibh. Amet tempus donec convallis tincidunt bibendum commodo pellentesque ut. Ullamcorper fermentum nisi ullamcorper lectus amet lectus integer in. Augue tincidunt blandit sagittis sit. Convallis diam phasellus id vel sem sed sodales sit.',
+    perfil: IMAGES.Jose,
+  },
+  {
+    name: 'Bianca Melo',
+    occupation: 'Modelo',
+    text: 'Volutpat eget in nullam iaculis nibh. Amet tempus donec convallis tincidunt bibendum commodo pellentesque ut. Ullamcorper fermentum nisi ullamcorper lectus amet lectus integer in. Augue tincidunt blandit sagittis sit. Convallis diam phasellus id vel sem sed sodales sit.',
+    perfil: IMAGES.Bianca,
   },
 ];

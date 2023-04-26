@@ -2,6 +2,7 @@ import { ICONS } from '@/assets';
 import { CardImage, ContainerFeedback } from './style';
 import { i18n } from '@/translate/i18n.js';
 import Image from 'next/image';
+import { Testimonial } from '@/components/molecules';
 
 export const Feedback = () => {
   const feedback = i18n.t('feedback.subtitle');
@@ -14,7 +15,7 @@ export const Feedback = () => {
           <Image src={ICONS.Feedback} alt="icone feedback" />
         </CardImage>
       </aside>
-      <div>2</div>
+      <Testimonial/>
     </ContainerFeedback>
   );
 };
