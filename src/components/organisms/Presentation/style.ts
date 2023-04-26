@@ -16,10 +16,12 @@ export const PresentationContainer = styled.div`
   justify-content: center;
   height: 88vh;
   position: relative;
+  min-height: 660px;
   @media (max-width: ${BREAKPOINTS.sm}) {
     background-position: center;
     width: 100%;
     padding: 96px 20px 128px;
+    min-height: 0;
   }
 `;
 
