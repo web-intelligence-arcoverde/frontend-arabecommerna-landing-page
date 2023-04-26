@@ -46,18 +46,18 @@ export const allSectionsMock = [
 ];
 export const cardInfosMock = [
   {
-    title: `${i18n.t('howWork.Methodology')}`,
-    subTitle: `${i18n.t('howWork.adopted')}`,
+    title: `${i18n.t('howWork.Methodology.title')}`,
+    subTitle: `${i18n.t('howWork.Methodology.subTitle')}`,
     icon: ICONS.Mouses,
   },
   {
-    title: `${i18n.t('howWork.liveClasses')}`,
-    subTitle: `${i18n.t('howWork.study')}`,
+    title: `${i18n.t('howWork.liveClasses.title')}`,
+    subTitle: `${i18n.t('howWork.liveClasses.subTitle')}`,
     icon: ICONS.Notebook,
   },
   {
-    title: `${i18n.t('howWork.studentFollow')}`,
-    subTitle: `${i18n.t('howWork.withConstant')}`,
+    title: `${i18n.t('howWork.studentFollow.title')}`,
+    subTitle: `${i18n.t('howWork.studentFollow.subTitle')}`,
     icon: ICONS.People,
   },
 ];
