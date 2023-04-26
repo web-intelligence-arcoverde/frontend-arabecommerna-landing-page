@@ -8,6 +8,7 @@ import Menu from './menu.svg';
 import Close from './close.svg';
 import Feedback from './feedback.svg';
 import TestimonialIcon from './testimonial.svg';
+import ArrowBlue from './arrow_blue.svg';
 
 export const ICONS = {
   Mouse,
@@ -20,4 +21,5 @@ export const ICONS = {
   Close,
   Feedback,
   TestimonialIcon,
+  ArrowBlue,
 };

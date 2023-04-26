@@ -7,7 +7,7 @@ import { Testimonial } from '@/components/molecules';
 export const Feedback = () => {
   const feedback = i18n.t('feedback.subtitle');
   return (
-    <ContainerFeedback>
+    <ContainerFeedback id='feedback'>
       <aside>
         <h4>{`${i18n.t('feedback.title')}`}</h4>
         <h1 dangerouslySetInnerHTML={{ __html: feedback }} />

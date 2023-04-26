@@ -22,12 +22,7 @@ export const Testimonial = () => {
       <CardIconFeedback>
         <Image src={ICONS.TestimonialIcon} alt="icone representativo de fala" />
       </CardIconFeedback>
-      <Swiper
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        loop
-      >
+      <Swiper slidesPerView={0.9} navigation loop>
         {testimonialMock.map((item) => (
           <SwiperSlide key={item.name}>
             <Post>

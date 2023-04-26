@@ -1,3 +1,4 @@
+import { ICONS } from '@/assets';
 import { COLORS } from '@/common';
 import styled from 'styled-components';
 
@@ -8,11 +9,28 @@ export const ContainerTestimonial = styled.div`
   border-radius: 5px;
   max-width: 824px;
   height: max-content;
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 85%;
+    content: url(${ICONS.ArrowBlue.src});
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border: solid 1px ${COLORS.light._03};
+  }
+  .swiper-button-prev {
+    left: 85%;
+    transform: rotate(180deg);
+  }
+  .swiper-button-next {
+    right: 0;
+  }
 `;
 
 export const CardIconFeedback = styled.div`
   border-radius: 5px;
   margin-right: 32px;
+  width: 30%;
 `;
 
 export const Post = styled.div`
@@ -25,6 +43,7 @@ export const Post = styled.div`
     border-bottom: solid 1px ${COLORS.light._02};
     padding-bottom: 32px;
     margin-bottom: 32px;
+    width: 90%;
   }
 `;
 
@@ -32,6 +51,10 @@ export const PerfilUser = styled.div`
   display: flex;
   gap: 16px;
   align-items: center;
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
 `;
 
 export const InfoUser = styled.div`
