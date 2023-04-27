@@ -25,7 +25,7 @@ export const ContainerFeedback = styled.section`
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
-    padding: 96px 20px;
+    padding: 0 20px;
     gap: 32px;
     aside {
       h1 {

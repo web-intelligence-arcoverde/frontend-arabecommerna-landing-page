@@ -1,16 +1,19 @@
 import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
-export const AboutContainer = styled.section`
+export const AboutContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 128px 96px;
+  align-items: center;
+  gap: 96px;
 
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
+    gap: 0;
   }
 `;
 export const AboutImage = styled.div`
@@ -63,14 +66,12 @@ export const AboutContent = styled.div`
       font-weight: 500;
       font-size: 0.875rem;
       line-height: 21px;
-      letter-spacing: 0.02em;
     }
     h2,
     span {
       font-weight: 700;
       font-size: 1.5rem;
       line-height: 48px;
-      letter-spacing: 0.02em;
     }
     p {
       font-size: 1rem;
@@ -98,6 +99,7 @@ export const AboutCard = styled.div`
     color: ${COLORS.gray._02};
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
+    gap: 32px;
     span {
       width: 24px !important;
       height: 24px !important;

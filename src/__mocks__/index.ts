@@ -46,8 +46,8 @@ export const allSectionsMock = [
 ];
 export const cardInfosMock = [
   {
-    title: `${i18n.t('howWork.Methodology.title')}`,
-    subTitle: `${i18n.t('howWork.Methodology.subTitle')}`,
+    title: `${i18n.t('howWork.methodology.title')}`,
+    subTitle: `${i18n.t('howWork.methodology.subTitle')}`,
     icon: ICONS.Mouses,
   },
   {
