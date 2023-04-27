@@ -85,7 +85,7 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
       </Controls>
       {menuActive && (
         <ContentMenuMobile
-          nameCurrentSection={currentSection.name}
+          nameCurrentSection={currentSection?.name}
           buttonName={buttonName}
           sections={howItWorks}
         />

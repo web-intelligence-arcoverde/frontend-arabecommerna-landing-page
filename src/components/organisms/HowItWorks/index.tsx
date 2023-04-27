@@ -11,12 +11,12 @@ import { CardInfo } from '@/components/molecules';
 import { cardInfosMock } from '@/__mocks__';
 
 export const HowItWorks = () => {
-  const learnto = i18n.t('howWork.learnto');
+  const subTitle = i18n.t('howWork.Work.subTitle');
   return (
-    <HowItWorksContainer id='how-it-works'>
+    <HowItWorksContainer id="how-it-works">
       <LearnContainer>
-        <h1>{`${i18n.t('howWork.Work')}`}</h1>
-        <h2 dangerouslySetInnerHTML={{ __html: learnto }}></h2>
+        <h1>{`${i18n.t('howWork.Work.title')}`}</h1>
+        <h2 dangerouslySetInnerHTML={{ __html: subTitle }}></h2>
         <CardImage>
           <Image src={ICONS.Details} alt="icone" />
         </CardImage>

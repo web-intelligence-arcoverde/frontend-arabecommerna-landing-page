@@ -46,18 +46,18 @@ export const allSectionsMock = [
 ];
 export const cardInfosMock = [
   {
-    title: `${i18n.t('howWork.Methodology')}`,
-    subTitle: `${i18n.t('howWork.adopted')}`,
+    title: `${i18n.t('howWork.Methodology.title')}`,
+    subTitle: `${i18n.t('howWork.Methodology.subTitle')}`,
     icon: ICONS.Mouses,
   },
   {
-    title: `${i18n.t('howWork.liveClasses')}`,
-    subTitle: `${i18n.t('howWork.study')}`,
+    title: `${i18n.t('howWork.liveClasses.title')}`,
+    subTitle: `${i18n.t('howWork.liveClasses.subTitle')}`,
     icon: ICONS.Notebook,
   },
   {
-    title: `${i18n.t('howWork.studentFollow')}`,
-    subTitle: `${i18n.t('howWork.withConstant')}`,
+    title: `${i18n.t('howWork.studentFollow.title')}`,
+    subTitle: `${i18n.t('howWork.studentFollow.subTitle')}`,
     icon: ICONS.People,
   },
 ];
@@ -74,5 +74,18 @@ export const testimonialMock = [
     occupation: 'Modelo',
     text: 'Volutpat eget in nullam iaculis nibh. Amet tempus donec convallis tincidunt bibendum commodo pellentesque ut. Ullamcorper fermentum nisi ullamcorper lectus amet lectus integer in. Augue tincidunt blandit sagittis sit. Convallis diam phasellus id vel sem sed sodales sit.',
     perfil: IMAGES.Bianca,
+  },
+];
+
+export const AboutCardConMocks = [
+  {
+    title: `${i18n.t('aboutUs.material.title')}`,
+    subTitle: `${i18n.t('aboutUs.material.subTitle')}`,
+    icon: ICONS.Table,
+  },
+  {
+    title: `${i18n.t('aboutUs.certificate.title')}`,
+    subTitle: `${i18n.t('aboutUs.certificate.subTitle')}`,
+    icon: ICONS.Certificado,
   },
 ];

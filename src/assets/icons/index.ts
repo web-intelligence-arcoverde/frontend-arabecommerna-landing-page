@@ -9,6 +9,9 @@ import Close from './close.svg';
 import Feedback from './feedback.svg';
 import TestimonialIcon from './testimonial.svg';
 import ArrowBlue from './arrow_blue.svg';
+import Grade from './grade.svg';
+import Table from './table.svg';
+import Certificado from './certificado.svg';
 
 export const ICONS = {
   Mouse,
@@ -22,4 +25,7 @@ export const ICONS = {
   Feedback,
   TestimonialIcon,
   ArrowBlue,
+  Grade,
+  Table,
+  Certificado,
 };
