@@ -5,8 +5,10 @@ export const ContainerPrice = styled.section`
   display: flex;
   padding: 96px;
   gap: 192px;
-  background-color: #222;
-  h1 {
+  align-items: center;
+  background: linear-gradient(0deg, rgba(8, 36, 26, 0.8), rgba(8, 36, 26, 0.8)), url(pexels-roberto-shumski-6102271.jpg);
+  p {
+    width: 100%;
     max-width: 550px;
     color: ${COLORS.light._05};
     font-size: 2rem;

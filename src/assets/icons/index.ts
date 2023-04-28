@@ -12,6 +12,7 @@ import ArrowBlue from './arrow_blue.svg';
 import Grade from './grade.svg';
 import Table from './table.svg';
 import Certificado from './certificado.svg';
+import Checked from './check.svg';
 
 export const ICONS = {
   Mouse,
@@ -28,4 +29,5 @@ export const ICONS = {
   Grade,
   Table,
   Certificado,
+  Checked,
 };

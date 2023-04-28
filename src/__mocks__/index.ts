@@ -89,3 +89,10 @@ export const AboutCardConMocks = [
     icon: ICONS.Certificado,
   },
 ];
+
+export const benefitPlanMock = [
+  'Ler e escrever em Árabe',
+  'Fluência no idioma',
+  'Material didático',
+  'Imersão cultural',
+];

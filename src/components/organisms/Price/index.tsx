@@ -1,3 +1,4 @@
+import { CardPrice } from '@/components/molecules';
 import { ContainerPrice } from './style';
 import { i18n } from '@/translate/i18n.js';
 
@@ -6,9 +7,8 @@ export const Price = () => {
 
   return (
     <ContainerPrice id="price">
-      <h1 dangerouslySetInnerHTML={{ __html: textInitComponent }} />
-
-      <div>teste</div>
+      <p dangerouslySetInnerHTML={{ __html: textInitComponent }} />
+      <CardPrice />
     </ContainerPrice>
   );
 };
