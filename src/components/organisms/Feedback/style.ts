@@ -7,6 +7,8 @@ export const ContainerFeedback = styled.section`
   gap: 120px;
 
   aside {
+    width: 100%;
+
     h4 {
       color: ${COLORS.gray._02};
       font-weight: 500;
@@ -25,7 +27,7 @@ export const ContainerFeedback = styled.section`
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 96px 20px;
     gap: 32px;
     aside {
       h1 {

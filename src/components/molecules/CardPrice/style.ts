@@ -1,4 +1,4 @@
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ContainerCard = styled.div`
@@ -10,6 +10,10 @@ export const ContainerCard = styled.div`
   width: 100%;
   max-width: 500px;
   justify-content: space-between;
+
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    padding: 56px 20px;
+  }
 `;
 
 export const NextClasses = styled.h5`
@@ -60,4 +64,5 @@ export const CardBenefit = styled.div`
 export const CardButton = styled.div`
   border-top: solid 1px ${COLORS.light._02};
   padding-top: 48px;
+  width: 100%;
 `;
