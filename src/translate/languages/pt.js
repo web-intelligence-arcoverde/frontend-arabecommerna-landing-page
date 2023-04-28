@@ -79,6 +79,9 @@ export const messages = {
             'Ao final do curso, com o nível que foi alcançado e a carga horária',
         },
       },
+      price: {
+        text: 'Não permita que a barreira do idioma o impeça de <span>alcançar seus objetivos.</span> Adquira acesso ao ambiente de aprendizado ideal para dar o primeiro passo com confiança',
+      },
     },
   },
 };

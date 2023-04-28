@@ -7,6 +7,7 @@ import {
   Header,
   HowItWorks,
   Presentation,
+  Price,
 } from '@/components';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Presentation />
       <HowItWorks />
       <AboutUs />
+      <Price />
       <Feedback />
     </PageView>
   );
