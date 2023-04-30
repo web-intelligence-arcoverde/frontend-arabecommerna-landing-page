@@ -18,17 +18,20 @@ export const ContentMenuMobile = ({
   buttonName,
   sections,
   nameCurrentSection,
+  currentPageMobile,
+  nextPageMobile,
+  handleMenu
 }: ContentMenuMobileProps) => {
   const [showSections, setShowSections] = useState<boolean>(false);
 
   return (
-    <CardContentMenuMobile >
+    <CardContentMenuMobile>
       <ButtonsControl>
         <ChangeLanguage />
         <Button>{buttonName}</Button>
       </ButtonsControl>
       <CardSections>
-        <CurrentPageActivated href="">Curso de árabe</CurrentPageActivated>
+        <CurrentPageActivated href="">{currentPageMobile}</CurrentPageActivated>
         <CurrentSection
           arrowRotate={showSections && 'rotate(180deg)'}
           onClick={() => {
@@ -42,8 +45,13 @@ export const ContentMenuMobile = ({
       {showSections && (
         <AllSections>
           {sections.map((item) => (
-            <li key={item.name}>
-              <AnchorLink href={`#${item.id}`} id={nameCurrentSection === item.name ? `active` : ''}>
+            <li onClick={handleMenu} key={item.name}>
+              <AnchorLink
+    
+    offset={item?.scrollMobile}
+                href={`#${item.id}`}
+                id={nameCurrentSection === item.name ? `active` : ''}
+              >
                 {item.name}
               </AnchorLink>
             </li>
@@ -51,7 +59,7 @@ export const ContentMenuMobile = ({
         </AllSections>
       )}
       <NextPage>
-        <a href="">Clube de Traduções </a>
+        <a href="">{nextPageMobile} </a>
       </NextPage>
     </CardContentMenuMobile>
   );

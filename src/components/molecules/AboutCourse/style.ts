@@ -26,6 +26,7 @@ export const AboutImage = styled.div`
     span {
       max-width: 375px !important;
       max-height: 350px !important;
+      object-fit: fill;
     }
   }
 `;

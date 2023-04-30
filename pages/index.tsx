@@ -17,6 +17,8 @@ const Home = () => {
         currentPage={i18n.t('header.currentPage')}
         lastPage={i18n.t('header.lastPage')}
         howItWorks={allSectionsMock}
+        currentPageMobile={'Curso de Árabe'}
+        nextPageMobile={'Clube de Traduções'}
       />
       <Presentation />
       <HowItWorks />

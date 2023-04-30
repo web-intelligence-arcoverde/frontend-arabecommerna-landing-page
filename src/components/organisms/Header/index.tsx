@@ -23,9 +23,14 @@ import {
 import { HeaderProps } from '@/types/header';
 import { useScrollSection } from '@/hooks/useScrollSection';
 import useModalOverflow from '@/hooks/useOverflowModal';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
+export const Header = ({
+  currentPage,
+  lastPage,
+  howItWorks,
+  currentPageMobile,
+  nextPageMobile,
+}: HeaderProps) => {
   const [isHovering, setIsHovering] = useState<boolean>(false);
   const [menuActive, setMenuActive] = useState<boolean>(false);
 
@@ -88,6 +93,9 @@ export const Header = ({ currentPage, lastPage, howItWorks }: HeaderProps) => {
           nameCurrentSection={currentSection?.name}
           buttonName={buttonName}
           sections={howItWorks}
+          currentPageMobile={currentPageMobile}
+          nextPageMobile={nextPageMobile}
+          handleMenu={handleMenu}
         />
       )}
     </ContainerHeader>

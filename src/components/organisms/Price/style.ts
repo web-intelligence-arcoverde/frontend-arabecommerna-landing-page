@@ -1,3 +1,4 @@
+import { IMAGES } from '@/assets';
 import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
@@ -7,7 +8,11 @@ export const ContainerPrice = styled.section`
   gap: 192px;
   align-items: center;
   background: linear-gradient(0deg, rgba(8, 36, 26, 0.8), rgba(8, 36, 26, 0.8)),
-    url(pexels-roberto-shumski-6102271.jpg);
+    url(${IMAGES.BackgroundPrice.src});
+  background-position: center;
+
+
+
   p {
     width: 100%;
     max-width: 550px;
@@ -25,6 +30,7 @@ export const ContainerPrice = styled.section`
     flex-direction: column;
     padding: 96px 20px;
     gap: 56px;
+    background-position:top;
   }
   p {
     font-size: 1.6rem;
