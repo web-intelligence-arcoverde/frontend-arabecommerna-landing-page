@@ -84,6 +84,19 @@ export const messages = {
       },
       price: {
         text: `Don't let the language barrier stop you from <span>achieving your goals.</span> Get access to the ideal learning environment to take the first step with confidence`,
+        card: {
+          text: 'NEXT CLASSES',
+          from: 'From',
+          per: 'per',
+          button: 'I want to start learning',
+          amonth:'A month',
+          benefit: {
+            one: 'Read and write in Arabic',
+            two: 'Language fluency',
+            three: 'Courseware',
+            four: 'Cultural immersion',
+          },
+        },
       },
     },
   },

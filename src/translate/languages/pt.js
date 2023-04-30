@@ -81,6 +81,19 @@ export const messages = {
       },
       price: {
         text: 'Não permita que a barreira do idioma o impeça de <span>alcançar seus objetivos.</span> Adquira acesso ao ambiente de aprendizado ideal para dar o primeiro passo com confiança',
+        card: {
+          text: 'PRÓXIMAS TURMAS',
+          from: 'De',
+          per: 'por',
+          button: 'Quero começar a aprender',
+          amonth:'Por mês',
+          benefit: {
+            one: 'Ler e escrever em Árabe',
+            two: 'Fluência no idioma',
+            three: 'Material didático',
+            four: 'Imersão cultural',
+          },
+        },
       },
     },
   },

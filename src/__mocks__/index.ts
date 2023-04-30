@@ -10,7 +10,7 @@ export const allSectionsMock = [
   {
     name: `${i18n.t('allSections.aboutUs')}`,
     id: 'about-us',
-    scrollMobile:100
+    scrollMobile: 100,
   },
   {
     name: `${i18n.t('allSections.explore')}`,
@@ -92,8 +92,8 @@ export const AboutCardConMocks = [
 ];
 
 export const benefitPlanMock = [
-  'Ler e escrever em Árabe',
-  'Fluência no idioma',
-  'Material didático',
-  'Imersão cultural',
+  `${i18n.t('price.card.benefit.one')}`,
+  `${i18n.t('price.card.benefit.two')}`,
+  `${i18n.t('price.card.benefit.three')}`,
+  `${i18n.t('price.card.benefit.four')}`,
 ];

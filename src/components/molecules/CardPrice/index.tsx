@@ -1,4 +1,3 @@
-import { benefitPlanMock } from '@/__mocks__';
 import {
   CardBenefit,
   CardButton,
@@ -10,25 +9,41 @@ import {
 import Image from 'next/image';
 import { ICONS } from '@/assets';
 import { Button } from '@/components/atoms';
+import { i18n } from '@/translate/i18n.js';
 
-export const CardPrice = () => {
+interface CardPriceProps {
+  title: string;
+  oldPrice: string;
+  currentPrice: string;
+  arrayBenefit: string[];
+  buttonText: string;
+}
+
+export const CardPrice = ({
+  title,
+  oldPrice,
+  currentPrice,
+  arrayBenefit,
+  buttonText,
+}: CardPriceProps) => {
   return (
     <ContainerCard>
-      <NextClasses>PRÓXIMAS TURMAS: 03 / 11</NextClasses>
+      <NextClasses>{title}</NextClasses>
       <OldValue>
-        De <span>R$ 400,00</span> por
+        {`${i18n.t('price.card.from')}`} <span>R$ {oldPrice}</span>{' '}
+        {`${i18n.t('price.card.per')}`}
       </OldValue>
       <CurrentValue>
-        R$ 199,90 <span>por mês</span>
+        R$ {currentPrice} <span> {`${i18n.t('price.card.amonth')}`} </span>
       </CurrentValue>
-      {benefitPlanMock.map((benefit, index) => (
+      {arrayBenefit.map((benefit, index) => (
         <CardBenefit key={index}>
           <Image src={ICONS.Checked} alt="icone de checked" />
           {benefit}
         </CardBenefit>
       ))}
       <CardButton>
-        <Button>Quero começar a aprender</Button>
+        <Button>{buttonText}</Button>
       </CardButton>
     </ContainerCard>
   );
