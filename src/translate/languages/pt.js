@@ -19,12 +19,16 @@ export const messages = {
         questions: 'Dúvidas',
       },
       presentation: {
-        learn: 'APRENDIZADO DE IDIOMA',
-        become:
-          'Torne-se <span>fluente em Árabe</span> de um modo eficiente e descomplicado',
-        wheAre:
-          'Somos a primeira metodologia que garante a fluência no idioma Árabe e te insere de verdade na cultura',
-        start: 'Começar a aprender',
+        learn: {
+          title: 'APRENDIZADO DE IDIOMA',
+          subTitle:
+            'Torne-se <span>fluente em Árabe</span> de um modo eficiente e descomplicado',
+        },
+        wheAre: {
+          title:
+            'Somos a primeira metodologia que garante a fluência no idioma Árabe e te insere de verdade na cultura',
+          subTitle: 'Começar a aprender',
+        },
         seeMore: 'Arraste para ver mais',
       },
       howWork: {
@@ -86,7 +90,7 @@ export const messages = {
           from: 'De',
           per: 'por',
           button: 'Quero começar a aprender',
-          amonth:'Por mês',
+          amonth: 'Por mês',
           benefit: {
             one: 'Ler e escrever em Árabe',
             two: 'Fluência no idioma',
