@@ -5,7 +5,6 @@ import {
   IconCountry,
   InfoCountry,
 } from './style';
-import { ICONS } from '@/assets';
 
 interface CardCountryProps {
   icon: any;

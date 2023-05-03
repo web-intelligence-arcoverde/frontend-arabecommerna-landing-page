@@ -14,6 +14,12 @@ export const ContainerExplore = styled.section`
   }
 `;
 
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
 export const ContainerMap = styled.div`
   position: absolute;
   right: 96px;
@@ -24,8 +30,8 @@ export const ButtonClick = styled.button<{
   positionY: number;
 }>`
   position: absolute;
-  right: ${(props) => (props.positionX ? `${props.positionX}%` : '')};
-  top: ${(props) => (props.positionY ? `${props.positionY}%` : '')};
+  right: ${(props) => props.positionX && `${props.positionX}%`};
+  top: ${(props) => props.positionY && `${props.positionY}%`};
   width: 32px;
   height: 32px;
   background-color: transparent;

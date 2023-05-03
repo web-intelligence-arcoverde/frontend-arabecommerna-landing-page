@@ -1,4 +1,4 @@
-import { ICONS, IMAGES } from '@/assets';
+import { ICONS, IMAGES, COUNTRYS } from '@/assets';
 import { i18n } from '../translate/i18n.js';
 
 export const allSectionsMock = [
@@ -100,19 +100,59 @@ export const benefitPlanMock = [
 
 export const MapsMock = [
   {
-    map: ICONS.MapMarrocos,
-    icon: ICONS.IconMarrocos,
+    map: COUNTRYS.MapMarrocos,
+    icon: COUNTRYS.IconMarrocos,
     country: 'Marrocos',
     capital: 'Capital Rabat',
     positionX: 81.5,
     positioY: 11,
   },
   {
-    map: ICONS.MapLibia,
-    icon: ICONS.IconLibia,
+    map: COUNTRYS.MapLibia,
+    icon: COUNTRYS.IconLibia,
     country: 'Libia',
-    capital: 'Capital da Libia',
+    capital: 'Capital Trípoli',
     positionX: 51,
     positioY: 30,
+  },
+  {
+    map: COUNTRYS.MapSaara,
+    icon: COUNTRYS.IconSaara,
+    country: 'Saara Ocidental',
+    capital: 'Capital El Aiune',
+    positionX: 93,
+    positioY: 27,
+  },
+  {
+    map: COUNTRYS.MapMauritania,
+    icon: COUNTRYS.IconMauritania,
+    country: 'Mauritania',
+    capital: 'Capital Nouakchott',
+    positionX: 90,
+    positioY: 41.5,
+  },
+  {
+    map: COUNTRYS.MapArgelia,
+    icon: COUNTRYS.IconArgelia,
+    country: 'Argélia',
+    capital: 'Capital Algiers',
+    positionX: 71,
+    positioY: 24,
+  },
+  {
+    map: COUNTRYS.MapTunisia,
+    icon: COUNTRYS.IconTunisia,
+    country: 'Tunísia',
+    capital: 'Capital Tunes',
+    positionX:61.5,
+    positioY: 11.8,
+  },
+  {
+    map: COUNTRYS.MapChade,
+    icon: COUNTRYS.IconChade,
+    country: 'Chade',
+    capital: 'Capital Djamena',
+    positionX: 50,
+    positioY: 61,
   },
 ];
