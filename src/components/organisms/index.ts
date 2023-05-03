@@ -1,6 +1,7 @@
+export { Header } from './Header';
+export { Presentation } from './Presentation';
 export { AboutUs } from './AboutUs';
 export { HowItWorks } from './HowItWorks';
-export { Presentation } from './Presentation';
-export { Header } from './Header';
-export { Feedback } from './Feedback';
+export { Discovery } from './Discovery';
 export { Price } from './Price';
+export { Feedback } from './Feedback';

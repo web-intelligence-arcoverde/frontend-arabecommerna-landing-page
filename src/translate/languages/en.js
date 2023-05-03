@@ -89,7 +89,7 @@ export const messages = {
           from: 'From',
           per: 'per',
           button: 'I want to start learning',
-          amonth:'A month',
+          amonth: 'A month',
           benefit: {
             one: 'Read and write in Arabic',
             two: 'Language fluency',
@@ -98,6 +98,17 @@ export const messages = {
           },
         },
       },
+      discovery: {
+        title: 'FIND IT OUT',
+        subTitle: 'Why learn the Arabic <span>language</span>',
+        buttons: {
+          culture: 'Culture',
+          travels: 'Travels',
+          careers: 'Careers',
+          religion: 'Religion',
+        },
+        text: 'Arab culture is extremely rich and diverse, spanning over 20 countries and a population of over 400 million people. This cultural richness is expressed in areas such as literature, architecture, music, dance and gastronomy. The influence of Arab culture can be seen in various parts of the world, which highlights its importance and appreciation',
+      }
     },
   },
 };

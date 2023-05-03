@@ -97,3 +97,16 @@ export const benefitPlanMock = [
   `${i18n.t('price.card.benefit.three')}`,
   `${i18n.t('price.card.benefit.four')}`,
 ];
+export const discoveryButtonMock = [
+  `${i18n.t('discovery.buttons.culture')}`,
+  `${i18n.t('discovery.buttons.travels')}`,
+  `${i18n.t('discovery.buttons.careers')}`,
+  `${i18n.t('discovery.buttons.religion')}`,
+];
+
+export const discoveryCultureMock = [
+  IMAGES.Wall,
+  IMAGES.House,
+  IMAGES.People,
+  IMAGES.Food,
+];

@@ -3,6 +3,7 @@ import { allSectionsMock } from '@/__mocks__';
 import { i18n } from '../src/translate/i18n.js';
 import {
   AboutUs,
+  Discovery,
   Feedback,
   Header,
   HowItWorks,
@@ -23,6 +24,7 @@ const Home = () => {
       <Presentation />
       <HowItWorks />
       <AboutUs />
+      <Discovery />
       <Price />
       <Feedback />
     </PageView>

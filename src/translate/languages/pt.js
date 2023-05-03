@@ -99,6 +99,17 @@ export const messages = {
           },
         },
       },
+      discovery: {
+        title: 'DESCUBRA',
+        subTitle: 'Porque aprender a <span>língua Árabe</span>',
+        buttons: {
+          culture: 'Cultura',
+          travels: 'Viagens',
+          careers: 'Carreiras',
+          religion: 'Religião',
+        },
+        text: 'A cultura árabe é extremamente rica e diversa, abrangendo mais de 20 países e uma população de mais de 400 milhões de pessoas. Essa riqueza cultural é expressa em áreas como a literatura, arquitetura, música, dança e gastronomia. A influência da cultura árabe pode ser vista em várias partes do mundo, o que evidencia sua importância e valorização',
+      }
     },
   },
 };
