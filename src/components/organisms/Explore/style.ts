@@ -18,3 +18,16 @@ export const ContainerMap = styled.div`
   position: absolute;
   right: 96px;
 `;
+
+export const ButtonClick = styled.button<{
+  positionX: number;
+  positionY: number;
+}>`
+  position: absolute;
+  right: ${(props) => (props.positionX ? `${props.positionX}%` : '')};
+  top: ${(props) => (props.positionY ? `${props.positionY}%` : '')};
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+`;

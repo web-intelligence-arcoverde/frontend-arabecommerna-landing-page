@@ -13,8 +13,10 @@ import Grade from './grade.svg';
 import Table from './table.svg';
 import Certificado from './certificado.svg';
 import Checked from './check.svg';
-import Map from './map.svg';
-import Marrocos from './countrys/marrocos.svg'
+import IconMarrocos from'./countrys/icon-marrocos.svg'
+import MapMarrocos from './countrys/map-marrocos.svg';
+import IconLibia from './countrys/icon-libia.svg'
+import MapLibia from './countrys/map-libia.svg'
 
 export const ICONS = {
   Mouse,
@@ -32,6 +34,8 @@ export const ICONS = {
   Table,
   Certificado,
   Checked,
-  Map,
-  Marrocos
+  MapMarrocos,
+  IconMarrocos,
+  MapLibia,
+  IconLibia,
 };

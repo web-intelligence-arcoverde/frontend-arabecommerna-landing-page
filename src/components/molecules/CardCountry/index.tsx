@@ -7,17 +7,22 @@ import {
 } from './style';
 import { ICONS } from '@/assets';
 
-export const CardCountry = () => {
+interface CardCountryProps {
+  icon: any;
+  country: string;
+  capital: string;
+}
+
+export const CardCountry = ({ icon, country, capital }: CardCountryProps) => {
   return (
     <ContainerCountry>
       <InfoCountry>
         <IconCountry>
-          <Image width={32} height={32} src={ICONS.Marrocos} />
+          <Image width={32} height={32} src={icon} />
         </IconCountry>
-
         <div>
-          <h4>Marrocos</h4>
-          <span>Capital Rabat</span>
+          <h4>{country}</h4>
+          <span>{capital}</span>
         </div>
       </InfoCountry>
       <DescriptionCountry>

@@ -97,3 +97,22 @@ export const benefitPlanMock = [
   `${i18n.t('price.card.benefit.three')}`,
   `${i18n.t('price.card.benefit.four')}`,
 ];
+
+export const MapsMock = [
+  {
+    map: ICONS.MapMarrocos,
+    icon: ICONS.IconMarrocos,
+    country: 'Marrocos',
+    capital: 'Capital Rabat',
+    positionX: 81.5,
+    positioY: 11,
+  },
+  {
+    map: ICONS.MapLibia,
+    icon: ICONS.IconLibia,
+    country: 'Libia',
+    capital: 'Capital da Libia',
+    positionX: 51,
+    positioY: 30,
+  },
+];
