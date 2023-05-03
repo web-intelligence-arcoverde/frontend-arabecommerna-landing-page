@@ -1,5 +1,10 @@
 import Image from 'next/image';
-import { DiscoveryContent, DiscoveryImages, DiscoveryTitle } from './style';
+import {
+  DiscoveryContent,
+  DiscoveryImages,
+  DiscoveryTitle,
+  Title,
+} from './style';
 import { ICONS } from '@/assets';
 import { GroupButtons } from '@/components/atoms/ButtonsGroup';
 import { discoveryCultureMock } from '@/__mocks__';
@@ -11,10 +16,12 @@ export const Discovery = () => {
     <DiscoveryContent>
       <DiscoveryTitle>
         <Image src={ICONS.Grade} />
-        <h1>{`${i18n.t('discovery.title')}`}</h1>
+        <Title>
+          <h1>{`${i18n.t('discovery.title')}`}</h1>{' '}
+          <h2 dangerouslySetInnerHTML={{ __html: subTitle }}></h2>
+        </Title>
         <Image src={ICONS.Details} />
       </DiscoveryTitle>
-      <h2 dangerouslySetInnerHTML={{ __html: subTitle }}></h2>
       <GroupButtons />
       <p>{`${i18n.t('discovery.text')}`}</p>
       <DiscoveryImages>
