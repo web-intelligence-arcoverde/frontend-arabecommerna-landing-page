@@ -108,21 +108,21 @@ export const discoveryMock = [
   {
     text: `${i18n.t('discovery.text.culture')}`,
     images: [IMAGES.Wall, IMAGES.House, IMAGES.People, IMAGES.Food],
-    id: 'Cultura',
+    id: `${i18n.t('discovery.buttons.culture')}`,
   },
   {
     text: `${i18n.t('discovery.text.travels')}`,
     images: [IMAGES.House, IMAGES.House, IMAGES.Food, IMAGES.Food],
-    id: 'Viagens',
+    id: `${i18n.t('discovery.buttons.travels')}`,
   },
   {
     text: `${i18n.t('discovery.text.careers')}`,
     images: [IMAGES.Wall, IMAGES.Wall, IMAGES.Food, IMAGES.Food],
-    id: 'Carreiras',
+    id: `${i18n.t('discovery.buttons.careers')}`,
   },
   {
     text: `${i18n.t('discovery.text.religion')}`,
     images: [IMAGES.Wall, IMAGES.People, IMAGES.People, IMAGES.People],
-    id: 'Religião',
+    id: `${i18n.t('discovery.buttons.religion')}`,
   },
 ];

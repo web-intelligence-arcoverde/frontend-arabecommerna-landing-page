@@ -8,12 +8,12 @@ import { discoveryMock } from '@/__mocks__';
 import { useState } from 'react';
 
 export const Discovery = () => {
-  const [state, setState] = useState(discoveryMock[0]);
-  const [valor, setValor] = useState('Cultura');
+  const [dataDiscovery, setDataDiscovery] = useState(discoveryMock[0]);
+  const [idButton, setIdButton] = useState('Cultura');
   const handelOnClick = (e) => {
-    setValor(e.target.innerText);
-    let teste = discoveryMock.filter((item) => valor === item.id);
-    setState(teste[0]);
+    setIdButton(e.target.innerText);
+    let teste = discoveryMock.filter((item) => idButton === item.id);
+    setDataDiscovery(teste[0]);
   };
   const subTitle = `${i18n.t('discovery.subTitle')}`;
   return (
@@ -27,7 +27,10 @@ export const Discovery = () => {
         <Image src={ICONS.Details} />
       </DiscoveryTitle>
       <GroupButtons start={handelOnClick} />
-      <DiscoveryCard textContent={state.text} images={state.images} />
+      <DiscoveryCard
+        textContent={dataDiscovery.text}
+        images={dataDiscovery.images}
+      />
     </DiscoveryContent>
   );
 };
