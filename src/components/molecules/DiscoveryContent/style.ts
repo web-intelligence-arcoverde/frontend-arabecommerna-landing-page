@@ -9,6 +9,7 @@ export const ContentText = styled.p`
   max-width: 824px;
   border-top: 1px solid ${COLORS.light._02};
   padding-top:16px ;
+  margin-bottom:42px ;
 
   @media (max-width: ${BREAKPOINTS.sm}) {
     max-width: 335px;

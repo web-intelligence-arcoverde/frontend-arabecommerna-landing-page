@@ -40,11 +40,12 @@ export const CardIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  span{
+  span {
     width: 42px !important;
     height: 42px !important;
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
+    align-self: flex-start;
     span {
       width: 30px !important;
       height: 30px !important;

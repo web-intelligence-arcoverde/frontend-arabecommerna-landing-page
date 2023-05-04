@@ -10,7 +10,7 @@ export const DiscoveryContent = styled.section`
   text-align: center;
   letter-spacing: 0.02em;
   height: 100%;
-  gap: 24px;
+  gap: 12px;
 
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 96px 20px;
@@ -27,6 +27,8 @@ export const DiscoveryTitle = styled.div`
   justify-content: space-between;
   align-items: end;
   width: 100%;
+  margin-bottom: 10px;
+
   @media (max-width: ${BREAKPOINTS.sm}) {
     span {
       display: none !important;
