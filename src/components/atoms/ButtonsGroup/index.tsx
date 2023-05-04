@@ -1,14 +1,15 @@
 import { discoveryButtonMock } from '@/__mocks__';
 import { ButtonsContainer } from './style';
-
-interface buttonProps {
-  textButton: string;
-}
-export const GroupButtons = () => {
+type ButtonProps = {
+  start: any;
+};
+export const GroupButtons = ({ start }: ButtonProps) => {
   return (
     <ButtonsContainer>
       {discoveryButtonMock.map((textButton, index) => (
-        <button key={index}>{textButton}</button>
+        <button onClick={start} key={index}>
+          {textButton}
+        </button>
       ))}
     </ButtonsContainer>
   );

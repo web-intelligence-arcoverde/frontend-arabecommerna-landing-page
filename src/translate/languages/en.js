@@ -100,14 +100,19 @@ export const messages = {
       },
       discovery: {
         title: 'FIND IT OUT',
-        subTitle: 'Why learn the Arabic <span>language</span>',
+        subTitle: 'Why learn the Arabic <a>language</a>',
         buttons: {
           culture: 'Culture',
           travels: 'Travels',
           careers: 'Careers',
           religion: 'Religion',
         },
-        text: 'Arab culture is extremely rich and diverse, spanning over 20 countries and a population of over 400 million people. This cultural richness is expressed in areas such as literature, architecture, music, dance and gastronomy. The influence of Arab culture can be seen in various parts of the world, which highlights its importance and appreciation',
+        text: {
+          culture: `Arab culture is extremely rich and diverse, spanning over 20 countries and a population of over 400 million people. This cultural richness is expressed in areas such as literature, architecture, music, dance and gastronomy. The influence of Arab culture can be seen in various parts of the world, which shows its importance and appreciation`,
+          travels: `The Arab world is home to some of the world's most spectacular and impressive sights. The Sheikh Zayed Mosque in Abu Dhabi is a stunning example of modern Islamic architecture. The pyramids in Egypt are another historical landmark that has continued to fascinate visitors for thousands of years. Petra, Jordan is an ancient city carved from stone, and the Burj Khalifa in Dubai is a modern icon offering incredible views of the city`,
+          careers: `The Arab world offers many opportunities in areas ranging from business to education and tourism. Cities like Dubai and Doha are becoming global hubs for finance and technology. In addition, many renowned universities are located in Arab countries, offering exchange opportunities. Tourism is also on the rise, with destinations such as Egypt, Morocco and Qatar attracting millions of visitors each year.`,
+          religion: `Learning Arabic is essential for anyone seeking a deeper understanding of the Islamic religion. As it is the language of the Qur'an, the holy book of Islam, many prayers and religious ceremonies are performed in Arabic. Furthermore, understanding Arabic can allow for better communication and understanding of Muslim traditions around the world.`,
+        }
       }
     },
   },

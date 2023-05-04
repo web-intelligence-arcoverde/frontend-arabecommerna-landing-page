@@ -104,9 +104,25 @@ export const discoveryButtonMock = [
   `${i18n.t('discovery.buttons.religion')}`,
 ];
 
-export const discoveryCultureMock = [
-  IMAGES.Wall,
-  IMAGES.House,
-  IMAGES.People,
-  IMAGES.Food,
+export const discoveryMock = [
+  {
+    text: `${i18n.t('discovery.text.culture')}`,
+    images: [IMAGES.Wall, IMAGES.House, IMAGES.People, IMAGES.Food],
+    id: 'Cultura',
+  },
+  {
+    text: `${i18n.t('discovery.text.travels')}`,
+    images: [IMAGES.House, IMAGES.House, IMAGES.Food, IMAGES.Food],
+    id: 'Viagens',
+  },
+  {
+    text: `${i18n.t('discovery.text.careers')}`,
+    images: [IMAGES.Wall, IMAGES.Wall, IMAGES.Food, IMAGES.Food],
+    id: 'Carreiras',
+  },
+  {
+    text: `${i18n.t('discovery.text.religion')}`,
+    images: [IMAGES.Wall, IMAGES.People, IMAGES.People, IMAGES.People],
+    id: 'Religião',
+  },
 ];

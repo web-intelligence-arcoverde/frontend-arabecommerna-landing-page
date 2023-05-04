@@ -5,10 +5,11 @@ export const DiscoveryContent = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: ${COLORS.light._05};
   padding: 128px 96px;
   text-align: center;
   letter-spacing: 0.02em;
-  height: 100vh;
+  height: 100%;
   gap: 24px;
   p {
     color: ${COLORS.gray._02};
@@ -22,7 +23,6 @@ export const DiscoveryContent = styled.section`
     gap: 34px;
     p {
       max-width: 335px;
-      max-height: 288px;
       font-size: 1rem;
       line-height: 31px;
     }
@@ -33,6 +33,11 @@ export const DiscoveryTitle = styled.div`
   justify-content: space-between;
   align-items: end;
   width: 100%;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    span {
+      display: none !important;
+    }
+  }
 `;
 export const Title = styled.div`
   h1 {
@@ -42,49 +47,27 @@ export const Title = styled.div`
     line-height: 24px;
   }
   h2,
-  span {
+  a {
     color: ${COLORS.dark._04};
     font-size: 2rem;
     font-weight: 700;
     line-height: 48px;
   }
-  span {
+  a {
+    pointer-events: none;
     color: ${COLORS.brand._02};
   }
   width: 700px;
   @media (max-width: ${BREAKPOINTS.sm}) {
     h1 {
-      font-size: 0.875rem;
+      font-size: 0.975rem;
       line-height: 21px;
     }
     h2,
-    span {
+    a {
       font-family: 'Raleway';
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       line-height: 36px;
-    }
-  }
-`;
-
-export const DiscoveryImages = styled.div`
-  display: flex;
-  gap: 24px;
-  span {
-    max-width: 294px;
-    max-height: 400px;
-    border-radius: 5px;
-  }
-  @media (max-width: ${BREAKPOINTS.sm}) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    max-width: 375px;
-    max-height: 405px;
-    gap: 4px;
-    span {
-      width: 185.5px !important;
-      height: 200px !important;
-      border-radius: none;
     }
   }
 `;
