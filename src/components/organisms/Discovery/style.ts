@@ -11,13 +11,7 @@ export const DiscoveryContent = styled.section`
   letter-spacing: 0.02em;
   height: 100%;
   gap: 24px;
-  p {
-    color: ${COLORS.gray._02};
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 36px;
-    max-width: 824px;
-  }
+
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 96px 20px;
     gap: 34px;

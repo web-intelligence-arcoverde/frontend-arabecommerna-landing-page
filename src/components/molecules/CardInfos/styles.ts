@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const CardInfos = styled.div`
   display: flex;
   align-items: flex-start;
+  align-items: center;
   gap: 24px;
   h1 {
     color: ${COLORS.gray._01};

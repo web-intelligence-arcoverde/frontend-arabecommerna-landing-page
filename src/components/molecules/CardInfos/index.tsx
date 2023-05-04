@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { CardIcon, CardInfos } from './styles';
 import Image from 'next/image';
 interface CardInfoProps {

@@ -1,4 +1,4 @@
-import { DiscoveryImages } from './style';
+import { ContentText, DiscoveryImages } from './style';
 import Image from 'next/image';
 type DiscoveryProps = {
   textContent: string;
@@ -7,7 +7,7 @@ type DiscoveryProps = {
 export const DiscoveryCard = ({ textContent, images }: DiscoveryProps) => {
   return (
     <>
-      <p>{textContent}</p>
+      <ContentText>{textContent}</ContentText>
       <DiscoveryImages>
         {images.map((imgPresentation, index) => (
           <Image key={index} src={imgPresentation} />

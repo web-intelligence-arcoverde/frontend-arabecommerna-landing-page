@@ -1,5 +1,21 @@
-import { BREAKPOINTS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
+
+export const ContentText = styled.p`
+  color: ${COLORS.gray._02};
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 824px;
+  border-top: 1px solid ${COLORS.light._02};
+  padding-top:16px ;
+
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    max-width: 335px;
+    font-size: 1rem;
+    line-height: 31px;
+  }
+`;
 
 export const DiscoveryImages = styled.div`
   display: flex;

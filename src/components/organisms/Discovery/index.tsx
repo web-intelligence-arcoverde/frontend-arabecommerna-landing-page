@@ -1,19 +1,20 @@
 import Image from 'next/image';
 import { DiscoveryContent, DiscoveryTitle, Title } from './style';
 import { ICONS } from '@/assets';
-import { GroupButtons } from '@/components/atoms/ButtonsGroup';
 import { i18n } from '@/translate/i18n.js';
-import { DiscoveryCard } from '@/components/molecules';
-import { discoveryMock } from '@/__mocks__';
+import { ButtonTab, DiscoveryCard } from '@/components';
+import { discoveryButtonMock, discoveryMock } from '@/__mocks__';
 import { useState } from 'react';
 
 export const Discovery = () => {
   const [dataDiscovery, setDataDiscovery] = useState(discoveryMock[0]);
-  const [idButton, setIdButton] = useState('Cultura');
-  const handelOnClick = (e) => {
-    setIdButton(e.target.innerText);
-    let teste = discoveryMock.filter((item) => idButton === item.id);
-    setDataDiscovery(teste[0]);
+  const [idButton, setIdButton] = useState(
+    `${i18n.t('discovery.buttons.culture')}`
+  );
+  const handelOnClick = ({ target }) => {
+    setIdButton(target.innerText);
+    let filterDiscovery = discoveryMock.filter((item) => idButton === item.id);
+    setDataDiscovery(filterDiscovery[0]);
   };
   const subTitle = `${i18n.t('discovery.subTitle')}`;
   return (
@@ -26,7 +27,11 @@ export const Discovery = () => {
         </Title>
         <Image src={ICONS.Details} />
       </DiscoveryTitle>
-      <GroupButtons start={handelOnClick} />
+      <ButtonTab
+        getButton={handelOnClick}
+        isActive={idButton}
+        buttons={discoveryButtonMock}
+      />
       <DiscoveryCard
         textContent={dataDiscovery.text}
         images={dataDiscovery.images}
