@@ -31,3 +31,22 @@ export const CardInfos = styled.div`
     }
   }
 `;
+
+export const CardIcon = styled.div`
+  border: solid 1px ${COLORS.light._03};
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    width: 42px !important;
+    height: 42px !important;
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    span {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+`;
