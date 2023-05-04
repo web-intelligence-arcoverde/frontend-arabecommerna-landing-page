@@ -144,7 +144,7 @@ export const MapsMock = [
     icon: COUNTRYS.IconTunisia,
     country: 'Tunísia',
     capital: 'Capital Tunes',
-    positionX:61.5,
+    positionX: 61.5,
     positioY: 11.8,
   },
   {
@@ -154,5 +154,22 @@ export const MapsMock = [
     capital: 'Capital Djamena',
     positionX: 50,
     positioY: 61,
+  },
+
+  {
+    map: COUNTRYS.MapArabia,
+    icon: COUNTRYS.IconArabia,
+    country: 'Arábia Saudita',
+    capital: 'Capital Riad',
+    positionX: 10.5,
+    positioY: 49,
+  },
+  {
+    map: COUNTRYS.MapEgito,
+    icon: COUNTRYS.IconEgito,
+    country: 'Egito',
+    capital: 'Capital Cairo',
+    positionX: 34.6,
+    positioY: 30,
   },
 ];
