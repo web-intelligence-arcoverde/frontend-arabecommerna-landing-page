@@ -107,22 +107,42 @@ export const discoveryButtonMock = [
 export const discoveryMock = [
   {
     text: `${i18n.t('discovery.text.culture')}`,
-    images: [IMAGES.Wall, IMAGES.House, IMAGES.People, IMAGES.Food],
+    images: [
+      IMAGES.CulturaOne,
+      IMAGES.CulturaTwo,
+      IMAGES.CulturaThree,
+      IMAGES.CulturaFour,
+    ],
     id: `${i18n.t('discovery.buttons.culture')}`,
   },
   {
     text: `${i18n.t('discovery.text.travels')}`,
-    images: [IMAGES.House, IMAGES.House, IMAGES.Food, IMAGES.Food],
+    images: [
+      IMAGES.ViagemOne,
+      IMAGES.ViagemTwo,
+      IMAGES.ViagemThree,
+      IMAGES.ViagemFour,
+    ],
     id: `${i18n.t('discovery.buttons.travels')}`,
   },
   {
     text: `${i18n.t('discovery.text.careers')}`,
-    images: [IMAGES.Wall, IMAGES.Wall, IMAGES.Food, IMAGES.Food],
+    images: [
+      IMAGES.CarreiraOne,
+      IMAGES.Carreiratwo,
+      IMAGES.CarreiraThree,
+      IMAGES.CarreiraFour,
+    ],
     id: `${i18n.t('discovery.buttons.careers')}`,
   },
   {
     text: `${i18n.t('discovery.text.religion')}`,
-    images: [IMAGES.Wall, IMAGES.People, IMAGES.People, IMAGES.People],
+    images: [
+      IMAGES.ReligiaoOne,
+      IMAGES.ReligiaoTwo,
+      IMAGES.ReligiaoThree,
+      IMAGES.ReligiaoFour,
+    ],
     id: `${i18n.t('discovery.buttons.religion')}`,
   },
 ];
