@@ -42,6 +42,28 @@ import IconJordania from './icon-jordania.svg';
 import MapJordania from './map-jordania.svg';
 import IconPalestina from './icon-palestina.svg';
 import MapPalestina from './map-palestina.svg';
+import BackgroundSaara from './background-saara.svg';
+import BackgroundEgito from './background-egito.svg';
+import BackgroundSudao from './background-sudao.svg';
+import BackgroundArgelia from './background-argelia.svg';
+import BackgroundTunisia from './background-tunisia.svg';
+import BackgroundLibia from './background-libia.svg';
+import BackgroundChade from './background-chade.svg';
+import BackgroundMarrocos from './background-marrocos.svg';
+import BackgroundMauritania from './background-mauritania.svg';
+import BackgroundEritreia from './background-eritreia.svg';
+import BackgroundSomalia from './background-somalia.svg';
+import BackgroundIemem from './background-iemem.svg';
+import BackgroundJordania from './background-jordania.svg';
+import BackgroundPalestina from './background-palestina.svg';
+import BackgroundLibano from './background-libano.svg';
+import BackgroundSiria from './background-siria.svg';
+import BackgroundIraque from './background-iraque.svg';
+import BackgroundKuwait from './background-kuwait.svg';
+import BackgroundBahrein from './background-bahrein.svg';
+import BackgroundEmirados from './background-emirados.svg';
+import BackgroundOma from './background-oma.svg';
+import BackgroundArabia from './background-arabia.svg';
 
 export const COUNTRYS = {
   MapMarrocos,
@@ -88,4 +110,26 @@ export const COUNTRYS = {
   MapJordania,
   IconPalestina,
   MapPalestina,
+  BackgroundSaara,
+  BackgroundMarrocos,
+  BackgroundMauritania,
+  BackgroundArgelia,
+  BackgroundTunisia,
+  BackgroundLibia,
+  BackgroundChade,
+  BackgroundEgito,
+  BackgroundSudao,
+  BackgroundEritreia,
+  BackgroundSomalia,
+  BackgroundIemem,
+  BackgroundArabia,
+  BackgroundJordania,
+  BackgroundPalestina,
+  BackgroundLibano,
+  BackgroundSiria,
+  BackgroundIraque,
+  BackgroundKuwait,
+  BackgroundBahrein,
+  BackgroundEmirados,
+  BackgroundOma,
 };
