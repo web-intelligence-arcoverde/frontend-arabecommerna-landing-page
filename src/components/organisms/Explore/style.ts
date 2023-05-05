@@ -2,11 +2,12 @@ import { COUNTRYS } from '@/assets';
 import { COLORS } from '@/common';
 import styled from 'styled-components';
 
-export const ContainerExplore = styled.section`
+export const ContainerExplore = styled.section<{ background: any }>`
   display: flex;
   padding: 96px;
   justify-content: space-between;
-  background-image: url(${COUNTRYS.BackgroundSaara.src});
+  background-image: ${(props) =>
+    props.background && `url(${props.background.src}) }`};
   background-position: center;
   position: relative;
   min-height: 734px;

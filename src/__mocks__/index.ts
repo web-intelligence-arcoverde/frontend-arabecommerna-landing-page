@@ -106,6 +106,7 @@ export const MapsMock = [
     capital: 'Capital Rabat',
     positionX: 81.5,
     positioY: 11,
+    background:COUNTRYS.BackgroundMarrocos
   },
   {
     map: COUNTRYS.MapLibia,
@@ -114,6 +115,7 @@ export const MapsMock = [
     capital: 'Capital Trípoli',
     positionX: 51,
     positioY: 30,
+    background:COUNTRYS.BackgroundLibia
   },
   {
     map: COUNTRYS.MapSaara,
@@ -122,6 +124,7 @@ export const MapsMock = [
     capital: 'Capital El Aiune',
     positionX: 93,
     positioY: 27,
+    background:COUNTRYS.BackgroundSaara
   },
   {
     map: COUNTRYS.MapMauritania,
@@ -130,6 +133,7 @@ export const MapsMock = [
     capital: 'Capital Nouakchott',
     positionX: 90,
     positioY: 41.5,
+    background:COUNTRYS.BackgroundMauritania
   },
   {
     map: COUNTRYS.MapArgelia,
@@ -138,6 +142,7 @@ export const MapsMock = [
     capital: 'Capital Algiers',
     positionX: 71,
     positioY: 24,
+    background:COUNTRYS.BackgroundArgelia
   },
   {
     map: COUNTRYS.MapTunisia,
@@ -146,6 +151,7 @@ export const MapsMock = [
     capital: 'Capital Tunes',
     positionX: 61.5,
     positioY: 11.8,
+    background:COUNTRYS.BackgroundTunisia
   },
   {
     map: COUNTRYS.MapChade,
@@ -154,6 +160,7 @@ export const MapsMock = [
     capital: 'Capital Djamena',
     positionX: 50,
     positioY: 61,
+    background:COUNTRYS.BackgroundChade
   },
 
   {
@@ -163,6 +170,7 @@ export const MapsMock = [
     capital: 'Capital Riad',
     positionX: 10.5,
     positioY: 49,
+    background:COUNTRYS.BackgroundArabia
   },
   {
     map: COUNTRYS.MapEgito,
@@ -171,6 +179,7 @@ export const MapsMock = [
     capital: 'Capital Cairo',
     positionX: 34.6,
     positioY: 30,
+    background:COUNTRYS.BackgroundEgito
   },
   {
     map: COUNTRYS.MapSudao,
@@ -179,6 +188,7 @@ export const MapsMock = [
     capital: 'Capital Cartum',
     positionX: 34.6,
     positioY: 56.5,
+    background:COUNTRYS.BackgroundSudao
   },
   {
     map: COUNTRYS.MapEritreia,
@@ -187,6 +197,7 @@ export const MapsMock = [
     capital: 'Capital Asmara',
     positionX: 20.6,
     positioY: 56.5,
+    background:COUNTRYS.BackgroundEritreia
   },
   {
     map: COUNTRYS.MapSomalia,
@@ -195,6 +206,7 @@ export const MapsMock = [
     capital: 'Capital Mogadíscio',
     positionX: 8,
     positioY: 73.5,
+    background:COUNTRYS.BackgroundSomalia
   },
   {
     map: COUNTRYS.MapIemen,
@@ -203,6 +215,7 @@ export const MapsMock = [
     capital: 'Capital Sanaã',
     positionX: 10.5,
     positioY: 49.5,
+    background:COUNTRYS.BackgroundIemem
   },
   {
     map: COUNTRYS.MapArabia,
@@ -211,6 +224,7 @@ export const MapsMock = [
     capital: 'Capital Riad',
     positionX: 15,
     positioY: 33.5,
+    background:COUNTRYS.BackgroundArabia
   },
   {
     map: COUNTRYS.MapJordania,
@@ -219,6 +233,7 @@ export const MapsMock = [
     capital: 'Capital Amã',
     positionX: 27.5,
     positioY: 17.5,
+    background:COUNTRYS.BackgroundJordania
   },
   {
     map: COUNTRYS.MapPalestina,
@@ -227,6 +242,7 @@ export const MapsMock = [
     capital: 'Capital Jerusalém',
     positionX: 31.5,
     positioY: 13.5,
+    background:COUNTRYS.BackgroundPalestina
   },
   {
     map: COUNTRYS.MapLibano,
@@ -235,6 +251,7 @@ export const MapsMock = [
     capital: 'Capital Beirute',
     positionX: 30.5,
     positioY: 7.5,
+    background:COUNTRYS.BackgroundLibano
   },
   {
     map: COUNTRYS.MapSiria,
@@ -243,6 +260,7 @@ export const MapsMock = [
     capital: 'Capital Damasco',
     positionX: 26.5,
     positioY: 3.5,
+    background:COUNTRYS.BackgroundSiria
   },
   {
     map: COUNTRYS.MapIraque,
@@ -251,6 +269,7 @@ export const MapsMock = [
     capital: 'Capital Bagdá',
     positionX: 19,
     positioY: 7.5,
+    background:COUNTRYS.BackgroundIraque
   },
   {
     map: COUNTRYS.MapKuwait,
@@ -259,6 +278,7 @@ export const MapsMock = [
     capital: 'Capital Kuwait',
     positionX: 12.5,
     positioY: 16.5,
+    background:COUNTRYS.BackgroundKuwait
   },
   {
     map: COUNTRYS.MapBahrein,
@@ -267,6 +287,7 @@ export const MapsMock = [
     capital: 'Capital Manama',
     positionX: 7.5,
     positioY: 21.5,
+    background:COUNTRYS.BackgroundBahrein
   },
   {
     map: COUNTRYS.MapEmiriados,
@@ -275,6 +296,7 @@ export const MapsMock = [
     capital: 'Capital Abu Dahbi',
     positionX: 3,
     positioY: 30.5,
+    background:COUNTRYS.BackgroundEmirados
   },
   {
     map: COUNTRYS.MapOma,
@@ -283,5 +305,6 @@ export const MapsMock = [
     capital: 'Capital Mascate',
     positionX: 1,
     positioY: 37.5,
+    background:COUNTRYS.BackgroundOma
   },
 ];

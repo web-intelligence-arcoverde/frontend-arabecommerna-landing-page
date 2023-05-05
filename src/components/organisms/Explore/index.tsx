@@ -12,7 +12,7 @@ export const Explore = () => {
     setState(getCountry[0]);
   };
   return (
-    <ContainerExplore id="explore">
+    <ContainerExplore background={state.background} id="explore">
       <Content>
         <h1>Explore</h1>
         <CardCountry
@@ -22,7 +22,7 @@ export const Explore = () => {
         />
       </Content>
       <ContainerMap>
-        <Image src={state.map} alt="mapa" />
+        <Image src={state.map} alt="mapa" priority={true} />
         {MapsMock.map((item) => (
           <ButtonClick
             onClick={handleClick}
