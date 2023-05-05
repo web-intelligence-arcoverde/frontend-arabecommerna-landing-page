@@ -16,7 +16,7 @@ export const DiscoveryContent = styled.section`
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 36px;
-    max-width: 824px;
+    max-width: 1024px;
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 96px 20px;
