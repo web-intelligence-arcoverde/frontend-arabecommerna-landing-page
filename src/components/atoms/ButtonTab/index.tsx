@@ -1,18 +1,31 @@
+import { useState } from 'react';
 import { CardButtonTab, StyledButton } from './style';
 
 interface ButtonTabProps {
   getButton: any;
-  buttons: any[];
-  isActive: string;
+  buttons: string[];
+  defaultActive: string;
 }
 
-export const ButtonTab = ({ getButton, buttons, isActive }: ButtonTabProps) => {
+export const ButtonTab = ({
+  getButton,
+  buttons,
+  defaultActive,
+}: ButtonTabProps) => {
+  const [active, setActive] = useState(defaultActive);
+
+  const handleOnClick = ({ target }) => {
+    setActive(target.innerText);
+    getButton({ target });
+  };
+
   return (
     <CardButtonTab>
       {buttons.map((item, index) => (
         <StyledButton
-          active={isActive === item}
-          onClick={getButton}
+          id={active === item ? 'active' : ''}
+          active={active === item}
+          onClick={handleOnClick}
           key={index}
         >
           {item}

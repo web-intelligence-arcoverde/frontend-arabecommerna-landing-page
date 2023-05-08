@@ -8,13 +8,14 @@ import { useState } from 'react';
 
 export const Discovery = () => {
   const [dataDiscovery, setDataDiscovery] = useState(discoveryMock[0]);
-  const [idButton, setIdButton] = useState(
+  const [buttonActive, setButtonActive] = useState(
     `${i18n.t('discovery.buttons.culture')}`
   );
-  const handelOnClick = ({ target }) => {
-    setIdButton(target.innerText);
-    let filterDiscovery = discoveryMock.filter((item) => idButton === item.id);
-    setDataDiscovery(filterDiscovery[0]);
+  const handleOnClick = ({ target }) => {
+    const buttonId = target.innerText;
+    setButtonActive(buttonId);
+    const filterDiscovery = discoveryMock.find((item) => item.id === buttonId);
+    setDataDiscovery(filterDiscovery);
   };
   const subTitle = `${i18n.t('discovery.subTitle')}`;
   return (
@@ -28,8 +29,8 @@ export const Discovery = () => {
         <Image src={ICONS.Details} />
       </DiscoveryTitle>
       <ButtonTab
-        getButton={handelOnClick}
-        isActive={idButton}
+        getButton={handleOnClick}
+        defaultActive={buttonActive}
         buttons={discoveryButtonMock}
       />
       <DiscoveryCard
