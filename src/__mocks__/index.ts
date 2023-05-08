@@ -146,3 +146,34 @@ export const discoveryMock = [
     id: `${i18n.t('discovery.buttons.religion')}`,
   },
 ];
+
+export const doubtsCardMocks = [
+  {
+    doubt:
+      'Sit dictum ullamcorper orci porta ornare a. Enim pellentesque orci amet faucibus at donec arcu. Interdum tellus?',
+    response:
+      'Blandit et integer aliquam viverra. Elit massa sollicitudin dictum in. Mollis dolor imperdiet faucibus felis est',
+    id: '01',
+  },
+  {
+    doubt:
+      'Nunc urna tellus elit risus aenean lorem. Rhoncus lorem aliquam eu quis enim. Eu tempor sed sapien nisl purus?',
+    response:
+      'Dolor vel neque duis vehicula in feugiat. Risus in sit sed amet leo at mi. Lacinia tellus diam lorem adipiscing viverra',
+    id: '02',
+  },
+  {
+    doubt:
+      'Viverra non felis aliquet amet. Sodales ultrices pretium feugiat phasellus placerat nunc in cursus. Posuere justo congue?',
+    response:
+      'Lacus amet nibh vestibulum integer arcu dignissim a magna elementum. Ipsum mi sit vestibulum ac a arcu ac elit risus',
+    id: '03',
+  },
+  {
+    doubt:
+      'Morbi amet adipiscing aenean quis dignissim cras. Quis egestas lorem malesuada in tortor id eget urna massa?',
+    response:
+      'Fringilla pretium lectus magna suspendisse luctus morbi faucibus. Habitant quis ultrices malesuada sem imperdiet',
+    id: '04',
+  },
+];

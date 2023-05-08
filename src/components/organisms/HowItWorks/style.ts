@@ -18,7 +18,7 @@ export const HowItWorksContainer = styled.section`
     gap: 56px;
     p {
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 32px;
       letter-spacing: 0.02em;
     }
@@ -28,7 +28,6 @@ export const LearnContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 506px;
-  max-height: 192px;
   h1 {
     font-weight: 500;
     color: ${COLORS.gray._02};
