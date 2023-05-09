@@ -6,4 +6,4 @@ export { Discovery } from './Discovery';
 export { Price } from './Price';
 export { Feedback } from './Feedback';
 export { Doubts } from './Doubts';
-
+export { Footer } from './Footer';

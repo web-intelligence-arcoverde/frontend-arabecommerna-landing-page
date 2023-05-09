@@ -6,7 +6,7 @@ export const Presentation = () => {
   const become = i18n.t('presentation.learn.subTitle');
 
   return (
-    <PresentationContainer>
+    <PresentationContainer id='presentation'>
       <PresentationDetails>
         <Title>{`${i18n.t('presentation.learn.title')}`}</Title>
         <h2 dangerouslySetInnerHTML={{ __html: become }}></h2>

@@ -6,6 +6,7 @@ import {
   Discovery,
   Doubts,
   Feedback,
+  Footer,
   Header,
   HowItWorks,
   Presentation,
@@ -29,6 +30,7 @@ const Home = () => {
       <Price />
       <Feedback />
       <Doubts />
+      <Footer />
     </PageView>
   );
 };
