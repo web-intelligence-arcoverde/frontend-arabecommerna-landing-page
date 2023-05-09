@@ -1,15 +1,26 @@
 import { doubtsCardMocks } from '@/__mocks__';
-import { DoboutTitle, DoubtContent, DoubtsContainer } from './style';
+import {
+  Detail,
+  DoubtContent,
+  DoubtTitle,
+  DoubtsContainer,
+  Grade,
+} from './style';
 import { DoubtsCard } from '@/components/molecules';
+import Image from 'next/image';
+import { ICONS } from '@/assets';
 export const Doubts = () => {
   return (
     <DoubtsContainer>
-      <DoboutTitle>
+      <Grade>
+        <Image src={ICONS.Grade} />
+      </Grade>
+      <DoubtTitle>
         <h1>RESPONDENDO</h1>
         <h2>
-          Principais <span>dúvidas</span>
+          Principais <a>dúvidas</a>
         </h2>
-      </DoboutTitle>
+      </DoubtTitle>
       <DoubtContent>
         {doubtsCardMocks.map((item, index) => (
           <li key={index}>
@@ -21,6 +32,9 @@ export const Doubts = () => {
           </li>
         ))}
       </DoubtContent>
+      <Detail>
+        <Image src={ICONS.Details} />
+      </Detail>
     </DoubtsContainer>
   );
 };

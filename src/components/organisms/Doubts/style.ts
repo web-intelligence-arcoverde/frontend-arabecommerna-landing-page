@@ -1,4 +1,4 @@
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const DoubtsContainer = styled.section`
@@ -6,12 +6,18 @@ export const DoubtsContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: ${COLORS.light._05};
   padding: 128px 202px;
   letter-spacing: 0.02em;
   gap: 40px;
+  position: relative;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    padding: 96px 20px;
+    gap: 32px;
+  }
 `;
 
-export const DoboutTitle = styled.div`
+export const DoubtTitle = styled.div`
   h1 {
     text-align: center;
     font-weight: 500;
@@ -19,13 +25,25 @@ export const DoboutTitle = styled.div`
     color: ${COLORS.gray._02};
   }
   h2,
-  span {
+  a {
     font-weight: 700;
     font-size: 2rem;
     line-height: 48px;
   }
-  span {
+  a {
+    pointer-events: none;
     color: ${COLORS.brand._02};
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    h1 {
+      font-size: 0.875rem;
+      line-height: 21px;
+    }
+    h2,
+    a {
+      font-size: 1.5rem;
+      line-height: 36px;
+    }
   }
 `;
 
@@ -39,5 +57,23 @@ export const DoubtContent = styled.div`
   }
   li:nth-child(4) {
     border: none;
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    width: 100%;
+  }
+`;
+export const Grade = styled.div`
+  position: absolute;
+  top: 65px;
+  left: 96px;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
+  }
+`;
+export const Detail = styled.div`
+  position: absolute;
+  right: 36px;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
   }
 `;

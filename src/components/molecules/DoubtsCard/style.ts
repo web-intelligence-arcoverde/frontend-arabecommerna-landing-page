@@ -1,4 +1,4 @@
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const DoubtsContent = styled.div`
@@ -28,6 +28,18 @@ export const DoubtsContent = styled.div`
     margin-top: 12px;
     font-weight: 500;
     color: ${COLORS.gray._02};
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    h1,
+    h2,
+    p {
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      width: auto;
+      height: auto;
+    }
   }
 `;
 export const DoubtsText = styled.div`
