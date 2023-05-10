@@ -177,3 +177,12 @@ export const doubtsCardMocks = [
     id: '04',
   },
 ];
+
+export const conclusionClubMock = [
+  {
+    title: 'Clube de traduções',
+    text1: 'Como funciona',
+    text2: 'Música',
+    text3: 'Dúvidas',
+  },
+];
