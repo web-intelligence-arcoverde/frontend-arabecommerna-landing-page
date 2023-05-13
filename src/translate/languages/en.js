@@ -113,6 +113,12 @@ export const messages = {
           careers: `The Arab world offers many opportunities in areas ranging from business to education and tourism. Cities like Dubai and Doha are becoming global hubs for finance and technology. In addition, many renowned universities are located in Arab countries, offering exchange opportunities. Tourism is also on the rise, with destinations such as Egypt, Morocco and Qatar attracting millions of visitors each year.`,
           religion: `Learning Arabic is essential for anyone seeking a deeper understanding of the Islamic religion. As it is the language of the Qur'an, the holy book of Islam, many prayers and religious ceremonies are performed in Arabic. Furthermore, understanding Arabic can allow for better communication and understanding of Muslim traditions around the world.`,
         }
+      },
+      conclusion: {
+        title: 'Become fluent in Arabic from <br/> an efficient and uncomplicated way',
+        course: 'Arabic course',
+        club: 'Translation Club',
+        music: 'Music',
       }
     },
   },

@@ -3,30 +3,22 @@ import {
   ConclusionContainer,
   ConclusionSections,
   CoursePresentation,
-  EndSection,
 } from './style';
-import { conclusionClubMock } from '@/__mocks__';
+import { CourseArabe, TranslationClub } from '@/components/molecules';
+import { i18n } from '@/translate/i18n.js';
 
 export const Conclusion = () => {
+  const title = i18n.t('conclusion.title');
   return (
     <ConclusionContainer>
       <CoursePresentation>
         <Logo />
-        <p>
-          Torne-se fluente em Árabe de <br /> um modo eficiente e descomplicado
-        </p>
+        <p dangerouslySetInnerHTML={{ __html: title }}></p>
       </CoursePresentation>
-      <ConclusionSections></ConclusionSections>
-      <EndSection>
-        {conclusionClubMock.map((item, index) => (
-          <li key={index}>
-            <h1>{item.title}</h1>
-            <p>{item.text1}</p>
-            <p>{item.text2}</p>
-            <p>{item.text3}</p>
-          </li>
-        ))}
-      </EndSection>
+      <ConclusionSections>
+        <CourseArabe />
+        <TranslationClub />
+      </ConclusionSections>
     </ConclusionContainer>
   );
 };

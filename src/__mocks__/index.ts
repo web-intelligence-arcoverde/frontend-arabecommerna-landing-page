@@ -180,9 +180,9 @@ export const doubtsCardMocks = [
 
 export const conclusionClubMock = [
   {
-    title: 'Clube de traduções',
-    text1: 'Como funciona',
-    text2: 'Música',
-    text3: 'Dúvidas',
+    title: `${i18n.t('conclusion.club')}`,
+    text1: `${i18n.t('allSections.howItWorks')}`,
+    text2: `${i18n.t('conclusion.music')}`,
+    text3: `${i18n.t('allSections.questions')}`,
   },
 ];

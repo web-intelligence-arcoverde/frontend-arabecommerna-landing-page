@@ -114,7 +114,14 @@ export const messages = {
           careers: `O mundo árabe oferece muitas oportunidades em áreasque vão de negócios até educação e turismo. Cidades como Dubai e Doha estão se tornando hubs globais de finanças e tecnologia. Além disso, muitas universidades de renome estão localizadas em países árabes, oferecendo oportunidades de intercâmbio. O turismo também está em alta, com destinos como o Egito, Marrocos e Catar atraindo milhões de visitantes todos os anos`,
           religion: `Aprender árabe é fundamental para quem busca uma compreensão mais profunda da religião islâmica. Por ser o idioma do Alcorão, o livro sagrado do Islã, muitas orações e cerimônias religiosas são realizadas em árabe. Além disso, a compreensão do árabe pode permitir uma melhor comunicação e compreensão das tradições muçulmanas em todo o mundo`,
         }
+      },
+      conclusion: {
+        title: 'Torne-se fluente em Árabe de <br /> um modo eficiente e descomplicado',
+        course: 'Curso de Árabe',
+        club: 'Clube de traduções',
+        music: 'Música',
       }
     },
   },
+
 };
