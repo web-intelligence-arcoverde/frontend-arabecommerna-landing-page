@@ -31,6 +31,7 @@ export const allSectionsMock = [
   {
     name: `${i18n.t('allSections.price')}`,
     id: 'price',
+    scrollDesktop: 130,
   },
   {
     name: `${i18n.t('allSections.feedback')}`,

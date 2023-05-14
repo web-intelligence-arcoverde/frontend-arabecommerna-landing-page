@@ -42,7 +42,11 @@ export const CardDropdown = styled.ul`
 `;
 
 export const Section = styled(AnchorLink)`
+  display: flex;
+  align-items: center;
   padding-left: 20px;
   color: ${COLORS.gray._03};
   text-transform: capitalize;
+  width: 100%;
+  height: 40px;
 `;

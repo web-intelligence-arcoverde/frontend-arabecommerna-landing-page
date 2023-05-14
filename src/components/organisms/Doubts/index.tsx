@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { ICONS } from '@/assets';
 export const Doubts = () => {
   return (
-    <DoubtsContainer>
+    <DoubtsContainer id='questions'>
       <Grade>
         <Image src={ICONS.Grade} />
       </Grade>

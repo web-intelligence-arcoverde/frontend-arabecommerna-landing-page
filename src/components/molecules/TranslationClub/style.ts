@@ -12,6 +12,10 @@ export const TranslationContainer = styled.div`
   p {
     padding-bottom: 8px;
   }
+  h1,
+  li {
+    width: max-content;
+  }
   @media (max-width: ${BREAKPOINTS.sm}) {
     max-width: 135px;
   }
