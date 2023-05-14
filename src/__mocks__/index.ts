@@ -177,3 +177,12 @@ export const doubtsCardMocks = [
     id: '04',
   },
 ];
+
+export const conclusionClubMock = [
+  {
+    title: `${i18n.t('conclusion.club')}`,
+    text1: `${i18n.t('allSections.howItWorks')}`,
+    text2: `${i18n.t('conclusion.music')}`,
+    text3: `${i18n.t('allSections.questions')}`,
+  },
+];
