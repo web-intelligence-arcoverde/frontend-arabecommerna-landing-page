@@ -10,10 +10,6 @@ export const DiscoveryContent = styled.section`
   text-align: center;
   letter-spacing: 0.02em;
   height: 100%;
-<<<<<<< HEAD
-  gap: 12px;
-
-=======
   gap: 24px;
   p {
     color: ${COLORS.gray._02};
@@ -22,7 +18,6 @@ export const DiscoveryContent = styled.section`
     line-height: 36px;
     max-width: 1024px;
   }
->>>>>>> b9d4966 (refactor: refactor mocks. feat: add new images)
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 96px 20px;
     gap: 34px;
