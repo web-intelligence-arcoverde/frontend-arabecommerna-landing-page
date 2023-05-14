@@ -179,10 +179,7 @@ export const doubtsCardMocks = [
 ];
 
 export const conclusionClubMock = [
-  {
-    title: `${i18n.t('conclusion.club')}`,
-    text1: `${i18n.t('allSections.howItWorks')}`,
-    text2: `${i18n.t('conclusion.music')}`,
-    text3: `${i18n.t('allSections.questions')}`,
-  },
+  { link: `${i18n.t('allSections.howItWorks')}` },
+  { link: `${i18n.t('conclusion.music')}` },
+  { link: `${i18n.t('allSections.questions')}` },
 ];
