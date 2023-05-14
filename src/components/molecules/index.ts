@@ -5,5 +5,5 @@ export { Testimonial } from './Testimonial';
 export { CardPrice } from './CardPrice';
 export { DiscoveryCard } from './DiscoveryContent';
 export { DoubtsCard } from './DoubtsCard';
-export { CourseArabe } from './ConclusionCouse';
+export { CourseArabe } from './ConclusionCourse';
 export { TranslationClub } from './TranslationClub';

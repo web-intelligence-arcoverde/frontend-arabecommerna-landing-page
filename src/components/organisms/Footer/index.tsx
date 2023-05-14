@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { FooterContainer } from './style';
 import { ICONS } from '@/assets';
+import Link from 'next/link';
 
 export const Footer = () => {
   const date = new Date();
@@ -20,18 +21,19 @@ export const Footer = () => {
         </p>
         <p>
           Desenvolvido por{' '}
-          <a
+          <Link
             href="https://github.com/web-intelligence-arcoverde/"
             target="_blank"
+            rel='noreferrer'
           >
             Web Intelligence
-          </a>
+          </Link>
         </p>
       </div>
       <button onClick={goTop}>
-        <a href="#header">
+        <Link href="#header">
           <Image src={ICONS.ArrowTop} />
-        </a>
+        </Link>
       </button>
     </FooterContainer>
   );
