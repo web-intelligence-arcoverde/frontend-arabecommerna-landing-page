@@ -14,7 +14,6 @@ export const CardInfos = styled.div`
   }
   p {
     max-width: 516px;
-    max-height: 96px;
     color: ${COLORS.gray._02};
     font-weight: 400;
     line-height: 32px;

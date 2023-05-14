@@ -4,7 +4,9 @@ import { i18n } from '../src/translate/i18n.js';
 import {
   AboutUs,
   Discovery,
+  Doubts,
   Feedback,
+  Footer,
   Header,
   HowItWorks,
   Presentation,
@@ -27,6 +29,8 @@ const Home = () => {
       <Discovery />
       <Price />
       <Feedback />
+      <Doubts />
+      <Footer />
     </PageView>
   );
 };

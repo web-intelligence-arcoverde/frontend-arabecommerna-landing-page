@@ -4,3 +4,4 @@ export { ContentMenuMobile } from './ContentMenuMobile';
 export { Testimonial } from './Testimonial';
 export { CardPrice } from './CardPrice';
 export { DiscoveryCard } from './DiscoveryContent';
+export { DoubtsCard } from './DoubtsCard';
