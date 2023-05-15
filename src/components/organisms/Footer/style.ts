@@ -1,4 +1,3 @@
-import { Button } from './../../atoms/Button/index';
 import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
@@ -9,6 +8,7 @@ export const FooterContainer = styled.footer`
   padding: 56px 96px;
   height: 70px;
   gap: 56px;
+  align-items: center;
   div {
     display: flex;
     justify-content: space-between;
