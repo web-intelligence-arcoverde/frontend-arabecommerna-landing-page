@@ -40,7 +40,7 @@ export const CoursePresentation = styled.div`
   gap: 20px;
   min-width: 326px;
   p {
-    padding: 8px 25px;
+    padding-left: 28px;
     border-left: 1px solid ${COLORS.auxiliary.blue};
     line-height: 31px;
     color: ${COLORS.gray._01};
