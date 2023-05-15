@@ -1,4 +1,4 @@
-import { BREAKPOINTS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const DefaultContainer = styled.div`
@@ -11,14 +11,23 @@ export const DefaultContainer = styled.div`
 export const SectionsContainer = styled.div`
   display: flex;
   margin-top: 8px;
-  gap: 56px;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  gap: 16px;
+  flex-direction: column;
+  height: 100px;
+  flex-wrap: wrap;
+  width: 450px;
+  a{
+    color: ${COLORS.gray._01};
+    font-weight: 500;
   }
+
   @media (max-width: ${BREAKPOINTS.sm}) {
-    flex-flow: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    a{
+      text-align: start;
+      width: 30%;
+    }
   }
 `;
