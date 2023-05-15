@@ -5,6 +5,10 @@ export const TranslationContainer = styled.div`
   display: flex;
   flex-direction: column;
   h1 {
+    color: #605e70;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
     padding-bottom: 8px;
     border-bottom: 1px solid #e2f1eb;
   }
@@ -14,6 +18,10 @@ export const TranslationContainer = styled.div`
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     max-width: 135px;
+    h1 {
+      font-size: 0.875rem;
+      line-height: 21px;
+    }
   }
 `;
 
