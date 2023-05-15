@@ -57,7 +57,9 @@ export const Post = styled.div`
   flex-direction: column;
   width: 100%;
   p {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 36px;
     color: ${COLORS.gray._03};
     border-bottom: solid 1px ${COLORS.light._02};
     padding-bottom: 32px;
@@ -79,12 +81,15 @@ export const PerfilUser = styled.div`
 export const InfoUser = styled.div`
   h5 {
     color: ${COLORS.gray._02};
-    font-size: 1.05rem;
+    font-size: 1.125rem;
     font-weight: 500;
+    line-height: 27px;
     margin-bottom: 4px;
   }
   h6 {
     color: ${COLORS.gray._03};
     font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
   }
 `;

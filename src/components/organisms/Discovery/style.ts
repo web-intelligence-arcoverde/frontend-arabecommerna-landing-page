@@ -8,7 +8,6 @@ export const DiscoveryContent = styled.section`
   background-color: ${COLORS.light._05};
   padding: 128px 96px;
   text-align: center;
-  letter-spacing: 0.02em;
   height: 100%;
   gap: 24px;
   p {
@@ -20,7 +19,7 @@ export const DiscoveryContent = styled.section`
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 96px 20px;
-    gap: 34px;
+    gap: 32px;
     p {
       max-width: 335px;
       font-size: 1rem;

@@ -24,10 +24,12 @@ export const CardLinks = styled.div`
   flex-direction: column;
   gap: 16px;
   button {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 21px;
     background-color: transparent;
     border: none;
     text-align: start;
-    color: ${COLORS.gray._01};
-    font-weight: 500;
+    color: ${COLORS.gray._02};
   }
 `;

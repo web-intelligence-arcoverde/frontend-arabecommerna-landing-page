@@ -72,6 +72,7 @@ export const CardContent = styled.div`
       line-height: 36px;
     }
     p {
+      padding: 0px 6px;
       font-weight: 400;
       font-size: 1rem;
       line-height: 32px;

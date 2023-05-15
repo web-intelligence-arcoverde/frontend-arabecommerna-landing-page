@@ -20,8 +20,8 @@ export const PresentationContainer = styled.div`
   @media (max-width: ${BREAKPOINTS.sm}) {
     background-position: center;
     width: 100%;
+    height: 80vh;
     padding: 96px 20px 128px;
-    min-height: 0;
   }
 `;
 

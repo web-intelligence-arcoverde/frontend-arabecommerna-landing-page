@@ -8,8 +8,7 @@ export const ContentText = styled.p`
   line-height: 36px;
   max-width: 824px;
   border-top: 1px solid ${COLORS.light._02};
-  padding-top:16px ;
-  margin-bottom:42px ;
+  padding-top: 16px;
 
   @media (max-width: ${BREAKPOINTS.sm}) {
     max-width: 335px;
@@ -21,6 +20,7 @@ export const ContentText = styled.p`
 export const DiscoveryImages = styled.div`
   display: flex;
   gap: 24px;
+  padding-top: 32px;
   span {
     max-width: 294px;
     max-height: 400px;
@@ -30,13 +30,14 @@ export const DiscoveryImages = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
+    padding-top: 0px;
     max-width: 375px;
     max-height: 405px;
     gap: 4px;
     span {
       width: 185.5px !important;
       height: 200px !important;
-      border-radius: none;
+      border-radius: 0;
     }
   }
 `;

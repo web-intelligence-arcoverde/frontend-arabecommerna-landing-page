@@ -17,10 +17,10 @@ export const HowItWorksContainer = styled.section`
     padding: 96px 20px;
     gap: 56px;
     p {
+      margin-top: 4px;
       font-weight: 400;
       font-size: 1rem;
       line-height: 32px;
-      letter-spacing: 0.02em;
     }
   }
 `;

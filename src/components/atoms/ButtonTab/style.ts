@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const CardButtonTab = styled.div`
   display: flex;
-  letter-spacing: 0.02em;
   max-width: 824px;
   max-height: 55px;
   gap: 24px;
