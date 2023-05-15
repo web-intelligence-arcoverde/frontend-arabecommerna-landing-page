@@ -5,8 +5,7 @@ export const ContainerFeedback = styled.section`
   padding: 128px 96px;
   display: flex;
   gap: 120px;
-  letter-spacing: 0.02px;
-
+  
   aside {
     width: 100%;
 
