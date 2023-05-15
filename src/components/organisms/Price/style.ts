@@ -15,10 +15,6 @@ export const ContainerPrice = styled.section`
     padding: 96px 20px;
     gap: 56px;
     background-position: top;
-    p,
-    span {
-      font-size: 1.5rem;
-    }
   }
 `;
 
@@ -29,12 +25,18 @@ export const Information = styled.div`
     font-size: 2rem;
     font-weight: 700;
     line-height: 64px;
+    color: ${COLORS.light._05};
     width: 100%;
     max-width: 550px;
-    height: 100%;
-    color: ${COLORS.light._05};
   }
   span {
     color: ${COLORS.auxiliary.yellow};
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    p,
+    span {
+      font-size: 1.5rem;
+      line-height: 48px;
+    }
   }
 `;
