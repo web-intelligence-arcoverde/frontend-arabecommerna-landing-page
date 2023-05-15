@@ -13,6 +13,28 @@ const TrabslationClub = () => {
         currentPageMobile={'Curso de Árabe'}
         nextPageMobile={'Clube de Traduções'}
       />
+      <section
+        style={{
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+        id="how-it-works"
+      >
+        <h1>TESTE...</h1>
+      </section>
+      <section
+        style={{
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+        id="music-club"
+      >
+        <h1>MUSICAS...</h1>
+      </section>
 
       <Doubts />
       <Conclusion />

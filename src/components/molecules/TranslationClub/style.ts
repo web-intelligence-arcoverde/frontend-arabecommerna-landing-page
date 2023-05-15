@@ -23,7 +23,10 @@ export const CardLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  a {
+  button {
+    background-color: transparent;
+    border: none;
+    text-align: start;
     color: ${COLORS.gray._01};
     font-weight: 500;
   }

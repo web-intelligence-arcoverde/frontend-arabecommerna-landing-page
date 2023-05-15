@@ -16,7 +16,10 @@ export const SectionsContainer = styled.div`
   height: 100px;
   flex-wrap: wrap;
   width: 450px;
-  a{
+  button {
+    background-color: transparent;
+    border: none;
+    text-align: start;
     color: ${COLORS.gray._01};
     font-weight: 500;
   }
@@ -25,7 +28,7 @@ export const SectionsContainer = styled.div`
     flex-direction: row;
     width: 100%;
     height: auto;
-    a{
+    button {
       text-align: start;
       width: 30%;
     }
