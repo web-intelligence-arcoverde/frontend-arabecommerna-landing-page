@@ -20,7 +20,7 @@ export const SectionsContainer = styled.div`
     background-color: transparent;
     border: none;
     text-align: start;
-    color: ${COLORS.gray._01};
+    color: ${COLORS.gray._02};
     font-weight: 500;
   }
 
@@ -29,6 +29,8 @@ export const SectionsContainer = styled.div`
     width: 100%;
     height: auto;
     button {
+      font-size: 0.875rem;
+      line-height: 21px;
       text-align: start;
       width: 30%;
     }

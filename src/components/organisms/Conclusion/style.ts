@@ -8,7 +8,6 @@ export const ConclusionContainer = styled.section`
   gap: 231px;
   background-color: ${COLORS.brand._04};
   border-bottom: 0.01px solid ${COLORS.gray._05};
-  letter-spacing: 0.02em;
   h1,
   p {
     color: ${COLORS.gray._01};

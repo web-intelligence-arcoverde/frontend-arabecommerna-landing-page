@@ -6,7 +6,6 @@ export const DoubtsContent = styled.div`
   font-style: normal;
   font-size: 1rem;
   line-height: 24px;
-  letter-spacing: 0.02em;
   max-width: 1036px;
   max-height: 496px;
   h1,
@@ -36,7 +35,6 @@ export const DoubtsContent = styled.div`
       font-weight: 400;
       font-size: 0.875rem;
       line-height: 28px;
-      letter-spacing: 0.02em;
       width: auto;
       height: auto;
     }

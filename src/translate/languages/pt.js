@@ -40,7 +40,7 @@ export const messages = {
         methodology: {
           title: 'Metodologia',
           subTitle:
-            'Adotamos um modelo de ensino conversacional, junto com a práticaconstante e o uso da língua em situações reais, para garantir um aprendizado eficaz e imersivo',
+            'Adotamos um modelo de ensino conversacional, junto com a prática constante e o uso da língua em situações reais, para garantir um aprendizado eficaz e imersivo',
         },
         liveClasses: {
           title: 'Aulas ao vivo',
@@ -61,7 +61,7 @@ export const messages = {
         title: 'COM QUEM VOCÊ VAI APRENDER',
         subTitle: 'Olá, eu me chamo <span>Merna</span>',
         about:
-          'Com quase 10 anos de experiência no ensino do idioma árabe,sua paixão pela língua e pela cultura, juntamente com sua vocação pedagógica, a incentivaram a criar um curso de árabe para estrangeiros no Cairo, que atualmente está ajudando vários alunos de diversas nacionalidades ao redor do mundo',
+          'Com quase 10 anos de experiência no ensino do idioma árabe, sua paixão pela língua e pela cultura, juntamente com sua vocação pedagógica, a incentivaram a criar um curso de árabe para estrangeiros no Cairo, que atualmente está ajudando vários alunos de diversas nacionalidades ao redor do mundo',
         end: 'Ao longo dos anos, optou por uma abordagem de ensino flexível, que se adapta às necessidades individuais de cada aluno, focando no aprendizado através da conversação',
       },
       aboutUs: {
@@ -84,7 +84,7 @@ export const messages = {
         },
       },
       price: {
-        text: 'Não permita que a barreira do idioma o impeça de <span>alcançar seus objetivos.</span> Adquira acesso ao ambiente de aprendizado ideal para dar o primeiro passo com confiança',
+        text: 'Não permita que a barreira do idioma o impeça de <span>alcançar seus objetivos</span>. Adquira acesso ao ambiente de aprendizado ideal para dar o primeiro passo com confiança',
         card: {
           text: 'PRÓXIMAS TURMAS',
           from: 'De',

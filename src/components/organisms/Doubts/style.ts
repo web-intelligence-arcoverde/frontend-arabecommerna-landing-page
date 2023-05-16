@@ -8,7 +8,6 @@ export const DoubtsContainer = styled.section`
   align-items: center;
   background-color: ${COLORS.light._05};
   padding: 128px 202px;
-  letter-spacing: 0.02em;
   gap: 40px;
   position: relative;
   @media (max-width: ${BREAKPOINTS.sm}) {

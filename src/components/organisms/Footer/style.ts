@@ -27,7 +27,6 @@ export const FooterContainer = styled.footer`
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 21px;
-    letter-spacing: 0.02em;
     color: ${COLORS.gray._03};
   }
 

@@ -83,7 +83,7 @@ export const messages = {
         },
       },
       price: {
-        text: `Don't let the language barrier stop you from <span>achieving your goals.</span> Get access to the ideal learning environment to take the first step with confidence`,
+        text: `Don't let the language barrier stop you from <span>achieving your goals</span>. Get access to the ideal learning environment to take the first step with confidence`,
         card: {
           text: 'NEXT CLASSES',
           from: 'From',
