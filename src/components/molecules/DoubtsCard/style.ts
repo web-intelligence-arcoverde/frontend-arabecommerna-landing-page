@@ -52,7 +52,7 @@ export const DoubtsText = styled.div`
     h1 {
       display: flex;
       justify-content: space-between;
-      max-width: 287px;
+      max-width: 100%;
       div {
         display: block;
       }

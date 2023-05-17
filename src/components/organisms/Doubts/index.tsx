@@ -9,12 +9,26 @@ import {
 import { DoubtsCard } from '@/components/molecules';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 export const Doubts = () => {
   const [isOpen, setIsOpen] = useState(true);
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    function getResize() {
+      if(window.innerWidth < 800){
+        setIsOpen(false)
+      } else {
+        setIsOpen(true)
+      }
+    }
+    window.addEventListener('resize', getResize);
+    return () => {
+      window.removeEventListener('resize', getResize);
+    };
+  }, []);
 
   return (
     <DoubtsContainer id="questions">
