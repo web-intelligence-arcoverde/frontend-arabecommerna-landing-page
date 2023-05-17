@@ -50,6 +50,7 @@ export const DoubtContent = styled.div`
   border: 1px solid #ecebf2;
   border-radius: 5px;
   padding: 32px;
+  pointer-events: none;
   li {
     padding: 48px 0;
     border-bottom: 1px solid ${COLORS.light._02};
@@ -58,7 +59,13 @@ export const DoubtContent = styled.div`
     border: none;
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
+    padding: 24px;
     width: 100%;
+    pointer-events: all;
+    li {
+      padding: 24px 0;
+      border-bottom: 1px solid ${COLORS.light._02};
+    }
   }
 `;
 export const Grade = styled.div`

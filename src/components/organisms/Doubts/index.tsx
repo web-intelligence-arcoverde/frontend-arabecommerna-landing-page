@@ -9,9 +9,15 @@ import {
 import { DoubtsCard } from '@/components/molecules';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
+import { useState } from 'react';
 export const Doubts = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <DoubtsContainer id='questions'>
+    <DoubtsContainer id="questions">
       <Grade>
         <Image src={ICONS.Grade} />
       </Grade>
@@ -23,11 +29,11 @@ export const Doubts = () => {
       </DoubtTitle>
       <DoubtContent>
         {doubtsCardMocks.map((item, index) => (
-          <li key={index}>
+          <li key={index} onClick={toggleAccordion}>
             <DoubtsCard
-              title={item.doubt}
-              subTitle={item.response}
               id={item.id}
+              title={item.doubt}
+              subTitle={isOpen && item.response}
             />
           </li>
         ))}

@@ -13,13 +13,15 @@ export const DoubtsContent = styled.div`
     font-weight: 400;
     color: ${COLORS.gray._04};
   }
-
   h2,
   p {
     width: 920px;
     height: 24px;
   }
   h1 {
+    div {
+      display: none;
+    }
     max-width: 20px;
     max-height: 24px;
   }
@@ -43,4 +45,17 @@ export const DoubtsContent = styled.div`
 export const DoubtsText = styled.div`
   display: flex;
   gap: 32px;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    h1 {
+      display: flex;
+      justify-content: space-between;
+      max-width: 287px;
+      div {
+        display: block;
+      }
+    }
+  }
 `;
