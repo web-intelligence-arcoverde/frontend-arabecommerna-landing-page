@@ -155,6 +155,7 @@ export const doubtsCardMocks = [
     response:
       'Blandit et integer aliquam viverra. Elit massa sollicitudin dictum in. Mollis dolor imperdiet faucibus felis est',
     id: '01',
+    showAccordion: true,
   },
   {
     doubt:
@@ -162,6 +163,7 @@ export const doubtsCardMocks = [
     response:
       'Dolor vel neque duis vehicula in feugiat. Risus in sit sed amet leo at mi. Lacinia tellus diam lorem adipiscing viverra',
     id: '02',
+    showAccordion: false,
   },
   {
     doubt:
@@ -169,6 +171,7 @@ export const doubtsCardMocks = [
     response:
       'Lacus amet nibh vestibulum integer arcu dignissim a magna elementum. Ipsum mi sit vestibulum ac a arcu ac elit risus',
     id: '03',
+    showAccordion: false,
   },
   {
     doubt:
@@ -176,6 +179,7 @@ export const doubtsCardMocks = [
     response:
       'Fringilla pretium lectus magna suspendisse luctus morbi faucibus. Habitant quis ultrices malesuada sem imperdiet',
     id: '04',
+    showAccordion: false,
   },
 ];
 

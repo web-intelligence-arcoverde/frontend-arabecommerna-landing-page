@@ -12,16 +12,18 @@ import { ICONS } from '@/assets';
 import { useEffect, useState } from 'react';
 export const Doubts = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const toggleAccordion = () => {
+  const [state, setState] = useState([]);
+  const toggleAccordion = (e) => {
+    console.log(e.showAccordion);
     setIsOpen(!isOpen);
   };
 
   useEffect(() => {
     function getResize() {
-      if(window.innerWidth < 800){
-        setIsOpen(false)
+      if (window.innerWidth < 800) {
+        setIsOpen(false);
       } else {
-        setIsOpen(true)
+        setIsOpen(true);
       }
     }
     window.addEventListener('resize', getResize);
@@ -43,11 +45,17 @@ export const Doubts = () => {
       </DoubtTitle>
       <DoubtContent>
         {doubtsCardMocks.map((item, index) => (
-          <li key={index} onClick={toggleAccordion}>
+          <li
+            key={index}
+            onClick={() => {
+              toggleAccordion(item);
+            }}
+          >
             <DoubtsCard
               id={item.id}
               title={item.doubt}
               subTitle={isOpen && item.response}
+              showAccordion={item.showAccordion}
             />
           </li>
         ))}

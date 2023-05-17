@@ -6,9 +6,15 @@ interface DoubtProps {
   id: string;
   title: string;
   subTitle: string;
+  showAccordion?: boolean;
 }
 
-export const DoubtsCard = ({ id, title, subTitle }: DoubtProps) => {
+export const DoubtsCard = ({
+  id,
+  title,
+  subTitle,
+  showAccordion,
+}: DoubtProps) => {
   return (
     <DoubtsContent>
       <DoubtsText>
@@ -20,7 +26,7 @@ export const DoubtsCard = ({ id, title, subTitle }: DoubtProps) => {
         </h1>
         <div>
           <h2>{title}</h2>
-          <p>{subTitle}</p>
+          {showAccordion && subTitle}
         </div>
       </DoubtsText>
     </DoubtsContent>
