@@ -184,3 +184,78 @@ export const TrabslationClubMock = [
   { name: `${i18n.t('conclusion.music')}`, id: 'music-clube' },
   { name: `${i18n.t('allSections.questions')}`, id: 'questions' },
 ];
+
+export const modulesMock = [
+  {
+    id: 1,
+    title: 'Módulo 1',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 2,
+    title: 'Módulo 2',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 3,
+    title: 'Módulo 3',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 4,
+    title: 'Módulo 4',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 5,
+    title: 'Módulo 5',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 6,
+    title: 'Módulo 6',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 7,
+    title: 'Módulo 7',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 8,
+    title: 'Módulo 8',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 9,
+    title: 'Módulo 9',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 10,
+    title: 'Módulo 10',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 11,
+    title: 'Módulo 11',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+  {
+    id: 12,
+    title: 'Módulo 12',
+    description: 'Feugiat semper fames sem et viverra urna libero quam',
+    button: 'Ver mais',
+  },
+];

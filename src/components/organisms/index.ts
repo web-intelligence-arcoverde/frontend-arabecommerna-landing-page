@@ -8,3 +8,4 @@ export { Feedback } from './Feedback';
 export { Doubts } from './Doubts';
 export { Conclusion } from './Conclusion';
 export { Footer } from './Footer';
+export {Contents} from './Contents'
