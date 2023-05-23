@@ -10,9 +10,9 @@ import { DoubtsCard } from '@/components/molecules';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
 import { useEffect, useState } from 'react';
+
 export const Doubts = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const [state, setState] = useState([]);
   const toggleAccordion = (e) => {
     console.log(e.showAccordion);
     setIsOpen(!isOpen);
