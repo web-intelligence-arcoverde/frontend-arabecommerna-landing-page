@@ -35,7 +35,7 @@ export const DiscoveryImages = styled.div`
     max-height: 405px;
     gap: 4px;
     span {
-      width: 185.5px !important;
+      width:49% !important;
       height: 200px !important;
       border-radius: 0;
     }

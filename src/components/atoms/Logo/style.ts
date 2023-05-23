@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { BREAKPOINTS, COLORS } from '../../../common';
 
-export const StyleLogo = styled.span`
+export const StyleLogo = styled.div`
   color: ${COLORS.brand._01};
   background-color:${COLORS.brand._03} ;
   font-size: 1rem;
@@ -11,5 +11,6 @@ export const StyleLogo = styled.span`
   line-height: 24px;
   cursor: pointer;
   width: max-content;
+  white-space: nowrap;
  
 `;
