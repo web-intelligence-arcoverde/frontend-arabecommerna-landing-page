@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { CardButtons, Content, FlexHeader } from './styled';
+import { AllModule, CardButtons, Content, FlexHeader } from './styled';
+import { modulesMock } from '@/__mocks__';
+import { CardModule } from '@/components/molecules';
 
 export const Contents = () => {
   const labelButtonModule = ['Módulo 1 a 4', 'Módulo 5 a 8 ', 'Módulo 9 a 12'];
@@ -20,6 +22,16 @@ export const Contents = () => {
           ))}
         </CardButtons>
       </FlexHeader>
+      <AllModule>
+        {modulesMock.map((item) => (
+          <CardModule
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            button={item.button}
+          />
+        ))}
+      </AllModule>
     </Content>
   );
 };

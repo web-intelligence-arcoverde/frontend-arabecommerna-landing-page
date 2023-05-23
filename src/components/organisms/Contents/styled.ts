@@ -6,7 +6,7 @@ export const Content = styled.section`
   flex-direction: column;
   align-items: flex-start;
   padding: 128px 96px;
-  gap: 40;
+
   h6 {
     color: ${COLORS.gray._02};
     line-height: 24px;
@@ -29,6 +29,7 @@ export const FlexHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 40px;
 `;
 
 export const CardButtons = styled.div`
@@ -58,4 +59,17 @@ export const CardButtons = styled.div`
     font-weight: 600;
     background-color: rgba(10, 103, 209, 0.05);
   }
+`;
+
+export const AllModule = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+ /* Oculta a barra de rolagem */
+ ::-webkit-scrollbar {
+    display: none;
+  }
+  
+ 
 `;

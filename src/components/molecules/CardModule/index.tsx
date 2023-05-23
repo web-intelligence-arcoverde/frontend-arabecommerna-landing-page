@@ -1,11 +1,18 @@
-import { ContainerModule } from './styled';
+import Image from 'next/image';
+import { CardIcon, ContainerModule, DescriptionModule } from './styled';
+import { ICONS } from '@/assets';
 
-export const CardModule = ({ module }) => {
+export const CardModule = ({ title, description, button }) => {
   return (
     <ContainerModule>
-      <h3>{module.title}</h3>
-      <p>{module.content}</p>
-      <button>{module.button}</button>
+      <CardIcon>
+        <Image src={ICONS.Module} alt="icone card" />
+      </CardIcon>
+      <DescriptionModule>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <button>{button}</button>
+      </DescriptionModule>
     </ContainerModule>
   );
 };
