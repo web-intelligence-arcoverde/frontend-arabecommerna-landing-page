@@ -9,29 +9,8 @@ import {
 import { DoubtsCard } from '@/components/molecules';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
-import { useEffect, useState } from 'react';
 
 export const Doubts = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  const toggleAccordion = (e) => {
-    console.log(e.showAccordion);
-    setIsOpen(!isOpen);
-  };
-
-  useEffect(() => {
-    function getResize() {
-      if (window.innerWidth < 800) {
-        setIsOpen(false);
-      } else {
-        setIsOpen(true);
-      }
-    }
-    window.addEventListener('resize', getResize);
-    return () => {
-      window.removeEventListener('resize', getResize);
-    };
-  }, []);
-
   return (
     <DoubtsContainer id="questions">
       <Grade>
@@ -45,17 +24,11 @@ export const Doubts = () => {
       </DoubtTitle>
       <DoubtContent>
         {doubtsCardMocks.map((item, index) => (
-          <li
-            key={index}
-            onClick={() => {
-              toggleAccordion(item);
-            }}
-          >
+          <li key={index}>
             <DoubtsCard
               id={item.id}
               title={item.doubt}
-              subTitle={isOpen && item.response}
-              showAccordion={item.showAccordion}
+              subTitle={item.response}
             />
           </li>
         ))}
