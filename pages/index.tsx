@@ -13,6 +13,7 @@ import {
   Presentation,
   Price,
 } from '@/components';
+import { Contents } from '@/components/organisms/Contents';
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <HowItWorks />
       <AboutUs />
       <Discovery />
+      <Contents/>
       <Price />
       <Feedback />
       <Doubts />

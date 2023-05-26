@@ -7,3 +7,4 @@ export { DiscoveryCard } from './DiscoveryContent';
 export { DoubtsCard } from './DoubtsCard';
 export { CourseArabe } from './ConclusionCourse';
 export { TranslationClub } from './TranslationClub';
+export { CardModule } from './CardModule';
