@@ -93,18 +93,18 @@ export const AllModule = styled.div`
   flex-wrap: nowrap;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-
+  overflow-y: hidden;
   ::-webkit-scrollbar {
-    height: 8px;
+    height: 6px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: ${COLORS.brand._02};
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-track {
-    background-color: #f2f2f2;
+    background-color: ${COLORS.brand._04};
     border-radius: 4px;
   }
 `;

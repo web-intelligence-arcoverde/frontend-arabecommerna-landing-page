@@ -48,6 +48,7 @@ export const Contents = () => {
             title={item.title}
             description={item.description}
             button={item.button}
+            currentModule={item.modules}
           />
         ))}
       </AllModule>
