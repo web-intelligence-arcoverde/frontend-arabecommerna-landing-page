@@ -114,6 +114,16 @@ export const messages = {
           religion: `Learning Arabic is essential for anyone seeking a deeper understanding of the Islamic religion. As it is the language of the Qur'an, the holy book of Islam, many prayers and religious ceremonies are performed in Arabic. Furthermore, understanding Arabic can allow for better communication and understanding of Muslim traditions around the world.`,
         }
       },
+      content:{
+        content:'CONTENT',
+        module:'Module',
+        title:'What will you <span>learn</span>',
+        moduleOne:'Module 1 to 4',
+        moduleTwo:'Module 5 to 8',
+        modulesThree:'Module 9 to 12',
+        viewMore:'View More'
+
+      },
       conclusion: {
         title: 'Become fluent in Arabic from <br/> an efficient and uncomplicated way',
         course: 'Arabic course',

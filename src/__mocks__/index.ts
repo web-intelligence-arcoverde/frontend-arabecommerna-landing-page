@@ -188,9 +188,8 @@ export const TrabslationClubMock = [
 export const modulesMock = [
   {
     id: 1,
-    title: 'Módulo 1',
+    title: `${i18n.t('content.module')} 1`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -208,9 +207,8 @@ export const modulesMock = [
   },
   {
     id: 2,
-    title: 'Módulo 2',
+    title: `${i18n.t('content.module')} 2`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -228,9 +226,8 @@ export const modulesMock = [
   },
   {
     id: 3,
-    title: 'Módulo 3',
+    title: `${i18n.t('content.module')} 3`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -248,9 +245,8 @@ export const modulesMock = [
   },
   {
     id: 4,
-    title: 'Módulo 4',
+    title: `${i18n.t('content.module')} 4`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -268,9 +264,8 @@ export const modulesMock = [
   },
   {
     id: 5,
-    title: 'Módulo 5',
+    title: `${i18n.t('content.module')} 5`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -288,9 +283,8 @@ export const modulesMock = [
   },
   {
     id: 6,
-    title: 'Módulo 6',
+    title: `${i18n.t('content.module')} 6`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -308,9 +302,8 @@ export const modulesMock = [
   },
   {
     id: 7,
-    title: 'Módulo 7',
+    title: `${i18n.t('content.module')} 7`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -328,9 +321,8 @@ export const modulesMock = [
   },
   {
     id: 8,
-    title: 'Módulo 8',
+    title: `${i18n.t('content.module')} 8`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -348,9 +340,8 @@ export const modulesMock = [
   },
   {
     id: 9,
-    title: 'Módulo 9',
+    title: `${i18n.t('content.module')} 9`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -368,9 +359,8 @@ export const modulesMock = [
   },
   {
     id: 10,
-    title: 'Módulo 10',
+    title: `${i18n.t('content.module')} 10`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -388,9 +378,8 @@ export const modulesMock = [
   },
   {
     id: 11,
-    title: 'Módulo 11',
+    title: `${i18n.t('content.module')} 11`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },
@@ -408,9 +397,8 @@ export const modulesMock = [
   },
   {
     id: 12,
-    title: 'Módulo 12',
+    title: `${i18n.t('content.module')} 12`,
     description: 'Feugiat semper fames sem et viverra urna libero quam',
-    button: 'Ver mais',
     modules: [
       { name: 'Ornare quam lorem' },
       { name: 'Viverra pharetra sagitis' },

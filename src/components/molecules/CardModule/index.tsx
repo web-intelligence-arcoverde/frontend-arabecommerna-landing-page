@@ -9,8 +9,9 @@ import {
 } from './styled';
 import { ICONS } from '@/assets';
 import { useState } from 'react';
+import { i18n } from '@/translate/i18n.js';
 
-export const CardModule = ({ title, description, button, currentModule }) => {
+export const CardModule = ({ title, description, currentModule }) => {
   const [showContent, setShowContent] = useState<boolean>(false);
 
   const handleClick = () => {
@@ -24,7 +25,7 @@ export const CardModule = ({ title, description, button, currentModule }) => {
       <DescriptionModule>
         <h3>{title}</h3>
         <p>{description}</p>
-        <button onClick={() => handleClick()}>{button}</button>
+        <button onClick={() => handleClick()}>{`${i18n.t('content.viewMore')}`}</button>
       </DescriptionModule>
       {showContent && (
         <ContentModule>
