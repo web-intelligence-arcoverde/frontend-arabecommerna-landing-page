@@ -1,5 +1,5 @@
 import { Button } from './../../atoms/Button/index';
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ContainerModule = styled.div`
@@ -11,6 +11,9 @@ export const ContainerModule = styled.div`
   padding: 32px;
   min-height: 400px;
   min-width: 312px;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    min-width: 260px;
+  }
   
 `;
 
