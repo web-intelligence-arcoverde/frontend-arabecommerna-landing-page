@@ -15,7 +15,9 @@ import Certificado from './certificado.svg';
 import Checked from './check.svg';
 import ArrowTop from './arrow-top.svg';
 import ArrowDown from './arrowdown.svg';
-import Module from './module.svg'
+import Module from './module.svg';
+import ImagePlatform from './imagem-platform.svg';
+import IconTitle from './icon-title.svg';
 
 export const ICONS = {
   Mouse,
@@ -35,5 +37,7 @@ export const ICONS = {
   Checked,
   ArrowTop,
   ArrowDown,
-  Module
+  Module,
+  ImagePlatform,
+  IconTitle,
 };

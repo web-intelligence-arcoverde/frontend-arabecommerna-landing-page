@@ -23,7 +23,7 @@ export const ContainerFeedback = styled.section`
       line-height: 36px;
     }
     h1 {
-      max-width: 306px;
+      min-width: 306px;
       margin-bottom: 92px;
       color: ${COLORS.dark._04};
     }
