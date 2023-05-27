@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Aside, ContainerPlatform, ItemList, ItemListMobile, List } from './styled';
+import {
+  Aside,
+  ContainerPlatform,
+  ItemList,
+  ItemListMobile,
+  List,
+} from './styled';
 import { ICONS } from '@/assets';
 import { titleShowMock } from '@/__mocks__';
 import { StyleDesktop, StyleMobile } from 'styles';
@@ -9,6 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { HeaderSection } from '@/components/atoms';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -22,10 +29,14 @@ export const Platform = () => {
   return (
     <ContainerPlatform id="platform">
       <Aside>
-        <h6>PLATAFORMA</h6>
-        <h1>
+        <HeaderSection
+          lineHeight='2rem'
+          smallText={'PLATAFORMA'}
+          bigText={`<h1>
           Conheça <span>por dentro </span>
-        </h1>
+        </h1>`}
+        />
+
         <List>
           <StyleDesktop>
             {titleShowMock.map((item, index) => (

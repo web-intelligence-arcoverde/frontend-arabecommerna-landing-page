@@ -1,14 +1,15 @@
 import { doubtsCardMocks } from '@/__mocks__';
 import {
+  CardCenter,
   Detail,
   DoubtContent,
-  DoubtTitle,
   DoubtsContainer,
   Grade,
 } from './style';
 import { DoubtsCard } from '@/components/molecules';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
+import { HeaderSection } from '@/components/atoms';
 
 export const Doubts = () => {
   return (
@@ -16,12 +17,17 @@ export const Doubts = () => {
       <Grade>
         <Image src={ICONS.Grade} />
       </Grade>
-      <DoubtTitle>
-        <h1>RESPONDENDO</h1>
-        <h2>
-          Principais <a>dúvidas</a>
-        </h2>
-      </DoubtTitle>
+
+      <CardCenter>
+        <HeaderSection
+          lineHeight="none"
+          smallText={'RESPONDENDO'}
+          bigText={`
+          Principais <span>dúvidas</span>
+        `}
+        />
+      </CardCenter>
+
       <DoubtContent>
         {doubtsCardMocks.map((item, index) => (
           <li key={index}>

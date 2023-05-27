@@ -35,25 +35,7 @@ export const AboutContent = styled.div`
   flex-direction: column;
   max-width: 612px;
   gap: 12px;
-  h1 {
-    color: ${COLORS.gray._02};
-    font-weight: 500;
-    line-height: 24px;
-  }
-  h2 {
-      font-family: 'raleway';
-    }
-  h2,
-  span {
-    color: ${COLORS.dark._04};
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 48px;
-  }
-  span {
-    color: ${COLORS.brand._02};
-  }
-
+ 
   p {
     color: ${COLORS.gray._02};
     font-weight: 400;
@@ -64,17 +46,7 @@ export const AboutContent = styled.div`
     padding: 56px 20px;
     order: 2;
     gap: 0;
-    h1 {
-      font-weight: 500;
-      font-size: 0.875rem;
-      line-height: 21px;
-    }
-    h2,
-    span {
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 48px;
-    }
+   
     p {
       font-size: 1rem;
     }

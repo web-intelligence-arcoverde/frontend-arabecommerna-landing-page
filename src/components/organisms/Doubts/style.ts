@@ -16,35 +16,6 @@ export const DoubtsContainer = styled.section`
   }
 `;
 
-export const DoubtTitle = styled.div`
-  h1 {
-    text-align: center;
-    font-weight: 500;
-    line-height: 24px;
-    color: ${COLORS.gray._02};
-  }
-  h2,
-  a {
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 48px;
-  }
-  a {
-    pointer-events: none;
-    color: ${COLORS.brand._02};
-  }
-  @media (max-width: ${BREAKPOINTS.sm}) {
-    h1 {
-      font-size: 0.875rem;
-      line-height: 21px;
-    }
-    h2,
-    a {
-      font-size: 1.5rem;
-      line-height: 36px;
-    }
-  }
-`;
 
 export const DoubtContent = styled.div`
   border: 1px solid #ecebf2;
@@ -81,5 +52,11 @@ export const Detail = styled.div`
   right: 36px;
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: none;
+  }
+`;
+
+export const CardCenter = styled.div`
+  h6 {
+    text-align: center;
   }
 `;

@@ -4,14 +4,17 @@ import { IMAGES } from '@/assets';
 import { CardInfo } from '../CardInfos';
 import { AboutCardConMocks, cardInfosMock } from '@/__mocks__';
 import { i18n } from '../../../translate/i18n.js';
+import { HeaderSection } from '@/components/atoms';
 
 export const Course = () => {
   const courseSubTitle = i18n.t('aboutUs.course.subTitle');
   return (
     <AboutContainer>
       <AboutContent>
-        <h1>{`${i18n.t('aboutUs.course.title')}`}</h1>
-        <h2 dangerouslySetInnerHTML={{ __html: courseSubTitle }}></h2>
+        <HeaderSection
+          smallText={`${i18n.t('aboutUs.course.title')}`}
+          bigText={courseSubTitle}
+        />
         <p>{`${i18n.t('aboutUs.course.about')}`}</p>
         <AboutCard>
           {AboutCardConMocks.map((item, index) => (
