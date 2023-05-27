@@ -46,7 +46,7 @@ export const Platform = () => {
             ))}
           </StyleDesktop>
           <StyleMobile>
-            <Swiper slidesPerView={0.9} navigation>
+            <Swiper slidesPerView={1} navigation>
               {titleShowMock.map((item, index) => (
                 <SwiperSlide key={index}>
                   <ItemListMobile>

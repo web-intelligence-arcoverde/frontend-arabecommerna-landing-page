@@ -94,7 +94,8 @@ export const ItemListMobile = styled.div`
   text-align: center;
   li {
     color: ${COLORS.auxiliary.confirm};
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
