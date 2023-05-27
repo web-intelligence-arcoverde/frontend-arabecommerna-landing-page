@@ -16,7 +16,14 @@ import Checked from './check.svg';
 import ArrowTop from './arrow-top.svg';
 import ArrowDown from './arrowdown.svg';
 import Module from './module.svg';
+<<<<<<< HEAD
 import Play from './Play.svg';
+=======
+import ImagePlatform from './imagem-platform.svg';
+import Titles from './icon-title.svg';
+import TitlesBlue from './icon-title-blue.svg';
+import ImagePlatformMobile from './imagem-platform-mobile.svg';
+>>>>>>> master
 
 export const ICONS = {
   Mouse,
@@ -37,5 +44,12 @@ export const ICONS = {
   ArrowTop,
   ArrowDown,
   Module,
+<<<<<<< HEAD
   Play,
+=======
+  ImagePlatform,
+  ImagePlatformMobile,
+  Titles,
+  TitlesBlue,
+>>>>>>> master
 };

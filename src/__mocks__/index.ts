@@ -445,3 +445,26 @@ export const VideosCardMock = [
     id: 4,
   },
 ];
+
+export const titleShowMock = [
+  {
+    title: 'Título da mostragem 1',
+    description:
+      'Lorem ipsum dolor sit amet egestas consectetura id pretium nisl duits',
+  },
+  {
+    title: 'Título da mostragem 2',
+    description:
+      'Lorem ipsum dolor sit amet egestas consectetura id pretium nisl duits',
+  },
+  {
+    title: 'Título da mostragem 3',
+    description:
+      'Lorem ipsum dolor sit amet egestas consectetura id pretium nisl duits',
+  },
+  {
+    title: 'Título da mostragem 4',
+    description:
+      'Lorem ipsum dolor sit amet egestas consectetura id pretium nisl duits',
+  },
+];

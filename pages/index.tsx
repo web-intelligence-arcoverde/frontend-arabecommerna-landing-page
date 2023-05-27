@@ -10,6 +10,7 @@ import {
   Footer,
   Header,
   HowItWorks,
+  Platform,
   Presentation,
   Price,
   Results,
@@ -31,6 +32,8 @@ const Home = () => {
       <AboutUs />
       <Discovery />
       <Contents />
+      <Contents/>
+      <Platform/>
       <Price />
       <Feedback />
       <Results />
@@ -42,4 +45,4 @@ const Home = () => {
 };
 
 export default Home;
-/**/
+

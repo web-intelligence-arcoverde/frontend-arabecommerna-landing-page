@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { DiscoveryContent, DiscoveryTitle, Title } from './style';
 import { ICONS } from '@/assets';
 import { i18n } from '@/translate/i18n.js';
-import { ButtonTab, DiscoveryCard } from '@/components';
+import { ButtonTab, DiscoveryCard, HeaderSection } from '@/components';
 import { discoveryButtonMock, discoveryMock } from '@/__mocks__';
 import { useState } from 'react';
 
@@ -22,10 +22,11 @@ export const Discovery = () => {
     <DiscoveryContent id="discover">
       <DiscoveryTitle>
         <Image src={ICONS.Grade} />
-        <Title>
-          <h1>{`${i18n.t('discovery.title')}`}</h1>
-          <h2 dangerouslySetInnerHTML={{ __html: subTitle }}></h2>
-        </Title>
+        <HeaderSection
+          lineHeight="2rem"
+          smallText={`${i18n.t('discovery.title')}`}
+          bigText={subTitle}
+        />
         <Image src={ICONS.Details} />
       </DiscoveryTitle>
       <ButtonTab

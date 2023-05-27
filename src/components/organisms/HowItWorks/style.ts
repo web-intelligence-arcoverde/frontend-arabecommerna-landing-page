@@ -28,18 +28,6 @@ export const LearnContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 506px;
-  h1 {
-    font-weight: 500;
-    color: ${COLORS.gray._02};
-    line-height: 24px;
-  }
-  h2,
-  span {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 64px;
-    color: ${COLORS.dark._04};
-  }
   span {
     color: ${COLORS.brand._02};
   }

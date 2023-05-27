@@ -46,3 +46,15 @@ export const PageView = styled.div`
     padding: 0;
   }
 `;
+export const StyleMobile = styled.div`
+  display: none;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: block;
+  }
+`;
+export const StyleDesktop = styled.div`
+  display: block;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
+  }
+`;
