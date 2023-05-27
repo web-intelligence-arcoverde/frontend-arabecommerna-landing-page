@@ -17,7 +17,9 @@ import ArrowTop from './arrow-top.svg';
 import ArrowDown from './arrowdown.svg';
 import Module from './module.svg';
 import ImagePlatform from './imagem-platform.svg';
-import IconTitle from './icon-title.svg';
+import Titles from './icon-title.svg';
+import TitlesBlue from './icon-title-blue.svg';
+import ImagePlatformMobile from './imagem-platform-mobile.svg';
 
 export const ICONS = {
   Mouse,
@@ -39,5 +41,7 @@ export const ICONS = {
   ArrowDown,
   Module,
   ImagePlatform,
-  IconTitle,
+  ImagePlatformMobile,
+  Titles,
+  TitlesBlue,
 };
