@@ -1,5 +1,5 @@
+import { ICONS } from '@/assets';
 import { BREAKPOINTS, COLORS } from '@/common';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 export const ContainerPlatform = styled.section`
@@ -22,7 +22,6 @@ export const ContainerPlatform = styled.section`
       font-size: 2rem;
       font-family: 'Raleway';
     }
-
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
@@ -30,6 +29,26 @@ export const ContainerPlatform = styled.section`
     gap: 20px;
     width: 100%;
 
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 31%;
+      content: url(${ICONS.ArrowBlue.src});
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      border: solid 1px ${COLORS.light._03};
+    }
+
+    .swiper-button-prev {
+      transform: rotate(180deg);
+      left: 2%;
+    }
+    .swiper-button-next {
+      right: 2%;
+    }
+    .swiper-slide-active {
+      width: 100% !important;
+    }
   }
 `;
 
@@ -44,7 +63,7 @@ export const List = styled.ul`
   gap: 12px;
 `;
 
-export const ItemList = styled.div<{ active: boolean }>`
+export const ItemList = styled.div<{ active?: boolean }>`
   display: flex;
   flex-direction: column;
   li {
@@ -68,4 +87,23 @@ export const ItemList = styled.div<{ active: boolean }>`
   }
 `;
 
-
+export const ItemListMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  li {
+    color: ${COLORS.auxiliary.confirm};
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: rgba(10, 103, 209, 0.05);
+    height: 48px;
+  }
+  p{
+    padding: 20px 0 10px 0;
+    color: ${COLORS.gray._04};
+  }
+`;
