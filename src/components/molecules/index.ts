@@ -8,3 +8,4 @@ export { DoubtsCard } from './DoubtsCard';
 export { CourseArabe } from './ConclusionCourse';
 export { TranslationClub } from './TranslationClub';
 export { CardModule } from './CardModule';
+export { CardVideos } from './CardVideos';

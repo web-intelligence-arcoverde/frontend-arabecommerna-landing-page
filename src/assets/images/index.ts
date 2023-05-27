@@ -20,6 +20,7 @@ import ViagemOne from './viagens-1.webp';
 import ViagemTwo from './viagens-2.webp';
 import ViagemThree from './viagens-3.webp';
 import ViagemFour from './viagens-4.webp';
+import StudentEmanuel from './student.webp';
 
 export const IMAGES = {
   BackgroundPresentation,
@@ -44,4 +45,5 @@ export const IMAGES = {
   ViagemTwo,
   ViagemThree,
   ViagemFour,
+  StudentEmanuel,
 };

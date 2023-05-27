@@ -415,3 +415,33 @@ export const modulesMock = [
     ],
   },
 ];
+export const VideosCardMock = [
+  {
+    src: `https://berro-tech-bucket.s3.sa-east-1.amazonaws.com/upload/Globo+nova+marca++2021.mp4`,
+    student: 'Emanoel Costa',
+    img: IMAGES.StudentEmanuel,
+    time: 2,
+    id: 1,
+  },
+  {
+    src: `https://berro-tech-bucket.s3.sa-east-1.amazonaws.com/upload/Globo+nova+marca++2021.mp4`,
+    student: 'Milena Silva',
+    img: IMAGES.StudentEmanuel,
+    time: 2,
+    id: 2,
+  },
+  {
+    src: `https://berro-tech-bucket.s3.sa-east-1.amazonaws.com/upload/Globo+nova+marca++2021.mp4`,
+    student: 'Renato Vieira',
+    img: IMAGES.StudentEmanuel,
+    time: 6,
+    id: 3,
+  },
+  {
+    src: `https://berro-tech-bucket.s3.sa-east-1.amazonaws.com/upload/Globo+nova+marca++2021.mp4`,
+    student: 'Sabrina Oliveira',
+    img: IMAGES.StudentEmanuel,
+    time: 6,
+    id: 4,
+  },
+];

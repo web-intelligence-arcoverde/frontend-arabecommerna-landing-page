@@ -12,6 +12,7 @@ import {
   HowItWorks,
   Presentation,
   Price,
+  Results,
 } from '@/components';
 import { Contents } from '@/components/organisms/Contents';
 
@@ -29,9 +30,10 @@ const Home = () => {
       <HowItWorks />
       <AboutUs />
       <Discovery />
-      <Contents/>
+      <Contents />
       <Price />
       <Feedback />
+      <Results />
       <Doubts />
       <Conclusion />
       <Footer />
