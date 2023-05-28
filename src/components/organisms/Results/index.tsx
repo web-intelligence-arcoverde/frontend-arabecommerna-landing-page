@@ -6,7 +6,7 @@ import { i18n } from '@/translate/i18n.js';
 
 export const Results = () => {
   return (
-    <ResultsContainer>
+    <ResultsContainer id='results'>
       <ResultsPresentation>
         <Image src={ICONS.Details} />
         <HeaderSection

@@ -21,6 +21,11 @@ import ImagePlatform from './imagem-platform.svg';
 import Titles from './icon-title.svg';
 import TitlesBlue from './icon-title-blue.svg';
 import ImagePlatformMobile from './imagem-platform-mobile.svg';
+import ButtonPlay from './button_play.svg';
+import Emanuel from './student.svg';
+import Milena from './milena.svg';
+import Renato from './renato.svg';
+import Sabrina from './sabrina.svg';
 
 export const ICONS = {
   Mouse,
@@ -46,4 +51,9 @@ export const ICONS = {
   ImagePlatformMobile,
   Titles,
   TitlesBlue,
+  ButtonPlay,
+  Emanuel,
+  Milena,
+  Renato,
+  Sabrina,
 };

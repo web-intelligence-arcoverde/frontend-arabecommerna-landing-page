@@ -14,9 +14,6 @@ export const ContainerModule = styled.div`
   :last-child{
     margin-right: 100px;
   }
-  @media (max-width: ${BREAKPOINTS.sm}) {
-    min-width: 260px;
-  }
   
 `;
 

@@ -136,7 +136,7 @@ export const messages = {
       },
       dobouts: {
         title: 'ANSWERING',
-        subTitle: 'main <span>questions</span>'
+        subTitle: 'Main <span>questions</span>'
       },
       plataform: {
         title: 'PLATAFORM',

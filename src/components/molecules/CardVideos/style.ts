@@ -1,4 +1,4 @@
-import { COLORS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ResultsVideos = styled.div`
@@ -8,24 +8,16 @@ export const ResultsVideos = styled.div`
 export const VideosContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 350px;
   width: 100%;
-  border-width: 0px 1px 1px 1px;
-  border-style: solid;
-  border-color: #ecebf2;
-  border-radius: 0px 0px 5px 5px;
+  border: solid 1px #ecebf2;
+  border-radius: 5px;
   text-align: left;
   video {
     max-width: 350px;
     width: 100%;
     max-height: 450px;
     height: 100%;
-    border-radius: 5px 5px 0px 0px;
-  }
-  span {
-    max-width: 350px !important;
-    max-height: 450px !important;
+    min-width: 240px;
   }
 `;
 export const StudentInfos = styled.div`
@@ -42,5 +34,28 @@ export const StudentInfos = styled.div`
     font-weight: 400;
     font-size: 1rem;
     line-height: 24px;
+  }
+`;
+
+export const CardImage = styled.div`
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+  }
+  span{
+    width: 300px;
+    height: 400px;
+  }
+  @media(max-width:${BREAKPOINTS.sm}){
+    min-width: 240px !important;
+   
   }
 `;
