@@ -13,6 +13,8 @@ export const ResultsContainer = styled.section`
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 96px 20px;
     overflow-x: auto;
+
+    text-align: center;
     ::-webkit-scrollbar {
     height: 6px;
   }
