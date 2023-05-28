@@ -1,5 +1,5 @@
-import { COUNTRYS } from '@/assets';
-import { COLORS } from '@/common';
+
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ContainerExplore = styled.section<{ background: any }>`
@@ -15,6 +15,9 @@ export const ContainerExplore = styled.section<{ background: any }>`
   h1 {
     font-weight: 500;
     color: ${COLORS.light._05};
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: none;
   }
 `;
 
