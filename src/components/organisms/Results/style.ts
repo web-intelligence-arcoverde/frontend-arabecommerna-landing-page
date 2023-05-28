@@ -1,4 +1,4 @@
-import { BREAKPOINTS } from '@/common';
+import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
 
 export const ResultsContainer = styled.section`
@@ -7,6 +7,8 @@ export const ResultsContainer = styled.section`
   padding: 128px 96px;
   gap: 56px;
   text-align: right;
+  border-top: solid 1px ${COLORS.light._02};
+  border-bottom: solid 1px ${COLORS.light._02};
 
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 96px 20px;
