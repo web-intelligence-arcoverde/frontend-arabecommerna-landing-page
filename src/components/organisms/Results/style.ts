@@ -16,18 +16,18 @@ export const ResultsContainer = styled.section`
 
     text-align: center;
     ::-webkit-scrollbar {
-    height: 6px;
-  }
+      height: 6px;
+    }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: ${COLORS.brand._02};
-    border-radius: 4px;
-  }
+    ::-webkit-scrollbar-thumb {
+      background-color: ${COLORS.brand._02};
+      border-radius: 4px;
+    }
 
-  ::-webkit-scrollbar-track {
-    background-color: ${COLORS.brand._04};
-    border-radius: 4px;
-  }
+    ::-webkit-scrollbar-track {
+      background-color: ${COLORS.brand._04};
+      border-radius: 4px;
+    }
   }
 `;
 
