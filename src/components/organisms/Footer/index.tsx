@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { FooterContainer } from './style';
 import { ICONS } from '@/assets';
 import Link from 'next/link';
+import { i18n } from '@/translate/i18n';
 
 export const Footer = () => {
   const date = new Date();
@@ -14,17 +15,19 @@ export const Footer = () => {
   return (
     <FooterContainer>
       <div>
-        <p>©{currentYear} Árabe com Merna</p>{' '}
-        <p>Todos os direitos reservados</p>{' '}
         <p>
-          Design por <span>Brenno Guedes</span>
+          ©{currentYear} {`${i18n.t('header.logo')}`}
+        </p>
+        <p>{`${i18n.t('footer.right')}`}</p>{' '}
+        <p>
+          {`${i18n.t('footer.desing')}`} <span>Brenno Guedes</span>
         </p>
         <p>
-          Desenvolvido por{' '}
+          {`${i18n.t('footer.developed')}`}{' '}
           <Link
             href="https://github.com/web-intelligence-arcoverde/"
             target="_blank"
-            rel='noreferrer'
+            rel="noreferrer"
           >
             Web Intelligence
           </Link>
