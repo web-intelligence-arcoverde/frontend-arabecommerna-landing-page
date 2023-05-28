@@ -10,6 +10,7 @@ import { DoubtsCard } from '@/components/molecules';
 import Image from 'next/image';
 import { ICONS } from '@/assets';
 import { HeaderSection } from '@/components/atoms';
+import { i18n } from '@/translate/i18n.js';
 
 export const Doubts = () => {
   return (
@@ -21,10 +22,8 @@ export const Doubts = () => {
       <CardCenter>
         <HeaderSection
           lineHeight="none"
-          smallText={'RESPONDENDO'}
-          bigText={`
-          Principais <span>dúvidas</span>
-        `}
+          smallText={`${i18n.t('dobouts.title')}`}
+          bigText={`${i18n.t('dobouts.subTitle')}`}
         />
       </CardCenter>
 

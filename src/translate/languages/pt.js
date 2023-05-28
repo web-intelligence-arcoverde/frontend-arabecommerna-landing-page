@@ -1,3 +1,5 @@
+import { subtle } from "crypto";
+
 export const messages = {
   pt: {
     translations: {
@@ -115,20 +117,32 @@ export const messages = {
           religion: `Aprender árabe é fundamental para quem busca uma compreensão mais profunda da religião islâmica. Por ser o idioma do Alcorão, o livro sagrado do Islã, muitas orações e cerimônias religiosas são realizadas em árabe. Além disso, a compreensão do árabe pode permitir uma melhor comunicação e compreensão das tradições muçulmanas em todo o mundo`,
         }
       },
-      content:{
-        content:'CONTÉUDO',
-        module:'Módulo',
-        title:'O que você vai <span>aprender</span>',
-        moduleOne:'Módulo 1 a 4',
-        moduleTwo:'Módulo 5 a 8',
-        modulesThree:'Módulo 9 a 12',
-        viewMore:'ver mais'
+      content: {
+        content: 'CONTÉUDO',
+        module: 'Módulo',
+        title: 'O que você vai <span>aprender</span>',
+        moduleOne: 'Módulo 1 a 4',
+        moduleTwo: 'Módulo 5 a 8',
+        modulesThree: 'Módulo 9 a 12',
+        viewMore: 'ver mais'
       },
       conclusion: {
         title: 'Torne-se fluente em Árabe de <br /> um modo eficiente e descomplicado',
         course: 'Curso de Árabe',
         club: 'Clube de traduções',
         music: 'Música',
+      },
+      results: {
+        title: 'RESULTADOS',
+        subTitle: 'Veja os resultados dos <span>nossos alunos</span>'
+      },
+      dobouts: {
+        title: 'RSPONDENDO',
+        subTitle: 'principais <span>dúvidas</span>'
+      },
+      plataform: {
+        title: 'PLATAFORMA',
+        subTitle: '<h1>Conheça<span>por dentro</span></h1 >'
       }
     },
   },

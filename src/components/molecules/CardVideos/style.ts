@@ -15,6 +15,7 @@ export const VideosContainer = styled.div`
   border-style: solid;
   border-color: #ecebf2;
   border-radius: 0px 0px 5px 5px;
+  text-align: left;
   video {
     max-width: 350px;
     width: 100%;

@@ -16,6 +16,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { HeaderSection } from '@/components/atoms';
+import { i18n } from '@/translate/i18n';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -30,11 +31,9 @@ export const Platform = () => {
     <ContainerPlatform id="platform">
       <Aside>
         <HeaderSection
-          lineHeight='2rem'
-          smallText={'PLATAFORMA'}
-          bigText={`<h1>
-          Conheça <span>por dentro </span>
-        </h1>`}
+          lineHeight="2rem"
+          smallText={`${i18n.t('plataform.title')}`}
+          bigText={`${i18n.t('plataform.subTitle')}`}
         />
 
         <List>

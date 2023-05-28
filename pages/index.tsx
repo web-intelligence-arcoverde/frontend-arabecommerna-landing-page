@@ -32,8 +32,7 @@ const Home = () => {
       <AboutUs />
       <Discovery />
       <Contents />
-      <Contents/>
-      <Platform/>
+      <Platform />
       <Price />
       <Feedback />
       <Results />
@@ -45,4 +44,3 @@ const Home = () => {
 };
 
 export default Home;
-
