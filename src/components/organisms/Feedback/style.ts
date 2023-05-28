@@ -8,37 +8,17 @@ export const ContainerFeedback = styled.section`
 
   aside {
     width: 100%;
-
-    h4 {
-      color: ${COLORS.gray._02};
-      font-weight: 500;
-      margin-bottom: 12px;
-    }
-    h1 {
-      color: ${COLORS.dark._04};
-      font-size: 2rem;
-      max-width: 306px;
-      margin-bottom: 92px;
-    }
-    span {
-      color: ${COLORS.brand._02};
-      font-size: 2rem;
-    }
+    min-width: 305px;
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     flex-direction: column;
     padding: 96px 20px;
     gap: 32px;
-    aside {
-      h1 {
-        margin-bottom: 0;
-      }
-    }
   }
 `;
 export const CardImage = styled.div`
   display: flex;
-
+  margin-top: 100px;
   span {
     padding-left: 50px;
     position: relative;

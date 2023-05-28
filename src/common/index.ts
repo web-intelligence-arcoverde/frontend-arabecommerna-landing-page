@@ -44,6 +44,7 @@ export const COLORS = {
     mustart: '#D1C815',
     yellow: '#D1C815',
     pink: '#D10A8D',
+    blue: '#0A67D1',
   },
   opacity: {
     blue_01: 'rgba(27, 93, 224, 0.1)',

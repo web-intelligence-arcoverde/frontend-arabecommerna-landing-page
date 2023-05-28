@@ -83,13 +83,13 @@ export const messages = {
         },
       },
       price: {
-        text: `Don't let the language barrier stop you from <span>achieving your goals.</span> Get access to the ideal learning environment to take the first step with confidence`,
+        text: `Don't let the language barrier stop you from <span>achieving your goals</span>. Get access to the ideal learning environment to take the first step with confidence`,
         card: {
           text: 'NEXT CLASSES',
           from: 'From',
           per: 'per',
           button: 'I want to start learning',
-          amonth:'A month',
+          amonth: 'A month',
           benefit: {
             one: 'Read and write in Arabic',
             two: 'Language fluency',
@@ -98,6 +98,50 @@ export const messages = {
           },
         },
       },
+      discovery: {
+        title: 'FIND IT OUT',
+        subTitle: 'Why learn the Arabic <a>language</a>',
+        buttons: {
+          culture: 'Culture',
+          travels: 'Travels',
+          careers: 'Careers',
+          religion: 'Religion',
+        },
+        text: {
+          culture: `Arab culture is extremely rich and diverse, spanning over 20 countries and a population of over 400 million people. This cultural richness is expressed in areas such as literature, architecture, music, dance and gastronomy. The influence of Arab culture can be seen in various parts of the world, which shows its importance and appreciation`,
+          travels: `The Arab world is home to some of the world's most spectacular and impressive sights. The Sheikh Zayed Mosque in Abu Dhabi is a stunning example of modern Islamic architecture. The pyramids in Egypt are another historical landmark that has continued to fascinate visitors for thousands of years. Petra, Jordan is an ancient city carved from stone, and the Burj Khalifa in Dubai is a modern icon offering incredible views of the city`,
+          careers: `The Arab world offers many opportunities in areas ranging from business to education and tourism. Cities like Dubai and Doha are becoming global hubs for finance and technology. In addition, many renowned universities are located in Arab countries, offering exchange opportunities. Tourism is also on the rise, with destinations such as Egypt, Morocco and Qatar attracting millions of visitors each year.`,
+          religion: `Learning Arabic is essential for anyone seeking a deeper understanding of the Islamic religion. As it is the language of the Qur'an, the holy book of Islam, many prayers and religious ceremonies are performed in Arabic. Furthermore, understanding Arabic can allow for better communication and understanding of Muslim traditions around the world.`,
+        }
+      },
+      content: {
+        content: 'CONTENT',
+        module: 'Module',
+        title: 'What will you <span>learn</span>',
+        moduleOne: 'Module 1 to 4',
+        moduleTwo: 'Module 5 to 8',
+        modulesThree: 'Module 9 to 12',
+        viewMore: 'View More'
+
+      },
+      conclusion: {
+        title: 'Become fluent in Arabic from <br/> an efficient and uncomplicated way',
+        course: 'Arabic course',
+        club: 'Translation Club',
+        music: 'Music',
+      },
+      results: {
+        title: 'RESULTS',
+        subTitle: 'See the results of <span>our students</span>'
+      },
+      dobouts: {
+        title: 'ANSWERING',
+        subTitle: 'Main <span>questions</span>'
+      },
+      plataform: {
+        title: 'PLATAFORM',
+        subTitle: '<h1>know <span>inside</span></h1 >'
+      }
     },
   },
 };

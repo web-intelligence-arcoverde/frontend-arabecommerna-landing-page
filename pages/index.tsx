@@ -4,12 +4,19 @@ import { i18n } from '../src/translate/i18n.js';
 import {
   AboutUs,
   Explore,
+  Conclusion,
+  Discovery,
+  Doubts,
   Feedback,
+  Footer,
   Header,
   HowItWorks,
+  Platform,
   Presentation,
   Price,
+  Results,
 } from '@/components';
+import { Contents } from '@/components/organisms/Contents';
 
 const Home = () => {
   return (
@@ -25,11 +32,17 @@ const Home = () => {
       <HowItWorks />
       <AboutUs />
       <Explore />
+      <Discovery />
+      <Contents />
+      <Platform />
       <Price />
       <Feedback />
+      <Results />
+      <Doubts />
+      <Conclusion />
+      <Footer />
     </PageView>
   );
 };
 
 export default Home;
-/**/

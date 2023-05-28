@@ -9,14 +9,14 @@ import { ICONS } from '@/assets';
 import { i18n } from '../../../translate/i18n.js';
 import { CardInfo } from '@/components/molecules';
 import { cardInfosMock } from '@/__mocks__';
+import { HeaderSection } from '@/components/atoms';
 
 export const HowItWorks = () => {
   const subTitle = i18n.t('howWork.work.subTitle');
   return (
     <HowItWorksContainer id="how-it-works">
       <LearnContainer>
-        <h1>{`${i18n.t('howWork.work.title')}`}</h1>
-        <h2 dangerouslySetInnerHTML={{ __html: subTitle }}></h2>
+        <HeaderSection smallText={`${i18n.t('howWork.work.title')}`} bigText={subTitle}/>
         <CardImage>
           <Image src={ICONS.Details} alt="icone" />
         </CardImage>

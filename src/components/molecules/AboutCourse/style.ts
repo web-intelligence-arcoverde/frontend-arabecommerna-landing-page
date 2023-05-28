@@ -35,45 +35,18 @@ export const AboutContent = styled.div`
   flex-direction: column;
   max-width: 612px;
   gap: 12px;
-  h1 {
-    color: ${COLORS.gray._02};
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-  }
-  h2,
-  span {
-    color: ${COLORS.dark._04};
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-  }
-  span {
-    color: ${COLORS.brand._02};
-  }
-
+ 
   p {
     color: ${COLORS.gray._02};
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 36px;
-    letter-spacing: 0.02em;
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     padding: 56px 20px;
     order: 2;
-    h1 {
-      font-weight: 500;
-      font-size: 0.875rem;
-      line-height: 21px;
-    }
-    h2,
-    span {
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 48px;
-    }
+    gap: 0;
+   
     p {
       font-size: 1rem;
     }
@@ -90,7 +63,6 @@ export const AboutCard = styled.div`
     font-weight: 400;
     font-size: 1rem;
     line-height: 24px;
-    letter-spacing: 0.02em;
   }
   h1 {
     color: ${COLORS.gray._01};
@@ -101,6 +73,7 @@ export const AboutCard = styled.div`
   }
   @media (max-width: ${BREAKPOINTS.sm}) {
     gap: 32px;
+    padding: 32px 0;
     span {
       width: 24px !important;
       height: 24px !important;

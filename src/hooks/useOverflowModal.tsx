@@ -20,7 +20,6 @@ function useModalOverflow(isOpen: boolean, onClose?: () => void,idElement?:any) 
 
     function handleClick(event: MouseEvent) {
       const modal = document.querySelector(`#${idElement}`);
-      console.log(event)
 
       if (isOpen && modal && !modal.contains(event.target as Node)) {
         onClose && onClose();

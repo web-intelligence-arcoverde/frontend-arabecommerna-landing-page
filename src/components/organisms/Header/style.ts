@@ -58,6 +58,7 @@ export const CurrentNavigation = styled.div`
   gap: 12px;
   line-height: 70px;
   cursor: pointer;
+  white-space: nowrap;
   a {
     color: ${COLORS.gray._03};
     text-transform: capitalize;

@@ -36,6 +36,7 @@ export const Header = ({
 
   const buttonName = 'Whatsapp';
   const currentSection = useScrollSection(howItWorks);
+  const lastLink = howItWorks[howItWorks.length - 1].name
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -77,7 +78,7 @@ export const Header = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="#"> {currentSection?.name}</a>
+            <a href="#"> {!!currentSection? currentSection?.name:lastLink}</a>
             <Image src={ICONS.Arrow} alt="icone dopdrow" />
           </CurrentNavigation>
           <VerticalLine />
@@ -90,7 +91,7 @@ export const Header = ({
       </Controls>
       {menuActive && (
         <ContentMenuMobile
-          nameCurrentSection={currentSection?.name}
+          nameCurrentSection={!!currentSection? currentSection?.name:lastLink}
           buttonName={buttonName}
           sections={howItWorks}
           currentPageMobile={currentPageMobile}

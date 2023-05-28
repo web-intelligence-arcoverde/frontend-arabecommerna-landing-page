@@ -17,10 +17,10 @@ export const HowItWorksContainer = styled.section`
     padding: 96px 20px;
     gap: 56px;
     p {
+      margin-top: 4px;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 32px;
-      letter-spacing: 0.02em;
     }
   }
 `;
@@ -28,19 +28,6 @@ export const LearnContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 506px;
-  max-height: 192px;
-  h1 {
-    font-weight: 500;
-    color: ${COLORS.gray._02};
-    line-height: 24px;
-  }
-  h2,
-  span {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 64px;
-    color: ${COLORS.dark._04};
-  }
   span {
     color: ${COLORS.brand._02};
   }

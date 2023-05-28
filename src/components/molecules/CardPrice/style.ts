@@ -12,7 +12,7 @@ export const ContainerCard = styled.div`
   justify-content: space-between;
 
   @media (max-width: ${BREAKPOINTS.sm}) {
-    padding: 56px 20px;
+    padding: 32px 24px;
   }
 `;
 

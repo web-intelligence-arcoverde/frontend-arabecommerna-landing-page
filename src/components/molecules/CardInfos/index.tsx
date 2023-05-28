@@ -1,4 +1,4 @@
-import { CardInfos } from './styles';
+import { CardIcon, CardInfos } from './styles';
 import Image from 'next/image';
 interface CardInfoProps {
   title: string;
@@ -9,7 +9,9 @@ interface CardInfoProps {
 export const CardInfo = ({ title, subTitle, icon }: CardInfoProps) => {
   return (
     <CardInfos>
-      <Image src={icon} alt="icone" />
+      <CardIcon>
+        <Image src={icon} alt="icone" />
+      </CardIcon>
       <div>
         <h1>{title}</h1>
         <p>{subTitle}</p>

@@ -1,5 +1,5 @@
 import { CardPrice } from '@/components/molecules';
-import { ContainerPrice } from './style';
+import { ContainerPrice, Information } from './style';
 import { i18n } from '@/translate/i18n.js';
 import { benefitPlanMock } from '@/__mocks__';
 
@@ -8,7 +8,9 @@ export const Price = () => {
 
   return (
     <ContainerPrice id="price">
-      <p dangerouslySetInnerHTML={{ __html: textInitComponent }} />
+      <Information>
+        <p dangerouslySetInnerHTML={{ __html: textInitComponent }}></p>
+      </Information>
       <CardPrice
         title={`${i18n.t('price.card.text')}: 03 / 11 `}
         oldPrice={'400,00'}

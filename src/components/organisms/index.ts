@@ -1,7 +1,14 @@
+export { Header } from './Header';
+export { Presentation } from './Presentation';
 export { AboutUs } from './AboutUs';
 export { HowItWorks } from './HowItWorks';
-export { Presentation } from './Presentation';
-export { Header } from './Header';
-export { Feedback } from './Feedback';
+export { Discovery } from './Discovery';
 export { Price } from './Price';
 export {Explore} from './Explore'
+export { Feedback } from './Feedback';
+export { Doubts } from './Doubts';
+export { Conclusion } from './Conclusion';
+export { Footer } from './Footer';
+export { Contents } from './Contents';
+export { Results } from './Results';
+export { Platform } from './Platform';
