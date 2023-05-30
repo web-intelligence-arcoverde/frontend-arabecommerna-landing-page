@@ -1,17 +1,14 @@
-
-import { BREAKPOINTS, COLORS } from '@/common';
 import styled from 'styled-components';
+import { BREAKPOINTS, COLORS } from '@/common';
 
-export const ContainerExplore = styled.section<{ background: any }>`
+export const ContainerExplore = styled.section`
   display: flex;
   padding: 96px;
   justify-content: space-between;
-  background-image: ${(props) =>
-    props.background && `url(${props.background.src}) }`};
-  background-position: center;
-  position: relative;
   min-height: 734px;
-
+  position: relative;
+  overflow: hidden;
+ 
   h1 {
     font-weight: 500;
     color: ${COLORS.light._05};
@@ -20,11 +17,17 @@ export const ContainerExplore = styled.section<{ background: any }>`
     display: none;
   }
 `;
+export const CardBackground = styled.div`
+position: absolute;
+left: 0;
+top: 0;
+`
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 5;
 `;
 
 export const ContainerMap = styled.div`
@@ -43,4 +46,6 @@ export const ButtonClick = styled.button<{
   height: 32px;
   background-color: transparent;
   border: none;
+  z-index:20;
 `;
+
