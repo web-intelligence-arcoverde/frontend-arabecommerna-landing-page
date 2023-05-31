@@ -10,7 +10,7 @@ export const DiscoveryCard = ({ textContent, images }: DiscoveryProps) => {
       <ContentText>{textContent}</ContentText>
       <DiscoveryImages>
         {images.map((imgPresentation, index) => (
-          <Image key={index} src={imgPresentation} />
+          <Image key={index} src={imgPresentation} alt='image of presentation'/>
         ))}
       </DiscoveryImages>
     </>

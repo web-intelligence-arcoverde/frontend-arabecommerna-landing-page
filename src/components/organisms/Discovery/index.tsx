@@ -21,13 +21,13 @@ export const Discovery = () => {
   return (
     <DiscoveryContent id="discover">
       <DiscoveryTitle>
-        <Image src={ICONS.Grade} />
+        <Image src={ICONS.Grade} alt='icon detail'/>
         <HeaderSection
           lineHeight="2rem"
           smallText={`${i18n.t('discovery.title')}`}
           bigText={subTitle}
         />
-        <Image src={ICONS.Details} />
+        <Image src={ICONS.Details} alt='icon detail'/>
       </DiscoveryTitle>
       <ButtonTab
         getButton={handleOnClick}

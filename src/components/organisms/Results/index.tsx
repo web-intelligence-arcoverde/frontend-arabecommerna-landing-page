@@ -10,7 +10,7 @@ export const Results = () => {
     <ResultsContainer id="results">
       <ResultsPresentation>
         <StyleDesktop>
-          <Image src={ICONS.Details} />
+          <Image src={ICONS.Details} alt='icon detail'/>
         </StyleDesktop>
 
         <HeaderSection

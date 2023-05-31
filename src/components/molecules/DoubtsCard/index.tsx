@@ -32,7 +32,7 @@ export const DoubtsCard = ({ id, title, subTitle }: DoubtProps) => {
         <h1>
           {id}
           <div>
-            <Image src={ICONS.ArrowDown} />
+            <Image src={ICONS.ArrowDown} alt='arrow up'/>
           </div>
         </h1>
         <div>

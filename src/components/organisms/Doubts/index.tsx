@@ -16,7 +16,7 @@ export const Doubts = () => {
   return (
     <DoubtsContainer id="questions">
       <Grade>
-        <Image src={ICONS.Grade} />
+        <Image src={ICONS.Grade} alt='icon detail'/>
       </Grade>
 
       <CardCenter>
@@ -39,7 +39,7 @@ export const Doubts = () => {
         ))}
       </DoubtContent>
       <Detail>
-        <Image src={ICONS.Details} />
+        <Image src={ICONS.Details} alt='icon detail'/>
       </Detail>
     </DoubtsContainer>
   );

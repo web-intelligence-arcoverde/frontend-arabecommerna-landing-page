@@ -29,7 +29,7 @@ export const Course = () => {
         </AboutCard>
       </AboutContent>
       <AboutImage>
-        <Image src={IMAGES.Student} />
+        <Image src={IMAGES.Student} alt='image of student'/>
       </AboutImage>
     </AboutContainer>
   );

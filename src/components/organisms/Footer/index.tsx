@@ -35,7 +35,7 @@ export const Footer = () => {
       </div>
       <button onClick={goTop}>
         <Link href="#header">
-          <Image src={ICONS.ArrowTop} />
+          <Image src={ICONS.ArrowTop} alt='arrow top'/>
         </Link>
       </button>
     </FooterContainer>

@@ -9,10 +9,10 @@ export const Teacher = () => {
   return (
     <TeacherPresentation>
       <CardImage>
-        <Image src={IMAGES.Merna} />
+        <Image src={IMAGES.Merna} alt='image of teacher'/>
       </CardImage>
       <CardIcon>
-        <Image src={ICONS.Grade} />
+        <Image src={ICONS.Grade} alt='icon detail'/>
       </CardIcon>
       <CardContent>
         <HeaderSection
