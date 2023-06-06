@@ -1,4 +1,4 @@
-import Mouse from './mouse.svg';
+import Mouse from '../icons/mouse.svg';
 import Arrow from './arrow.svg';
 import Mouses from './mouses.svg';
 import Notebook from './notebook.svg';
@@ -16,7 +16,7 @@ import Checked from './check.svg';
 import ArrowTop from './arrow-top.svg';
 import ArrowDown from './arrowdown.svg';
 import Module from './module.svg';
-import Play from './Play.svg';
+import Play from './play.svg';
 import ImagePlatform from './imagem-platform.svg';
 import Titles from './icon-title.svg';
 import TitlesBlue from './icon-title-blue.svg';
@@ -26,7 +26,6 @@ import Emanuel from './student.svg';
 import Milena from './milena.svg';
 import Renato from './renato.svg';
 import Sabrina from './sabrina.svg';
-
 
 export const ICONS = {
   Mouse,
