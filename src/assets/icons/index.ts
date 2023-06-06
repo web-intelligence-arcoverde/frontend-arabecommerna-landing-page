@@ -1,4 +1,4 @@
-import Mouse from '../icons/mouse.svg';
+import Mouse from './mouse.svg';
 import Arrow from './arrow.svg';
 import Mouses from './mouses.svg';
 import Notebook from './notebook.svg';
