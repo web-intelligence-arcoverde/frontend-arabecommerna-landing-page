@@ -142,7 +142,7 @@ export const messages = {
       },
       plataform: {
         title: 'PLATAFORMA',
-        subTitle: '<h1>Conheça<span>por dentro</span></h1 >'
+        subTitle: '<h1>Conheça <span>por dentro</span></h1 >'
       },
       footer: {
         right: 'Todos os direitos reservados',
