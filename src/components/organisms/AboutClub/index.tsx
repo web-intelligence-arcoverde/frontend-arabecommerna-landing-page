@@ -1,23 +1,23 @@
-import Image from 'next/image';
+import { CardInfo } from '@/components/molecules';
+import { i18n } from '@/translate/i18n.js';
 import { AboutCard, AboutContainer, AboutContent, AboutImage } from './style';
-import { IMAGES } from '@/assets';
-import { CardInfo } from '../CardInfos';
-import { AboutCardConMocks } from '@/__mocks__';
-import { i18n } from '../../../translate/i18n.js';
 import { HeaderSection } from '@/components/atoms';
+import { AboutClubMocks } from '@/__mocks__';
+import { IMAGES } from '@/assets';
+import Image from 'next/image';
 
-export const Course = () => {
-  const courseSubTitle = i18n.t('aboutUs.course.subTitle');
+export const AboutClub = () => {
+  const SubTitle = i18n.t('aboutClub.subTitle');
   return (
     <AboutContainer>
       <AboutContent>
         <HeaderSection
-          smallText={`${i18n.t('aboutUs.course.title')}`}
-          bigText={courseSubTitle}
+          smallText={`${i18n.t('aboutClub.title')}`}
+          bigText={SubTitle}
         />
-        <p>{`${i18n.t('aboutUs.course.about')}`}</p>
+        <p>{`${i18n.t('aboutClub.paragraph')}`}</p>
         <AboutCard>
-          {AboutCardConMocks.map((item, index) => (
+          {AboutClubMocks.map((item, index) => (
             <li key={index}>
               <CardInfo
                 title={item.title}
@@ -29,7 +29,7 @@ export const Course = () => {
         </AboutCard>
       </AboutContent>
       <AboutImage>
-        <Image src={IMAGES.Student} alt="image of student" />
+        <Image src={IMAGES.MusicImage} alt="image of student" />
       </AboutImage>
     </AboutContainer>
   );

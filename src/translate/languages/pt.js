@@ -148,6 +148,37 @@ export const messages = {
         right: 'Todos os direitos reservados',
         desing: 'Design por',
         developed: 'Desenvolvido por'
+      },
+      musicPrice: {
+        title: 'TRADUÇÃO DE MÚSICAS',
+        subTitle: 'Explore a riqueza da <span>música Árabe</span> com traduções exclusivas',
+        paragraph: 'Tenha acesso a centenas de traduções precisas e detalhadas de forma prática e organizada',
+        whatsapp: 'Preciso de uma tradução agora',
+        button: 'Assinar agora'
+      },
+      aboutClub: {
+        title: 'SOBRE O CLUBE',
+        subTitle: 'Aprencie suas <span>músicas favoritas</span> em uma plataforma fácil de usar',
+        paragraph: 'Dictum tellus dis nulla vel id venenatis. Tincidunt quis molestie eu nibh mauris elit cras condimentum parturient. Tortor morbi ut auctor viverra quis elementum neque. Penatibus vel mi pellentesque tristique molestie',
+        dicover: 'Descubra músicas',
+        discoverSubTitle: 'Participe de uma comunidade engajada na cultura árabe',
+        download: 'Baixe as traduções',
+        downloadSubTitle: 'Você pode baixar o arquivo de todas as músicas traduzidas'
+      },
+      ClubWork: {
+        subTitle: '<a>Uma</a> assinatura, <a>todas</a> as traduções',
+        CardTable: {
+          title: 'Pedidos',
+          subTitle: 'Indique uma ou mais músicas para serem traduzidas ao longo do mês'
+        },
+        CardSurvey: {
+          title: 'Enquetes',
+          subTitle: 'Acompanhe as músicas que estão sendo pedidas e vote em 3 delas'
+        },
+        cardTranslation: {
+          title: 'Traduções',
+          subTitle: 'Todos os membros recebem as 10 traduções mais votadas do mês'
+        },
       }
     },
   }

@@ -91,6 +91,18 @@ export const AboutCardConMocks = [
     icon: ICONS.Certificado,
   },
 ];
+export const AboutClubMocks = [
+  {
+    title: `${i18n.t('aboutClub.dicover')}`,
+    subTitle: `${i18n.t('aboutClub.discoverSubTitle')}`,
+    icon: ICONS.Music,
+  },
+  {
+    title: `${i18n.t('aboutClub.download')}`,
+    subTitle: `${i18n.t('aboutClub.downloadSubTitle')}`,
+    icon: ICONS.Download,
+  },
+];
 
 export const benefitPlanMock = [
   `${i18n.t('price.card.benefit.one')}`,
@@ -98,7 +110,6 @@ export const benefitPlanMock = [
   `${i18n.t('price.card.benefit.three')}`,
   `${i18n.t('price.card.benefit.four')}`,
 ];
-
 export const MapsMock = [
   {
     map: COUNTRYS.MapMarrocos,
@@ -677,5 +688,23 @@ export const titleShowMock = [
     title: 'Título da mostragem 4',
     description:
       'Lorem ipsum dolor sit amet egestas consectetura id pretium nisl duits',
+  },
+];
+
+export const MusicClubMock = [
+  {
+    icon: ICONS.Table,
+    title: `${i18n.t('ClubWork.CardTable.title')}`,
+    subTitle: `${i18n.t('ClubWork.CardTable.subTitle')}`,
+  },
+  {
+    icon: ICONS.Survey,
+    title: `${i18n.t('ClubWork.CardSurvey.title')}`,
+    subTitle: `${i18n.t('ClubWork.CardSurvey.subTitle')}`,
+  },
+  {
+    icon: ICONS.Translation,
+    title: `${i18n.t('ClubWork.cardTranslation.title')}`,
+    subTitle: `${i18n.t('ClubWork.cardTranslation.subTitle')}`,
   },
 ];

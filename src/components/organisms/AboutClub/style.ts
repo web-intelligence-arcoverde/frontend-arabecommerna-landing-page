@@ -1,0 +1,86 @@
+import { BREAKPOINTS, COLORS } from '@/common';
+import styled from 'styled-components';
+
+export const AboutContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 128px 96px;
+  align-items: center;
+  gap: 96px;
+
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+  }
+`;
+export const AboutContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 612px;
+  gap: 12px;
+  max-height: 636px;
+  p {
+    color: ${COLORS.gray._02};
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 36px;
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    padding: 56px 20px;
+    order: 2;
+    gap: 0;
+    max-height: 150vh;
+    height: 100%;
+    p {
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const AboutCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 60px 0;
+  h1,
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  h1 {
+    color: ${COLORS.gray._01};
+    font-weight: 500;
+  }
+  p {
+    color: ${COLORS.gray._02};
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    gap: 32px;
+    padding: 32px 0;
+    span {
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+`;
+export const AboutImage = styled.div`
+  span {
+    border: 1px solid #f6f5fa;
+    border-radius: 5px;
+    max-width: 540px;
+    max-height: 636px;
+  }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    order: 1;
+    span {
+      border: none;
+      border-radius: none;
+      max-width: 375px;
+      max-height: 350px;
+    }
+  }
+`;

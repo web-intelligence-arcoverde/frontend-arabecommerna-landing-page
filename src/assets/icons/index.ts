@@ -1,16 +1,16 @@
-import Mouse from './mouse.svg'
+import Mouse from './mouse.svg';
 import Arrow from './arrow.svg';
 import Mouses from './mouses.svg';
-import Notebook from './notebook.svg'
-import People from './people.svg'
+import Notebook from './notebook.svg';
+import People from './people.svg';
 import Details from './details.svg';
 import Menu from './menu.svg';
 import Close from './close.svg';
 import Feedback from './feedback.svg';
 import TestimonialIcon from './testimonial.svg';
 import ArrowBlue from './arrow_blue.svg';
-import Grade from './grade.svg'
-import Table from './table.svg'
+import Grade from './grade.svg';
+import Table from './table.svg';
 import Certificado from './certificado.svg';
 import Checked from './check.svg';
 import ArrowTop from './arrow-top.svg';
@@ -26,6 +26,11 @@ import Emanuel from './student.svg';
 import Milena from './milena.svg';
 import Renato from './renato.svg';
 import Sabrina from './sabrina.svg';
+import Whatsapp from './whatsap.svg';
+import Music from './Music.svg';
+import Download from './Download.svg';
+import Translation from './translation.svg';
+import Survey from './survey.svg';
 
 export const ICONS = {
   Mouse,
@@ -56,4 +61,9 @@ export const ICONS = {
   Milena,
   Renato,
   Sabrina,
+  Whatsapp,
+  Music,
+  Download,
+  Translation,
+  Survey,
 };

@@ -146,6 +146,37 @@ export const messages = {
         right: 'All rights reserved',
         desing: 'Design by',
         developed: 'Developed by'
+      },
+      musicPrice: {
+        title: 'MUSIC TRANSLATION',
+        subTitle: 'Explore the richness of <span>Arabic music</span> with unique translations',
+        paragraph: 'Get access to hundreds of accurate and detailed translations in a practical and organized way',
+        whatsapp: 'I need a translation now',
+        button: 'Subscribe now'
+      },
+      aboutClub: {
+        title: 'ABOUT THE CLUB',
+        subTitle: 'Learn your <span>favorite songs</span> on an easy-to-use platform',
+        paragraph: 'Dictum tellus dis nulla vel id venenatis. Tincidunt quis molestie eu nibh mauris elit cras condimentum parturient. Tortor morbi ut auctor viverra quis elementum neque. Penatibus vel mi pellentesque tristique molestie',
+        dicover: 'Discover music',
+        discoverSubTitle: 'Join a community engaged in Arabic culture',
+        download: 'Download the translations',
+        downloadSubTitle: 'You can download the archive of all translated songs'
+      },
+      ClubWork: {
+        subTitle: '<a>One</a> signature, <a>all</a> translations',
+        CardTable: {
+          title: 'Requests',
+          subTitle: 'Indicate one or more songs to be translated throughout the month'
+        },
+        CardSurvey: {
+          title: 'Survey',
+          subTitle: 'Follow the songs that are being requested and vote for 3 of them'
+        },
+        CardTranslation: {
+          title: 'Translations',
+          subTitle: 'All members receive the top 10 most voted translations of the month'
+        },
       }
     },
   }

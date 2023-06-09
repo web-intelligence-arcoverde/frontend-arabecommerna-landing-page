@@ -12,3 +12,6 @@ export { Footer } from './Footer';
 export { Contents } from './Contents';
 export { Results } from './Results';
 export { Platform } from './Platform';
+export { MusicPrice } from './MusicPrice';
+export { AboutClub } from './AboutClub';
+export { Club } from './Club';

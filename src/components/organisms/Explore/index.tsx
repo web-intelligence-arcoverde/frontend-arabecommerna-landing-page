@@ -11,13 +11,12 @@ import { useState } from 'react';
 import { MapsMock } from '@/__mocks__';
 
 export const Explore = () => {
-  const [state, setState] = useState(MapsMock[1]);
+  const [state, setState] = useState(MapsMock[0]);
   console.log(state.background);
 
   const handleClick = ({ target }) => {
     let getCountry = MapsMock.filter((item) => target.id === item.country);
     setState(getCountry[0]);
-    console.log('pegou')
   };
   return (
     <ContainerExplore id="explore">

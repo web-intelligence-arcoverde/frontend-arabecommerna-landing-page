@@ -21,6 +21,7 @@ import ViagemTwo from './viagens-2.webp';
 import ViagemThree from './viagens-3.webp';
 import ViagemFour from './viagens-4.webp';
 import StudentEmanuel from './student.webp';
+import MusicImage from './music-image.webp';
 
 export const IMAGES = {
   BackgroundPresentation,
@@ -46,4 +47,5 @@ export const IMAGES = {
   ViagemThree,
   ViagemFour,
   StudentEmanuel,
+  MusicImage,
 };
