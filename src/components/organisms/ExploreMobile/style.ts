@@ -7,6 +7,10 @@ export const ExploreContainer = styled.section`
   align-items: flex-start;
   padding: 0px;
   gap: 244px;
+  display: none;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    display: block;
+  }
 `;
 
 export const Explore = styled.div`
