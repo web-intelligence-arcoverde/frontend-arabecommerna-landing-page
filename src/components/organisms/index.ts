@@ -15,3 +15,4 @@ export { Platform } from './Platform';
 export { MusicPrice } from './MusicPrice';
 export { AboutClub } from './AboutClub';
 export { Club } from './Club';
+export { ExploreMobile } from './ExploreMobile';

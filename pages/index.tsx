@@ -15,6 +15,7 @@ import {
   Presentation,
   Price,
   Results,
+  ExploreMobile,
 } from '@/components';
 import { Contents } from '@/components/organisms/Contents';
 
@@ -32,6 +33,7 @@ const Home = () => {
       <HowItWorks />
       <AboutUs />
       <Explore />
+      <ExploreMobile/>
       <Discovery />
       <Contents />
       <Platform />

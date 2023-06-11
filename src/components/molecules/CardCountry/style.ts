@@ -1,3 +1,4 @@
+import { BREAKPOINTS } from './../../../common/index';
 import { COLORS } from '@/common';
 import styled from 'styled-components';
 
@@ -6,6 +7,12 @@ export const ContainerCountry = styled.div`
   flex-direction: column;
   gap: 16px;
   max-width: 600px;
+
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    align-items: flex-start;
+    padding: 0px 20px 32px;
+    gap: 12px;
+  }
 `;
 
 export const InfoCountry = styled.div`
@@ -25,6 +32,19 @@ export const InfoCountry = styled.div`
     font-weight: 400;
     color: ${COLORS.light._05};
   }
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    width: 100%;
+    h4 {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 24px;
+    }
+    span {
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 21px;
+    }
+  }
 `;
 
 export const IconCountry = styled.div`
@@ -40,4 +60,10 @@ export const DescriptionCountry = styled.p`
   color: ${COLORS.light._04};
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 36px;
+  @media (max-width: ${BREAKPOINTS.sm}) {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 32px;
+  }
 `;

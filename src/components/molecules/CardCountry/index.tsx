@@ -17,7 +17,7 @@ export const CardCountry = ({ icon, country, capital }: CardCountryProps) => {
     <ContainerCountry>
       <InfoCountry>
         <IconCountry>
-          <Image width={32} height={32} src={icon} alt='any icon'/>
+          <Image width={32} height={32} src={icon} alt="any icon" />
         </IconCountry>
         <div>
           <h4>{country}</h4>
