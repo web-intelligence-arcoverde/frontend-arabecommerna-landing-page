@@ -1,4 +1,5 @@
 import { BREAKPOINTS, COLORS } from '@/common';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const ExploreContainer = styled.section`
@@ -6,8 +7,8 @@ export const ExploreContainer = styled.section`
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 244px;
   display: none;
+
   @media (max-width: ${BREAKPOINTS.sm}) {
     display: block;
   }
@@ -55,12 +56,13 @@ export const CardButton = styled.div`
   }
 `;
 
-export const CardText = styled.div<{
-  image: any;
-}>`
+export const CardText = styled.div`
   @media (max-width: ${BREAKPOINTS.sm}) {
-    background-image: url(${(props) => props.image});
-    background-size: cover;
-    background-position: center;
+    position: relative;
   }
+`;
+
+export const BackgroundImage = styled(Image)`
+  position: absolute;
+  top: 0;
 `;

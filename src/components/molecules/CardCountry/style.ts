@@ -7,7 +7,6 @@ export const ContainerCountry = styled.div`
   flex-direction: column;
   gap: 16px;
   max-width: 600px;
-
   @media (max-width: ${BREAKPOINTS.sm}) {
     align-items: flex-start;
     padding: 0px 20px 32px;
@@ -21,6 +20,7 @@ export const InfoCountry = styled.div`
   gap: 16px;
   border-bottom: solid 1px ${COLORS.gray._01};
   padding-bottom: 16px;
+  z-index: 99;
   h4 {
     font-weight: 600;
     color: ${COLORS.light._05};
@@ -65,5 +65,6 @@ export const DescriptionCountry = styled.p`
     font-weight: 400;
     font-size: 1rem;
     line-height: 32px;
+    z-index: 99;
   }
 `;

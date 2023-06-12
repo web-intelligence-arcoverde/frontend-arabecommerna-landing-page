@@ -1,13 +1,16 @@
 import Image from 'next/image';
-import { CardButton, CardText, Explore, ExploreContainer } from './style';
+import {
+  CardButton,
+  CardText,
+  Explore,
+  ExploreContainer,
+  BackgroundImage,
+} from './style';
 import { MapsMock } from '@/__mocks__';
 import { useState } from 'react';
 import { CardCountry } from '@/components/molecules';
 
-interface ExploreProps {
-  teste?: any;
-}
-export const ExploreMobile = ({ teste }: ExploreProps) => {
+export const ExploreMobile = () => {
   const [state, setState] = useState(MapsMock[0]);
 
   const handleClick = ({ target }) => {
@@ -26,12 +29,13 @@ export const ExploreMobile = ({ teste }: ExploreProps) => {
           ))}
         </CardButton>
       </Explore>
-      <CardText image={state.background}>
+      <CardText>
         <CardCountry
           icon={state.icon}
           country={state.country}
           capital={state.capital}
         />
+      <BackgroundImage src={state.background} loading="eager" layout='responsive'/>
       </CardText>
     </ExploreContainer>
   );
