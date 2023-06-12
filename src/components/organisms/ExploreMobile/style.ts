@@ -59,10 +59,22 @@ export const CardButton = styled.div`
 export const CardText = styled.div`
   @media (max-width: ${BREAKPOINTS.sm}) {
     position: relative;
+    padding-top: 180px;
   }
 `;
 
-export const BackgroundImage = styled(Image)`
+export const BackgroundImage = styled.div`
   position: absolute;
   top: 0;
-`;
+  width: 100%;
+  height: 600px;
+  
+  
+  img {
+    width: 190% !important;
+    height: auto !important;
+    min-width: none !important;
+    max-width: none !important;
+    min-height: none !important;
+  }
+  `

@@ -35,7 +35,9 @@ export const ExploreMobile = () => {
           country={state.country}
           capital={state.capital}
         />
-      <BackgroundImage src={state.background} loading="eager" layout='responsive'/>
+      <BackgroundImage>
+        <Image src={state.background} loading="eager" />   
+      </BackgroundImage>
       </CardText>
     </ExploreContainer>
   );
