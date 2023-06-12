@@ -76,5 +76,7 @@ export const BackgroundImage = styled.div`
     min-width: none !important;
     max-width: none !important;
     min-height: none !important;
+    padding-right: 200px !important;
+    object-fit: cover;
   }
   `
