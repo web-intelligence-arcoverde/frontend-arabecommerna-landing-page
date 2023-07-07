@@ -6,22 +6,21 @@ import {
   ContainerMap,
   Content,
 } from './style';
-import { CardCountry } from '@/components/molecules';
-import { useState } from 'react';
-import { MapsMock } from '@/__mocks__';
+import {CardCountry} from '@/components/molecules';
+import {useState} from 'react';
+import {MapsMock} from '@/__mocks__';
 
 export const Explore = () => {
   const [state, setState] = useState(MapsMock[0]);
-  console.log(state.background);
 
-  const handleClick = ({ target }) => {
+  const handleClick = ({target}) => {
     let getCountry = MapsMock.filter((item) => target.id === item.country);
     setState(getCountry[0]);
   };
   return (
-    <ContainerExplore id="explore">
+    <ContainerExplore id='explore'>
       <CardBackground>
-        <Image  src={state.background} loading='eager' alt="teste" />
+        <Image src={state.background} loading='eager' alt='teste' />
       </CardBackground>
       <Content>
         <h1>Explore</h1>
@@ -32,7 +31,7 @@ export const Explore = () => {
         />
       </Content>
       <ContainerMap>
-        <Image src={state.map} alt="mapa" priority={true} />
+        <Image src={state.map} alt='mapa' priority={true} />
         {MapsMock.map((item) => (
           <ButtonClick
             onClick={handleClick}

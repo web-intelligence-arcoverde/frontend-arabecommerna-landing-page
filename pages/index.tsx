@@ -32,7 +32,6 @@ const Home = () => {
       <Presentation />
       <HowItWorks />
       <AboutUs />
-      <Explore />
       <ExploreMobile />
       <Discovery />
       <Contents />
