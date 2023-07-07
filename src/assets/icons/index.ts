@@ -1,17 +1,18 @@
 import Mouse from './mouse.svg';
-import Mouses from './mouses.svg';
+
+import Mouses from './new-mouses.svg';
+import Notebook from './new-notebook.svg';
+import People from './new-people.svg';
+import Grade from './new-grade.svg';
+import Table from './new-table.svg';
 
 import Arrow from './arrow.svg';
-import Notebook from './notebook.svg';
-import People from './people.svg';
 import Details from './details.svg';
 import Menu from './menu.svg';
 import Close from './close.svg';
 import Feedback from './feedback.svg';
 import TestimonialIcon from './testimonial.svg';
 import ArrowBlue from './arrow_blue.svg';
-import Grade from './grade.svg';
-import Table from './table.svg';
 import Certificado from './certificado.svg';
 import Checked from './check.svg';
 import ArrowTop from './arrow-top.svg';
