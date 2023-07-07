@@ -2,7 +2,7 @@ import BackgroundPresentation from './piramide_plano.webp';
 import Bianca from './perfil_bianca.webp';
 import Jose from './perfil_jose.webp';
 import Merna from './new-merna.webp';
-import Student from './aluno.webp';
+import Student from './new-student.webp';
 import BackgroundPrice from './background-price.webp';
 import CulturaOne from './Cultura_wall.webp';
 import CulturaTwo from './Cultura_house.webp';
