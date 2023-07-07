@@ -1,6 +1,7 @@
 import Mouse from './mouse.svg';
-import Arrow from './arrow.svg';
 import Mouses from './mouses.svg';
+
+import Arrow from './arrow.svg';
 import Notebook from './notebook.svg';
 import People from './people.svg';
 import Details from './details.svg';

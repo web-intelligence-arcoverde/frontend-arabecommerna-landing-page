@@ -10,9 +10,9 @@ import {
   Navigation,
   VerticalLine,
 } from './style';
-import { useState } from 'react';
+import {useState} from 'react';
 import Image from 'next/image';
-import { ICONS } from '@/assets';
+import {ICONS} from '@/assets';
 import {
   Button,
   ChangeLanguage,
@@ -20,8 +20,8 @@ import {
   DropdownHeader,
   Logo,
 } from '@/components';
-import { HeaderProps } from '@/types/header';
-import { useScrollSection } from '@/hooks/useScrollSection';
+import {HeaderProps} from '@/types/header';
+import {useScrollSection} from '@/hooks/useScrollSection';
 import useModalOverflow from '@/hooks/useOverflowModal';
 
 export const Header = ({
@@ -36,7 +36,7 @@ export const Header = ({
 
   const buttonName = 'Whatsapp';
   const currentSection = useScrollSection(howItWorks);
-  const lastLink = howItWorks[howItWorks.length - 1].name
+  const lastLink = howItWorks[howItWorks.length - 1].name;
 
   const handleMouseEnter = () => {
     setIsHovering(true);
@@ -52,11 +52,11 @@ export const Header = ({
   useModalOverflow(menuActive, handleMenu, 'header');
 
   return (
-    <ContainerHeader id="header">
+    <ContainerHeader id='header'>
       <Navigation>
         <Logo />
         <CardButton onClick={handleMenu}>
-          <Image src={menuActive ? ICONS.Close : ICONS.Menu} alt="icone menu" />
+          <Image src={menuActive ? ICONS.Close : ICONS.Menu} alt='icone menu' />
         </CardButton>
         <ListNav>
           <ContainerDrop>
@@ -78,11 +78,11 @@ export const Header = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="#"> {!!currentSection? currentSection?.name:lastLink}</a>
-            <Image src={ICONS.Arrow} alt="icone dopdrow" />
+            <a href='#'>{!!currentSection ? currentSection?.name : lastLink}</a>
+            <Image src={ICONS.Arrow} alt='icone dopdrow' />
           </CurrentNavigation>
           <VerticalLine />
-          <LastPage href="/traducoes">{lastPage}</LastPage>
+          <LastPage href='/clube-de-traducoes'>{lastPage}</LastPage>
         </ListNav>
       </Navigation>
       <Controls>
@@ -91,7 +91,9 @@ export const Header = ({
       </Controls>
       {menuActive && (
         <ContentMenuMobile
-          nameCurrentSection={!!currentSection? currentSection?.name:lastLink}
+          nameCurrentSection={
+            !!currentSection ? currentSection?.name : lastLink
+          }
           buttonName={buttonName}
           sections={howItWorks}
           currentPageMobile={currentPageMobile}

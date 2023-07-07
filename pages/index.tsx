@@ -1,6 +1,6 @@
-import { PageView } from '../styles';
-import { allSectionsMock } from '@/__mocks__';
-import { i18n } from '../src/translate/i18n.js';
+import {PageView} from '../styles';
+import {allSectionsMock} from '@/__mocks__';
+import {i18n} from '../src/translate/i18n.js';
 import {
   AboutUs,
   Explore,
@@ -17,7 +17,7 @@ import {
   Results,
   ExploreMobile,
 } from '@/components';
-import { Contents } from '@/components/organisms/Contents';
+import {Contents} from '@/components/organisms/Contents';
 
 const Home = () => {
   return (
@@ -33,7 +33,7 @@ const Home = () => {
       <HowItWorks />
       <AboutUs />
       <Explore />
-      <ExploreMobile/>
+      <ExploreMobile />
       <Discovery />
       <Contents />
       <Platform />
